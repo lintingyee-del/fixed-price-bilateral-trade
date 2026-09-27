@@ -1,0 +1,73 @@
+{
+  "title": "Supplementary material: data, certificates and replay script",
+  "files": {
+    "README.md": {
+      "sha256": "53e09f87bf15d17f2b2e0167e8682da8e2a31507dbf2a4e3f9d62256b6b5c7ae",
+      "bytes": 5388
+    },
+    "affine_boundary_coefficients.json": {
+      "sha256": "48048f51570b3f7d5e1029c3b62cc3d426454d78f8c7ef7f211b7a5e4807786f",
+      "bytes": 17144
+    },
+    "boundary_identities.json": {
+      "sha256": "0faa9b15e94328143c98d1772c80de690e8407562917b97badf47f2f7edd4d47",
+      "bytes": 372
+    },
+    "branch_elimination.json": {
+      "sha256": "818d54a2e6fd2e76380d93288f4eb93da3b4548b21f6f525fadbc0daaaaea13d",
+      "bytes": 4139
+    },
+    "branch_positive_factors.json": {
+      "sha256": "ef55e1766de17677bf4ad7573f9e56405c5d799beb6498721f1dd94444d34eb9",
+      "bytes": 1357
+    },
+    "endpoint_identities.json": {
+      "sha256": "808dbb1e38c22e6e03fb23d95dbd32257936f983a69f29523bb5a19db62ff980",
+      "bytes": 509
+    },
+    "general_instance.json": {
+      "sha256": "637f4120423d4d313b62363cb5c79797af72d9865c6fb8419c5f1ee366241e04",
+      "bytes": 38075
+    },
+    "obstructions.json": {
+      "sha256": "33bcb43b5d0af96b98425dbd5a5b34fc1b84acce8f45a73cf6c63b0b2fa3165d",
+      "bytes": 2763
+    },
+    "obstructions.md": {
+      "sha256": "d9f3ced48690a783e9db5489e053a9f7cd62f43658c5bb6485d5a30c0b4843c9",
+      "bytes": 4403
+    },
+    "reference_price_coefficients.json": {
+      "sha256": "14d88152da783c8c886008f8c3afbfba7ecb11df5b5fef7eb9c2e9b13dfb5a69",
+      "bytes": 2464
+    },
+    "second_unit_kernel_bounds.json": {
+      "sha256": "8294067ccd1469008d9fddec1573382c46898fb59b2e9d858ab4d96f286a0dff",
+      "bytes": 3045
+    },
+    "second_unit_kernel_identities.json": {
+      "sha256": "210f9ab842bc949938e9b86fb217dcfd6107babd508ce2ad4db4409e2d84548c",
+      "bytes": 835
+    },
+    "stationary_lower_endpoint.json": {
+      "sha256": "81df7ff73e80bc6db55a6149fc4da0bcea779bc02ca9d4fe67fdb3b2d99eb1b3",
+      "bytes": 6979492
+    },
+    "stationary_physical_conditions.json": {
+      "sha256": "f42310228b669244cb9eddd98f7cb76b9930dd2e444daf16b88e01080affcb24",
+      "bytes": 7441
+    },
+    "stationary_uniform_cover.json": {
+      "sha256": "df1b03196133ae3cbeade7990947903a1da636b4a299764dd74b951346d5bcb5",
+      "bytes": 3810867
+    },
+    "symmetric_instance.json": {
+      "sha256": "3da28af6b214e01e7ca0c7a963c9882f3275dc99f915a4bff29f46042a910631",
+      "bytes": 12610
+    },
+    "verify.py": {
+      "sha256": "cd692fc23c982fb83871d60d2c51a41f82a7e7bfffde16259c2db5eb1f004dc2",
+      "bytes": 21720
+    }
+  }
+}

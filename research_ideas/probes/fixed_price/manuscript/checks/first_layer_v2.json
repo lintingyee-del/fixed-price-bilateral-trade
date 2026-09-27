@@ -1,0 +1,284 @@
+{
+  "scope": "Local symbolic identities, semialgebraic implications, scalar interval and rational arithmetic only. Global and measure-theoretic arguments go to the separate second layer.",
+  "lookup_before_run": [
+    "fixed_price_scalar_monotonicity_20260912",
+    "fixed_price_candidate_scalar_root_20260912",
+    "fixed_price_boundary_identities_20260912",
+    "fixed_price_affine_frontier_algebra_20260912",
+    "fixed_price_affine_frontier_increasing_20260912",
+    "fixed_price_affine_frontier_convex_20260912",
+    "fixed_price_affine_frontier_weight_half_20260912",
+    "fixed_price_affine_frontier_weight_two_20260912",
+    "fixed_price_affine_frontier_half_gft_20260912",
+    "fixed_price_conditional_profile_algebra_20260912",
+    "fixed_price_finite_approximation_algebra_20260912",
+    "fixed_price_finite_approximation_arithmetic_20260912",
+    "fixed_price_calibration_algebra_20260912",
+    "fixed_price_calibration_nonconcavity_20260912",
+    "fixed_price_calibration_failed_guess_20260912",
+    "fixed_price_calibration_upper_sign_20260912",
+    "fixed_price_calibration_lower_sign_20260912",
+    "fixed_price_calibration_gap_sign_20260912",
+    "fixed_price_nonexponential_shape_algebra_20260912",
+    "fixed_price_source_boundary_algebra_20260913"
+  ],
+  "research_nodes_read": 85,
+  "tex_sha256": "46124c72f1f3d71deaebfd4e5e22cc87e76c5638ac963c074675bee90fa8b42c",
+  "groups": {
+    "algebra": {
+      "residuals": {
+        "calibration_two_step_formula": "0",
+        "calibration_energy_Euler_singular": "0",
+        "calibration_energy_Euler_terminal": "0",
+        "calibration_energy_gap_before_parts": "0",
+        "calibration_endpoint_d_y": "0",
+        "calibration_endpoint_d_C_fixed_d": "0",
+        "calibration_integral_relation_derivative": "0",
+        "calibration_integral_relation_initial": "0",
+        "calibration_positive_kernel_integral_derivative": "0",
+        "calibration_positive_kernel_second_derivative": "0",
+        "calibration_D_total_positive_kernel": "0",
+        "calibration_envelope_derivative": "0",
+        "calibration_envelope_sign_numerator": "0",
+        "calibration_critical_curve_derivative": "0",
+        "calibration_critical_total_active_time": "0",
+        "calibration_critical_value": "0",
+        "calibration_endpoint_matching": "0",
+        "S_derivative": "0",
+        "d_log_derivative": "0",
+        "arctan_primitive_y": "0",
+        "arctan_full_derivative": "0",
+        "EL_first_integral": "0",
+        "EL_power_equation": "0",
+        "pricing_primitive": "0",
+        "seller_CDF_derivative": "0",
+        "seller_CDF_primitive": "0",
+        "constant_price_GFT": "0",
+        "LRW_density_attribution": "0",
+        "finite_affine_gap": "0",
+        "finite_welfare_gap": "0",
+        "frontier_slope": "0",
+        "frontier_slope_C": "0",
+        "limiting_mean": "0",
+        "limiting_GFT": "0",
+        "Legendre_profile": "0",
+        "profile_denominator": "0",
+        "explicit_h_y": "0",
+        "nonexponential_log_rate": "0",
+        "nonexponential_rate_derivative": "0",
+        "nonexponential_nonzero_coefficient": "0",
+        "reciprocal_remainder": "0",
+        "square_reciprocal_remainder": "0",
+        "Lipschitz_coefficient": "0",
+        "Lipschitz_decreasing": "0",
+        "weak_mixed_product": "0",
+        "strict_gap_decomposition": "0"
+      },
+      "Jensen_witness": {
+        "d": "1/2",
+        "switch_time": "1/2",
+        "left_control": [
+          "4/5",
+          "3/5"
+        ],
+        "right_control": [
+          "1/5",
+          "2/5"
+        ],
+        "midpoint_control": [
+          "1/2",
+          "1/2"
+        ],
+        "left_objective": "203/216",
+        "right_objective": "103/96",
+        "midpoint_objective": "1",
+        "average_minus_midpoint": "11/1728",
+        "directional_second_derivative": "4/3"
+      },
+      "all_zero": true
+    },
+    "interval": {
+      "bits": 256,
+      "C_left": "[0.3937571625147833881672042647531503992662516022704721763147972524166107177734 +/- 6.73e-77]",
+      "C_right": "[0.3937571625147833881672042647531506703167947236465806781779974699020385742187 +/- 7.74e-77]",
+      "left_residual": "[3.66217564034267741103154603864006598866964e-33 +/- 6.13e-75]",
+      "right_residual": "[-3.1085101387047832734679488203680748776889e-34 +/- 2.51e-75]",
+      "beta_enclosure": "[0.738024335734494540834623048622325 +/- 8.07e-34]",
+      "d_enclosure": "[0.35496886969829085948195145565582 +/- 4.67e-33]",
+      "I_enclosure": "[1.44112818429663314581709358186184 +/- 8.28e-33]",
+      "rational_ratio_bound": "1012569388712649/1372000000000000",
+      "remote_atom_bound": "360000000001"
+    }
+  },
+  "decisions": [
+    {
+      "name": "scalar_signs",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "((8*C + I*(2*C - 1) - 6)/(4*C - 1) < 0) & ((8*C + I*(2*C - 1) - 6)/((2*C - 1)*(4*C - 1)) > 0)",
+      "premises": [
+        "C > 1/4",
+        "C < 1/2",
+        "I > 0"
+      ]
+    },
+    {
+      "name": "envelope_lower",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "C*y*(1 - C) + 2*C - 1 < 0",
+      "premises": [
+        "C > 0",
+        "C <= 1/4",
+        "y > 0",
+        "2*C*y < 1"
+      ]
+    },
+    {
+      "name": "envelope_upper",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "C*y*(1 - C) + 2*C - 1 > 0",
+      "premises": [
+        "C >= 1/2",
+        "y > 0",
+        "C*y < 1"
+      ]
+    },
+    {
+      "name": "gap_terms",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "E/p**2 - 2*Q*v + a*vp**2 >= 0",
+      "premises": [
+        "a >= 0",
+        "p > 0",
+        "E >= 0",
+        "Q >= 0",
+        "v <= 0"
+      ]
+    },
+    {
+      "name": "density_positive",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "H*L - K + d**2 > 0",
+      "premises": [
+        "d > 0",
+        "L >= d",
+        "H >= 0",
+        "K <= H*(L - d)"
+      ]
+    },
+    {
+      "name": "frontier_increasing",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "d*(S/(1 - 2*C) + 1) > 0",
+      "premises": [
+        "C > 1/4",
+        "C < 1/2",
+        "S > 1",
+        "d > 0",
+        "sigma < 0"
+      ]
+    },
+    {
+      "name": "frontier_convex",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "-S**3*d*(2 - sigma)/(sigma*(1 - 2*C)**2) > 0",
+      "premises": [
+        "C > 1/4",
+        "C < 1/2",
+        "S > 1",
+        "d > 0",
+        "sigma < 0"
+      ]
+    },
+    {
+      "name": "seller_atom",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "(T*d*eta >= 0) & (T*d*eta < 1)",
+      "premises": [
+        "d > 0",
+        "eta > 0",
+        "T >= 0",
+        "T <= 1/(d*(d + eta))"
+      ]
+    },
+    {
+      "name": "strict_welfare",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "GM + MM - beta*(GG + MM) > 0",
+      "premises": [
+        "beta > 0",
+        "beta < 1",
+        "alpha >= 0",
+        "alpha < 1",
+        "GM > 0",
+        "MM >= 0",
+        "GG >= 0",
+        "GM*alpha >= GG*beta - MM*(1 - beta)"
+      ]
+    },
+    {
+      "name": "smoothing_support",
+      "status": "proved",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "note": "",
+      "claim": "(Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) > 0) & (Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) < Lambda)",
+      "premises": [
+        "Lambda > 0",
+        "X >= 0",
+        "X <= Lambda",
+        "eps > 0",
+        "eps < 1/2",
+        "Z >= -1/2",
+        "Z <= 1/2"
+      ]
+    }
+  ],
+  "script_sha256": "0f3c0717ca08583a39011ffa81c326d382bf1cb8249223f123c04e6a7f114749"
+}

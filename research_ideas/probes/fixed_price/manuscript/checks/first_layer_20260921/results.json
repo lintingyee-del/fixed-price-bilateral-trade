@@ -1,0 +1,476 @@
+{
+  "date": "2026-09-21",
+  "scope": "Only paper.tex and its four included TeX files. New scalar algebra and universal semialgebraic components of Theorem E and finite-node evaluation. No theorem-level certificate for existence, compactness, continuum order, measure identities, limiting arguments, or the conjectural matching bound.",
+  "groups": {
+    "pricing_algebra": {
+      "key": "fpm_20260921_pricing_obstacle_new_exact",
+      "locations": [
+        {
+          "file": "two_units.tex",
+          "anchor": "eq:two-potential",
+          "lines": [
+            108
+          ]
+        },
+        {
+          "file": "two_units.tex",
+          "anchor": "eq:two-operator",
+          "lines": [
+            126
+          ]
+        }
+      ],
+      "node": "T_two_pricing",
+      "limitation": "Affine and Farkas components only; no continuum prefix or attainment theorem."
+    },
+    "pricing_scalar": {
+      "key": "fpm_20260921_pricing_scalar_new_smt",
+      "locations": [
+        {
+          "file": "two_unit_pricing_proofs.tex",
+          "anchor": "app:two-pricing",
+          "lines": [
+            130
+          ]
+        }
+      ],
+      "node": "T_two_pricing",
+      "limitation": "Scalar consequences conditional on the displayed integral bounds; no Banach-space or right-continuity argument is machine-proved."
+    },
+    "recurrence": {
+      "key": "fpm_20260921_finite_node_max_steps_smt",
+      "locations": [
+        {
+          "file": "two_unit_pricing_proofs.tex",
+          "anchor": "eq:two-backward",
+          "lines": [
+            295,
+            325
+          ]
+        },
+        {
+          "file": "two_unit_pricing_proofs.tex",
+          "anchor": "app:two-recurrence",
+          "lines": [
+            286
+          ]
+        }
+      ],
+      "node": "P_two_finite_nodes",
+      "limitation": "Universal scalar steps used by the backwards induction, not a machine-formalized induction over arbitrary node counts or continuum extension."
+    },
+    "rounding": {
+      "key": "fpm_20260921_buyer_rounding_pointwise_smt",
+      "locations": [
+        {
+          "file": "two_unit_pricing_proofs.tex",
+          "anchor": "Rounding the buyer bodies.",
+          "lines": [
+            261
+          ]
+        }
+      ],
+      "node": "T_two_pricing",
+      "limitation": "Pointwise real-variable implications only; expectation passage, floor measurability, optimal-price existence, and the supremum limit remain analytic."
+    }
+  },
+  "checks": [
+    {
+      "group": "pricing_algebra",
+      "name": "potential_minus_compensation_obstacle_identity",
+      "statement": "For L != 0, L*(u-[1-d*s/L+epsilon*theta/L+I/L]) = (d*s-L+L*u-I)-epsilon*theta.",
+      "kind": "exact",
+      "status": "proved",
+      "target": "L*(-I/L + u - 1 + d*s/L - epsilon*theta/L)",
+      "decomposition": "-I + L*u - L + d*s - epsilon*theta",
+      "residual": "0",
+      "nonnegative_terms_under_statement_premises": []
+    },
+    {
+      "group": "pricing_algebra",
+      "name": "feasible_triple_affine_slack",
+      "statement": "For every a, the potential-compensation slack of the a-weighted combination of (d,u,I,theta) equals the a-weighted combination of the two slacks, with buyer L and seller s fixed.",
+      "kind": "exact",
+      "status": "proved",
+      "target": "-I0*a - I1*(1 - a) + L*(a*u0 + u1*(1 - a)) - L - epsilon*(a*theta0 + theta1*(1 - a)) + s*(a*d0 + d1*(1 - a))",
+      "decomposition": "a*(-I0 + L*u0 - L + d0*s - epsilon*theta0) + (1 - a)*(-I1 + L*u1 - L + d1*s - epsilon*theta1)",
+      "residual": "0",
+      "nonnegative_terms_under_statement_premises": []
+    },
+    {
+      "group": "pricing_algebra",
+      "name": "ordered_compensation_farkas_certificate",
+      "statement": "If psi1+theta1 >= 0, psi2-theta2 >= 0, and theta2-theta1 >= 0, then psi1+psi2 >= 0. The three Farkas multipliers are exactly 1.",
+      "kind": "exact",
+      "status": "proved",
+      "target": "psi1 + psi2",
+      "decomposition": "psi1 + psi2",
+      "residual": "0",
+      "nonnegative_terms_under_statement_premises": [
+        "psi1+theta1",
+        "psi2-theta2",
+        "theta2-theta1"
+      ]
+    },
+    {
+      "group": "pricing_algebra",
+      "name": "rounding_tail_repair_farkas_certificate",
+      "statement": "If 0 <= DeltaL <= delta and DeltaG >= 0, adding ideal-tail mass delta changes each potential by -DeltaL+DeltaG+delta >= 0. The two slack multipliers are exactly 1.",
+      "kind": "exact",
+      "status": "proved",
+      "target": "DeltaG - DeltaL + delta",
+      "decomposition": "DeltaG - DeltaL + delta",
+      "residual": "0",
+      "nonnegative_terms_under_statement_premises": [
+        "delta-DeltaL",
+        "DeltaG"
+      ]
+    },
+    {
+      "group": "pricing_scalar",
+      "name": "scalar_kernel_contraction_after_common_denominator",
+      "statement": "For b>=0, 1<=L<=1+b, E>=0 and |kernel_difference|<=(L-1)*E, |kernel_difference|*(1+b)<=b*L*E. Dividing by positive L*(1+b) gives the obstacle difference bound b/(1+b)*E.",
+      "kind": "smt",
+      "hypotheses": [
+        "b >= 0",
+        "L >= 1",
+        "L <= b + 1",
+        "E >= 0",
+        "Abs(kernel_difference) <= E*(L - 1)"
+      ],
+      "goal": "(b + 1)*Abs(kernel_difference) <= E*L*b",
+      "status": "proved",
+      "claim": "forall E, L, b, kernel_difference: b >= 0 and L >= 1 and L <= b + 1 and E >= 0 and Abs(kernel_difference) <= E*(L - 1) => (b + 1)*Abs(kernel_difference) <= E*L*b",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "pricing_scalar",
+      "name": "two_obstacle_max_is_nonexpansive",
+      "statement": "If E>=0, |x1-y1|<=E and |x2-y2|<=E, then |max(0,x1,x2)-max(0,y1,y2)|<=E.",
+      "kind": "smt",
+      "hypotheses": [
+        "E >= 0",
+        "Abs(x1 - y1) <= E",
+        "Abs(x2 - y2) <= E"
+      ],
+      "goal": "Abs(Max(0, x1, x2) - Max(0, y1, y2)) <= E",
+      "status": "proved",
+      "claim": "forall E, x1, x2, y1, y2: E >= 0 and Abs(x1 - y1) <= E and Abs(x2 - y2) <= E => Abs(Max(0, x1, x2) - Max(0, y1, y2)) <= E",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "pricing_scalar",
+      "name": "constant_cumulative_mass_feasible_scalar",
+      "statement": "For d>0, 0<=s<=b and 1<=L<=1+b, the potential at constant cumulative mass 1+b and zero compensation equals d*s+1+b-L >= 0 after using the existing kernel mass identity.",
+      "kind": "smt",
+      "hypotheses": [
+        "d > 0",
+        "s >= 0",
+        "s <= b",
+        "L >= 1",
+        "L <= b + 1"
+      ],
+      "goal": "-L + b + d*s + 1 >= 0",
+      "status": "proved",
+      "claim": "forall L, b, d, s: d > 0 and s >= 0 and s <= b and L >= 1 and L <= b + 1 => -L + b + d*s + 1 >= 0",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "pricing_scalar",
+      "name": "finite_canonical_prefix_extension",
+      "statement": "If old_prefix<=psi2 and psi1+psi2>=0, the updated prefix max(old_prefix,-psi1) is >=old_prefix, >=-psi1 and <=psi2.",
+      "kind": "smt",
+      "hypotheses": [
+        "old_prefix <= psi2",
+        "psi1 + psi2 >= 0"
+      ],
+      "goal": "(Max(old_prefix, -psi1) >= old_prefix) & (Max(old_prefix, -psi1) <= psi2) & (Max(old_prefix, -psi1) >= -psi1)",
+      "status": "proved",
+      "claim": "forall old_prefix, psi1, psi2: old_prefix <= psi2 and psi1 + psi2 >= 0 => (Max(old_prefix, -psi1) >= old_prefix) & (Max(old_prefix, -psi1) <= psi2) & (Max(old_prefix, -psi1) >= -psi1)",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "recurrence",
+      "name": "one_backward_step_is_least_feasible",
+      "statement": "For next_mass>=0, m=max(next_mass,obstacle1,obstacle2) is nonnegative and satisfies all three bounds; every competitor satisfying those bounds is at least m.",
+      "kind": "smt",
+      "hypotheses": [
+        "next_mass >= 0",
+        "competitor >= next_mass",
+        "competitor >= obstacle1",
+        "competitor >= obstacle2"
+      ],
+      "goal": "(Max(next_mass, obstacle1, obstacle2) >= 0) & (Max(next_mass, obstacle1, obstacle2) >= next_mass) & (Max(next_mass, obstacle1, obstacle2) >= obstacle1) & (Max(next_mass, obstacle1, obstacle2) >= obstacle2) & (Max(next_mass, obstacle1, obstacle2) <= competitor)",
+      "status": "proved",
+      "claim": "forall competitor, next_mass, obstacle1, obstacle2: next_mass >= 0 and competitor >= next_mass and competitor >= obstacle1 and competitor >= obstacle2 => (Max(next_mass, obstacle1, obstacle2) >= 0) & (Max(next_mass, obstacle1, obstacle2) >= next_mass) & (Max(next_mass, obstacle1, obstacle2) >= obstacle1) & (Max(next_mass, obstacle1, obstacle2) >= obstacle2) & (Max(next_mass, obstacle1, obstacle2) <= competitor)",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "recurrence",
+      "name": "one_backward_step_is_order_preserving",
+      "statement": "If next_mass<=next_mass_upper and each obstacle is at most its upper counterpart, their three-way maximum has the same order.",
+      "kind": "smt",
+      "hypotheses": [
+        "next_mass <= next_mass_upper",
+        "obstacle1 <= obstacle1_upper",
+        "obstacle2 <= obstacle2_upper"
+      ],
+      "goal": "Max(next_mass, obstacle1, obstacle2) <= Max(next_mass_upper, obstacle1_upper, obstacle2_upper)",
+      "status": "proved",
+      "claim": "forall next_mass, next_mass_upper, obstacle1, obstacle1_upper, obstacle2, obstacle2_upper: next_mass <= next_mass_upper and obstacle1 <= obstacle1_upper and obstacle2 <= obstacle2_upper => Max(next_mass, obstacle1, obstacle2) <= Max(next_mass_upper, obstacle1_upper, obstacle2_upper)",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "recurrence",
+      "name": "three_way_max_convexity",
+      "statement": "For 0<=a<=1, max(a*r+(1-a)*r1,a*A+(1-a)*A1,a*B+(1-a)*B1) <= a*max(r,A,B)+(1-a)*max(r1,A1,B1).",
+      "kind": "smt",
+      "hypotheses": [
+        "a >= 0",
+        "a <= 1"
+      ],
+      "goal": "Max(a*next_mass + next_mass_upper*(1 - a), a*obstacle1 + obstacle1_upper*(1 - a), a*obstacle2 + obstacle2_upper*(1 - a)) <= a*Max(next_mass, obstacle1, obstacle2) + (1 - a)*Max(next_mass_upper, obstacle1_upper, obstacle2_upper)",
+      "status": "unknown",
+      "claim": "forall a, next_mass, next_mass_upper, obstacle1, obstacle1_upper, obstacle2, obstacle2_upper: a >= 0 and a <= 1 => Max(a*next_mass + next_mass_upper*(1 - a), a*obstacle1 + obstacle1_upper*(1 - a), a*obstacle2 + obstacle2_upper*(1 - a)) <= a*Max(next_mass, obstacle1, obstacle2) + (1 - a)*Max(next_mass_upper, obstacle1_upper, obstacle2_upper)",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unknown"
+      },
+      "witness": null,
+      "replay": "",
+      "note": "only one solver closed it; record the solver that did, not both"
+    },
+    {
+      "group": "recurrence",
+      "name": "positive_kernel_summand_preserves_future_bounds",
+      "statement": "For weight>=0 and future_lower<=future_upper, weight*future_lower<=weight*future_upper. This is the termwise comparison in the positive finite kernel.",
+      "kind": "smt",
+      "hypotheses": [
+        "weight >= 0",
+        "future_lower <= future_upper"
+      ],
+      "goal": "future_lower*weight <= future_upper*weight",
+      "status": "proved",
+      "claim": "forall future_lower, future_upper, weight: weight >= 0 and future_lower <= future_upper => future_lower*weight <= future_upper*weight",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "rounding",
+      "name": "rounded_stoploss_loss_all_real_regions",
+      "statement": "For 0<=rounded_buyer<=buyer<rounded_buyer+delta, delta>0 and seller>=0, 0<=(buyer-seller)_+-(rounded_buyer-seller)_+<=delta.",
+      "kind": "smt",
+      "hypotheses": [
+        "rounded_buyer >= 0",
+        "buyer >= rounded_buyer",
+        "buyer < delta + rounded_buyer",
+        "delta > 0",
+        "seller >= 0"
+      ],
+      "goal": "(Max(0, buyer - seller) - Max(0, rounded_buyer - seller) >= 0) & (Max(0, buyer - seller) - Max(0, rounded_buyer - seller) <= delta)",
+      "status": "proved",
+      "claim": "forall buyer, delta, rounded_buyer, seller: rounded_buyer >= 0 and buyer >= rounded_buyer and buyer < delta + rounded_buyer and delta > 0 and seller >= 0 => (Max(0, buyer - seller) - Max(0, rounded_buyer - seller) >= 0) & (Max(0, buyer - seller) - Max(0, rounded_buyer - seller) <= delta)",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "rounding",
+      "name": "rounded_gain_both_buyers_accept",
+      "statement": "For 0<=seller<price<=rounded_buyer<=buyer, [1+buyer-seller]-[1+rounded_buyer-seller]>=0.",
+      "kind": "smt",
+      "hypotheses": [
+        "seller >= 0",
+        "seller < price",
+        "price <= rounded_buyer",
+        "rounded_buyer <= buyer"
+      ],
+      "goal": "buyer - rounded_buyer >= 0",
+      "status": "proved",
+      "claim": "forall buyer, price, rounded_buyer, seller: seller >= 0 and seller < price and price <= rounded_buyer and rounded_buyer <= buyer => buyer - rounded_buyer >= 0",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "rounding",
+      "name": "rounded_gain_only_original_buyer_accepts",
+      "statement": "For 0<=rounded_buyer<price<=buyer and 0<=seller<price, the strict-seller/inclusive-buyer kernels differ by buyer-seller>=0.",
+      "kind": "smt",
+      "hypotheses": [
+        "rounded_buyer >= 0",
+        "rounded_buyer < price",
+        "price <= buyer",
+        "seller >= 0",
+        "seller < price"
+      ],
+      "goal": "buyer - seller >= 0",
+      "status": "proved",
+      "claim": "forall buyer, price, rounded_buyer, seller: rounded_buyer >= 0 and rounded_buyer < price and price <= buyer and seller >= 0 and seller < price => buyer - seller >= 0",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    },
+    {
+      "group": "rounding",
+      "name": "rounded_gain_acceptance_branches_are_exhaustive",
+      "statement": "For rounded_buyer<=buyer, every real seller and price lies in one of: seller>=price; seller<price<=rounded_buyer; seller<price, rounded_buyer<price<=buyer; seller<price and buyer<price. The first and last branches have equal pointwise gain kernels.",
+      "kind": "smt",
+      "hypotheses": [
+        "rounded_buyer <= buyer"
+      ],
+      "goal": "(seller >= price) | ((price <= rounded_buyer) & (seller < price)) | ((buyer < price) & (seller < price)) | ((price <= buyer) & (rounded_buyer < price) & (seller < price))",
+      "status": "proved",
+      "claim": "forall buyer, price, rounded_buyer, seller: rounded_buyer <= buyer => (seller >= price) | ((price <= rounded_buyer) & (seller < price)) | ((buyer < price) & (seller < price)) | ((price <= buyer) & (rounded_buyer < price) & (seller < price))",
+      "solvers": {
+        "z3": "unsat",
+        "cvc5": "unsat"
+      },
+      "witness": null,
+      "replay": "",
+      "note": ""
+    }
+  ],
+  "reused_existing_credentials": {
+    "fp_ext_k2_prefix_obstacle_components_20260914": {
+      "use": [
+        "four cumulative-price Fubini identities with common buyer/price atoms",
+        "contraction_weight_bound_identity",
+        "pricing_scale_relation"
+      ],
+      "tex": [
+        "two_units.tex:eq:two-potential",
+        "two_units.tex:eq:two-operator"
+      ],
+      "original_statement": "The nineteen named new symbolic identities in obstacle_components.json vanish exactly. They include four finite cumulative-price Fubini expansions retaining common buyer/price atoms, the positive kernel weight bound identity, price scaling, regular block-energy and common-clock algebra, a fixed-body-length perturbation, and four equalizing-measure identities for one stated rational buyer. Rational jet evaluation gives midpoint dot(H1)=1/40 while both endpoint jets satisfy the stated local constraints. The explicit three-block ratio energy has second derivative -381/4000 along the mean/length-preserving direction.",
+      "verified": [
+        "exact"
+      ],
+      "evidence": "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\buyer_adaptive_price\\obstacle_components.json",
+      "rerun": false
+    },
+    "fp_ext_k2_buyer_adaptive_prefix_components_20260914": {
+      "use": [
+        "seller_price_atom_jump",
+        "interior_seller_potential_slope",
+        "nonnegative_interval_slope_decomposition",
+        "node_increment_combines_affine_piece_and_downward_jump"
+      ],
+      "tex": [
+        "two_unit_pricing_proofs.tex:app:two-recurrence"
+      ],
+      "original_statement": "The eleven named symbolic identities in prefix_components.json vanish exactly, including normalized seller welfare, price-projection gain decomposition, atom jump, affine slope, a four-node CDF transfer Abel identity, and the double-contact/frozen-contact node recurrences. One rational two-atom-per-unit buyer example gives 68 nonnegative price-projection comparisons, eight exact affine interval replays, eight exact downward price-atom jumps, and equality of all-pair and canonical-prefix minima.",
+      "verified": [
+        "exact"
+      ],
+      "evidence": "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\buyer_adaptive_price\\prefix_components.json",
+      "rerun": false
+    },
+    "fp_ext_k2_buyer_adaptive_continuous_components_20260914": {
+      "use": [
+        "future-price kernel derivative",
+        "coincident atom traces"
+      ],
+      "tex": [
+        "two_unit_pricing_proofs.tex:app:two-pricing"
+      ],
+      "original_statement": "The fourteen new named symbolic identities in continuous_components.json vanish exactly. They cover the future-price kernel, its Leibniz derivative, backward price and regular seller/gamma ODEs, coincident buyer/price atom gamma traces, atomic canonical-reflection branches and the regular price-gain derivative Gamma'=sum(C_i f_i-A_i h_i). Exact rational branch formulas also give nonnegative single-seller potentials for two distinct price policies at Z1=Z2=1 and beta=3/4, while the displayed ordered seller example gives the same per-unit welfare 3/2 for all positive-price branches and normalized optimum 2.",
+      "verified": [
+        "exact"
+      ],
+      "evidence": "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\buyer_adaptive_price\\continuous_components.json",
+      "rerun": false
+    },
+    "fp_ext_k2_continuous_switching_components_20260914": {
+      "use": [
+        "tail_seller_constant_piece",
+        "tail_seller_outside_piece"
+      ],
+      "tex": [
+        "two_unit_pricing_proofs.tex:app:two-pricing"
+      ],
+      "original_statement": "The twenty named rational identities in continuous_switching_exact.json vanish exactly. They cover the mass and endpoint of the linear low-price density, low-buyer and low-seller polynomial potentials, the low ordered-seller square decomposition, finite-tail buyer and seller pieces, first-buyer/first-seller stationary boundary factors, two contact-clock identities, the identity alpha1(b)+alpha2(b)+2pT-2beta=-beta*D*K_beta under those contact identities, and the common-zero-mass envelope normalization algebra.",
+      "verified": [
+        "exact"
+      ],
+      "evidence": "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\unified_principle\\continuous_switching_exact.json",
+      "rerun": false
+    },
+    "fp_ext_k2_tail_active_components_20260913": {
+      "use": [
+        "tail balance algebra",
+        "clipping-loss decomposition"
+      ],
+      "tex": [
+        "two_unit_pricing_proofs.tex:app:two-tail"
+      ],
+      "original_statement": "Eight symbolic identities, six nonnegative clipping-loss differences, and three exact finite ordered instance replays establish the displayed components of the tail-active reduction. The all-instance statement is the separate analytic proof in tail_active_reduction.tex.",
+      "verified": [
+        "exact"
+      ],
+      "evidence": "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\general_certificate_resume\\tail_active_exact.json",
+      "rerun": false
+    }
+  },
+  "summary": {
+    "new_exact_checks": 4,
+    "new_dual_solver_checks": 12,
+    "passed": 15,
+    "nonpassing": [
+      "three_way_max_convexity"
+    ]
+  }
+}

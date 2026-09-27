@@ -1,0 +1,73 @@
+{
+  "scope": "New components for the finite-support common-price switching construction.\n\nExact scope: the named rational identities only. Arb scope: the new strict\nscalar sign hypotheses on the already credentialed stationary root hull.\nNeither layer audits the complete measure/PMP argument or issues a universal\nsimultaneous-buyer-and-seller guarantee. Old root isolation and kernel sign\nchecks are inputs and are not rerun.\n",
+  "exact": {
+    "actual_layer": "exact",
+    "scope": "Only the twenty named identities below.",
+    "identities": {
+      "linear_low_price_mass": "0",
+      "linear_low_price_endpoint": "0",
+      "low_buyer_potential_derivative": "0",
+      "low_first_seller_potential_derivative": "0",
+      "low_joint_seller_gradient": "0",
+      "low_joint_seller_negative_square": "0",
+      "low_first_seller_origin_value": "0",
+      "tail_first_buyer_derivative": "0",
+      "tail_second_buyer_derivative": "0",
+      "tail_joint_buyer_square": "0",
+      "tail_joint_final_balance": "0",
+      "tail_seller_constant_piece": "0",
+      "tail_seller_outside_piece": "0",
+      "left_buyer_endpoint_boundary_factors": "0",
+      "right_terminal_price_density": "0",
+      "right_seller_gradient_at_contact": "0",
+      "right_clock_mass_identity": "0",
+      "left_clock_mass_boundary_factors": "0",
+      "joint_tail_slope_is_minus_normalized_comparison": "0",
+      "common_zero_mass_envelope_normalization": "0"
+    },
+    "count": 20,
+    "not_certified": [
+      "Measure-level potential inequalities and support complementarity",
+      "The envelope argument identifying the common mass derivative",
+      "PMP/Kelley necessity or sufficiency",
+      "A universal simultaneous two-side price guarantee"
+    ]
+  },
+  "new_signs": {
+    "actual_layer": "arb",
+    "scope": "New strict scalar sign hypotheses for the low-density and finite-tail extensions, over the saved stationary root hull. Old root isolation and old kernel signs are not rerun.",
+    "source": "C:\\Users\\86131\\Documents\\research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\stationary_branch_uniform_arb.json",
+    "source_sha256": "f3d3de81df66e9e4c246d52412384c80356af4603c698efa6c97fba2527b9204",
+    "input_t": [
+      "1332853481/4194304000",
+      "1333276033/4194304000"
+    ],
+    "input_p": [
+      "754340808478301733/1125899906842624000",
+      "757970502520020517/1125899906842624000"
+    ],
+    "input_beta": [
+      "18227/25000",
+      "729081/1000000"
+    ],
+    "precision_bits": 192,
+    "cells": 64,
+    "bounds": {
+      "low_density_intercept": "[[0.2441967851810322720496060 +/- 3.56e-26], [0.2592019970216488111702802 +/- 3.12e-26]]",
+      "low_density_slope": "[[0.2914958269102481125401027 +/- 3.85e-26], [0.3141028782410995034979351 +/- 2.52e-26]]",
+      "low_first_seller_monotonicity_margin": "[[0.1423393336899586001833929 +/- 4.94e-26], [0.2137602056918673197230352 +/- 1.54e-26]]",
+      "low_joint_seller_square_margin": "[[0.05889971862256702134869509 +/- 4.53e-27], [0.3944899340224283571030896 +/- 1.68e-26]]",
+      "tail_buyer_first_final_slope": "[[0.04650338008670113187883032 +/- 2.26e-27], [0.08929910438038385611627234 +/- 1.16e-27]]",
+      "tail_joint_buyer_global_quadratic_margin": "[[0.07549481420426398195351985 +/- 1.41e-27], [0.1050408278882759777459088 +/- 3.54e-26]]",
+      "tail_density": "[[0.2709189999999418452247824 +/- 4.48e-26], [0.2709200000000583363757301 +/- 4.97e-26]]",
+      "finite_price_ceiling": "[[2.721705185598679577196890 +/- 2.27e-26], [2.882142170215942655886465 +/- 2.18e-25]]",
+      "second_buyer_value_at_b": "[[0.09855840873832631814557234 +/- 4.34e-27], [0.1242775625495501230962865 +/- 4.44e-26]]"
+    },
+    "failures": []
+  },
+  "reused_credentials": [
+    "fp_ext_k2_second_body_kernel_arb_20260913",
+    "fp_ext_k2_second_body_kernel_algebra_20260913",
+    "saved stationary_branch_uniform_arb.json root hull"
+  ]
+}

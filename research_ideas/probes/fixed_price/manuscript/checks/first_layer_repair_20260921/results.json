@@ -1,0 +1,1400 @@
+{
+  "date": "2026-09-21",
+  "plan": {
+    "mode": "plan_only_unless_run_is_explicitly_selected",
+    "scope": "Current paper.tex and four included TeX files; local checks only.",
+    "replay_symbolic": [
+      {
+        "group": "single_unit_algebra",
+        "count": 46,
+        "source": "first_layer.py:algebra",
+        "old_key": "fpm2_20260913_algebra"
+      },
+      {
+        "group": "displayed_steps",
+        "count": 6,
+        "source": "first_layer_register_20260913.py:displayed_steps",
+        "old_key": "fpm3_20260913_displayed_steps"
+      },
+      {
+        "group": "granularity",
+        "count": 22,
+        "source": "verify_granularity_hard_20260918.py: symbolic prefix only",
+        "old_key": "fp_manuscript_granularity_intermediate_identities_20260918"
+      },
+      {
+        "group": "shifted",
+        "count": 12,
+        "source": "extension_screen_20260913/shifted_algebra.py:main calculation block",
+        "old_key": "fp_ext_k2_shifted_clock_algebra_20260913"
+      },
+      {
+        "group": "endpoint",
+        "count": 13,
+        "source": "continuation/endpoint_algebra.py:main calculation block",
+        "old_key": "fp_ext_k2_inverse_endpoint_algebra_20260913"
+      },
+      {
+        "group": "outer_boundary",
+        "count": 4,
+        "source": "continuation/outer_boundary_algebra.py: pre-Arb calculation block",
+        "old_key": "fp_ext_k2_outer_boundary_algebra_20260913"
+      },
+      {
+        "group": "branch_elimination",
+        "count": 4,
+        "source": "continuation/branch_reduction.py:algebra calculation block",
+        "old_key": "fp_ext_k2_branch_elimination_algebra_20260913"
+      },
+      {
+        "group": "second_body_kernel",
+        "count": 10,
+        "source": "continuation/general_dual/second_body_kernel.py:symbolic",
+        "old_key": "fp_ext_k2_second_body_kernel_algebra_20260913"
+      },
+      {
+        "group": "stationary_reconstruction_replay",
+        "count": 9,
+        "source": "checks/first_layer_repair_20260921/physical_conditions.py:exact_components",
+        "old_key": "fpm_repair_20260921_stationary_reverse_construction_algebra"
+      }
+    ],
+    "replay_smt": [
+      {
+        "group": "single_unit_signs",
+        "count": 10,
+        "source": "first_layer.py:sign_claims"
+      },
+      {
+        "group": "pricing_scalar",
+        "count": 4,
+        "source": "first_layer_20260921.py:check_pricing_scalar"
+      },
+      {
+        "group": "node_steps",
+        "count": 3,
+        "source": "first_layer_20260921.py:check_recurrence, excluding the prior unknown"
+      },
+      {
+        "group": "buyer_rounding",
+        "count": 4,
+        "source": "first_layer_20260921.py:check_rounding"
+      }
+    ],
+    "new_repair_checks": {
+      "D1": "Four disjoint/exhaustive price regions, terminal atom routing, and scalar tail bounds.",
+      "D4": "K=(M+G)/D*(1-R/beta), R>=beta iff K<=0, equality at beta=R_min, and derivative identities."
+    },
+    "incidental_original_helper_replay": "The original calibration_probe.symbolic helper also replays its finite rational Jensen witness. That actual exact calculation is reported separately; it is not omitted from the run record.",
+    "reused_without_execution": [
+      "All unaffected Arb covers, including stationary branch and kernel sign covers",
+      "Specified finite-instance and polygon exact receipts",
+      "The 27-branch exact max-convexity certificate from this session",
+      "Other unchanged exact component receipts not invoked by the listed functions"
+    ],
+    "not_run": [
+      "Unpublished Markdown branches",
+      "Lean",
+      "Rethlas",
+      "Floating discovery",
+      "Granularity script's four floating quadratures",
+      "Original script main/writer wrappers"
+    ],
+    "writes": [
+      "checks/first_layer_repair_20260921/results.json",
+      "checks/first_layer_repair_20260921/pending_records.json"
+    ],
+    "current_graph_nodes_read": 56,
+    "tex_files_read": [
+      "paper.tex",
+      "two_units.tex",
+      "two_unit_pricing_proofs.tex",
+      "two_unit_family.tex",
+      "two_unit_computation.tex"
+    ]
+  },
+  "groups": [
+    {
+      "name": "single_unit_algebra",
+      "statement": "The local identities listed in manuscript/first_layer.py algebra() have zero residual, including the new EL first integral and strict-welfare decomposition.",
+      "layers": [
+        "sympy"
+      ],
+      "scope": "46 local identities from the current included single-unit proof.",
+      "old_keys": [
+        "fpm2_20260913_algebra"
+      ],
+      "result": {
+        "residuals": {
+          "calibration_two_step_formula": "0",
+          "calibration_energy_Euler_singular": "0",
+          "calibration_energy_Euler_terminal": "0",
+          "calibration_energy_gap_before_parts": "0",
+          "calibration_endpoint_d_y": "0",
+          "calibration_endpoint_d_C_fixed_d": "0",
+          "calibration_integral_relation_derivative": "0",
+          "calibration_integral_relation_initial": "0",
+          "calibration_positive_kernel_integral_derivative": "0",
+          "calibration_positive_kernel_second_derivative": "0",
+          "calibration_D_total_positive_kernel": "0",
+          "calibration_envelope_derivative": "0",
+          "calibration_envelope_sign_numerator": "0",
+          "calibration_critical_curve_derivative": "0",
+          "calibration_critical_total_active_time": "0",
+          "calibration_critical_value": "0",
+          "calibration_endpoint_matching": "0",
+          "S_derivative": "0",
+          "d_log_derivative": "0",
+          "arctan_primitive_y": "0",
+          "arctan_full_derivative": "0",
+          "EL_first_integral": "0",
+          "EL_power_equation": "0",
+          "pricing_primitive": "0",
+          "seller_CDF_derivative": "0",
+          "seller_CDF_primitive": "0",
+          "constant_price_GFT": "0",
+          "LRW_density_attribution": "0",
+          "finite_affine_gap": "0",
+          "finite_welfare_gap": "0",
+          "frontier_slope": "0",
+          "frontier_slope_C": "0",
+          "limiting_mean": "0",
+          "limiting_GFT": "0",
+          "Legendre_profile": "0",
+          "profile_denominator": "0",
+          "explicit_h_y": "0",
+          "nonexponential_log_rate": "0",
+          "nonexponential_rate_derivative": "0",
+          "nonexponential_nonzero_coefficient": "0",
+          "reciprocal_remainder": "0",
+          "square_reciprocal_remainder": "0",
+          "Lipschitz_coefficient": "0",
+          "Lipschitz_decreasing": "0",
+          "weak_mixed_product": "0",
+          "strict_gap_decomposition": "0"
+        },
+        "Jensen_witness": {
+          "d": "1/2",
+          "switch_time": "1/2",
+          "left_control": [
+            "4/5",
+            "3/5"
+          ],
+          "right_control": [
+            "1/5",
+            "2/5"
+          ],
+          "midpoint_control": [
+            "1/2",
+            "1/2"
+          ],
+          "left_objective": "203/216",
+          "right_objective": "103/96",
+          "midpoint_objective": "1",
+          "average_minus_midpoint": "11/1728",
+          "directional_second_derivative": "4/3"
+        },
+        "all_zero": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_jensen_helper",
+      "statement": "At d=theta=1/2 the two stated rational two-step controls have Jensen gap 11/1728.",
+      "layers": [
+        "exact"
+      ],
+      "scope": "Incidental exact calculation actually performed by the reused original helper; fixed rational witness only.",
+      "old_keys": [
+        "fpm2_20260913_jensen_exact"
+      ],
+      "result": {
+        "witness": {
+          "d": "1/2",
+          "switch_time": "1/2",
+          "left_control": [
+            "4/5",
+            "3/5"
+          ],
+          "right_control": [
+            "1/5",
+            "2/5"
+          ],
+          "midpoint_control": [
+            "1/2",
+            "1/2"
+          ],
+          "left_objective": "203/216",
+          "right_objective": "103/96",
+          "midpoint_objective": "1",
+          "average_minus_midpoint": "11/1728",
+          "directional_second_derivative": "4/3"
+        },
+        "all_passed": "True"
+      },
+      "status": "passed"
+    },
+    {
+      "name": "displayed_steps",
+      "statement": "The six listed local endpoint and first-variation identities have zero residual; the obstacle multiplier for the displayed energy is 2Q.",
+      "layers": [
+        "sympy"
+      ],
+      "scope": "Six local derivatives and first-variation identities.",
+      "old_keys": [
+        "fpm3_20260913_displayed_steps"
+      ],
+      "result": {
+        "scope": "Displayed endpoint algebra and the local first-variation normalization only.",
+        "residuals": {
+          "implicit_endpoint_derivative": "0",
+          "primitive_r_over_D": "0",
+          "primitive_r_squared_over_D": "0",
+          "U_from_two_primitives": "0",
+          "total_D_derivative": "0",
+          "first_variation_multiplier_2Q": "0"
+        },
+        "all_zero": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "granularity_symbolic_only",
+      "statement": "The 22 exact symbolic intermediate formulas in the recorded Lemma 6.1, Lemma 7.1 and Corollary B' expansion again have zero residual.",
+      "layers": [
+        "exact"
+      ],
+      "scope": "Only the old script's symbolic prefix is executed; four floating quadratures are excluded.",
+      "old_keys": [
+        "fp_manuscript_granularity_intermediate_identities_20260918"
+      ],
+      "result": {
+        "zero_residual_tests": {
+          "d/dr r/D": true,
+          "d/dr r^2/D": true,
+          "2U = Y^2/D + (2CY-1)Z": true,
+          "total derivative of D equals common form": true,
+          "Y D (Y+U) equals common form": true,
+          "1-D = Y(1-CY)": true,
+          "x/Pe = 1-CY": true,
+          "line: 1/x - 1/Pe = CD/(1-CY)": true,
+          "Phi closed form": true,
+          "(28) derivative": true,
+          "C r^2 = D - 1 + r": true,
+          "2C(1-r) = (2C-1) - D'": true,
+          "dPhi/dC = -(Y+U)B/q^2 (as identity in C,Y,Z)": true,
+          "Z-coefficient, polynomial form": true,
+          "Z-coefficient, product form": true,
+          "remainder = -Y(2D+Y)B/(2Dq^2)": true,
+          "D - (1-CY)^2 = Y B": true,
+          "1/x^2 - (1+x)/Pe^2 = D B/(Y q^2)": true,
+          "dPhi/dC = dPhi/dx * x'": true,
+          "multiplier prediction": true,
+          "I/2 from S=1/beta": true,
+          "1/(2 beta C) split": true
+        },
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "shifted",
+      "statement": "The twelve local identities in shifted_algebra.py, including the restricted two-unit objective reduction to positive shifted-clock log energy, have zero symbolic residual.",
+      "layers": [
+        "sympy"
+      ],
+      "scope": "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded.",
+      "old_keys": [
+        "fp_ext_k2_shifted_clock_algebra_20260913"
+      ],
+      "result": {
+        "residuals": {
+          "area_derivative_in_price": "0",
+          "first_unit_equalizer": "0",
+          "seller_cdf_derivative": "0",
+          "low_price_balance": "0",
+          "initial_seller_atom": "0",
+          "gain_density": "0",
+          "ratio_energy_reduction": "0",
+          "gap_density_identity": "0",
+          "Euler_first_integral": "0",
+          "Euler_equation_from_first_integral": "0",
+          "left_contact_density": "0",
+          "right_contact_density": "0"
+        },
+        "all_zero": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "endpoint",
+      "statement": "The endpoint quadrature, inverse-clock convex-gap and contact-density identities, and the three envelope derivatives in continuation/endpoint_algebra.py have zero symbolic residual.",
+      "layers": [
+        "sympy"
+      ],
+      "scope": "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded.",
+      "old_keys": [
+        "fp_ext_k2_inverse_endpoint_algebra_20260913"
+      ],
+      "result": {
+        "residuals": {
+          "q_derivative_quadrature": "0",
+          "gradient_quadrature": "0",
+          "total_gradient_endpoint_formula": "0",
+          "inverse_time_integration_by_parts": "0",
+          "inverse_derivative_Bregman_gap": "0",
+          "inverse_left_contact_density": "0",
+          "inverse_right_contact_density": "0",
+          "inverse_interior_density": "0",
+          "right_contact_mass_primitive": "0",
+          "right_transversality_equals_contact_mass": "0",
+          "envelope_p0": "0",
+          "envelope_t": "0",
+          "envelope_h": "0"
+        },
+        "all_zero": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "outer_boundary",
+      "statement": "The four recorded zero-left-contact, zero-right-contact, p=1 gap and buyer-mean identities have zero symbolic residual.",
+      "layers": [
+        "sympy"
+      ],
+      "scope": "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded.",
+      "old_keys": [
+        "fp_ext_k2_outer_boundary_algebra_20260913"
+      ],
+      "result": {
+        "residuals": {
+          "zero_left_contact": "0",
+          "zero_right_contact": "0",
+          "p_equals_one_gap": "0",
+          "buyer_mean_identity": "0"
+        },
+        "all_zero": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "branch_elimination",
+      "statement": "The four rational identities reducing the interior algebraic endpoint stationarity conditions to the two-variable branch in continuation/branch_reduction.py have zero symbolic residual.",
+      "layers": [
+        "sympy"
+      ],
+      "scope": "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded.",
+      "old_keys": [
+        "fp_ext_k2_branch_elimination_algebra_20260913"
+      ],
+      "result": {
+        "residuals": {
+          "natural_t_condition_solved_for_q": "0",
+          "contact_condition_solved_for_C": "0",
+          "left_C_rewrite_mod_natural_condition": "0",
+          "squared_elimination_mod_natural_condition": "0"
+        },
+        "all_zero": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "second_body_kernel",
+      "statement": "Ten recorded conditional identities for the reference price density, the second buyer body's priced-comparison difference, its joint change with the second seller endpoint mass and high mean, and the below-floor price-atom gap expand to zero. The price-atom factor uses both the left Euler first integral and p-stationarity. This does not prove general k=2 reduction.",
+      "layers": [
+        "sympy"
+      ],
+      "scope": "Ten conditional local kernel identities; the unchanged Arb sign cover is reused.",
+      "old_keys": [
+        "fp_ext_k2_second_body_kernel_algebra_20260913"
+      ],
+      "result": {
+        "scope": "Conditional second-body reduced-cost kernel at the stationary reference.\n\nSymPy checks local identities. Arb checks explicit kernel sign hypotheses\non the already recorded uniform stationary root hull; it does not repeat\nroot isolation or certify a general k=2 reduction. Buyer and seller states\nare fixed to the reference when the second buyer body is varied.",
+        "residuals": {
+          "left_price_atom_factor": "0",
+          "left_kernel_positive_factor": "0",
+          "middle_density_derivative": "0",
+          "right_density_derivative": "0",
+          "right_kernel_derivative": "0",
+          "second_body_kernel": "0",
+          "first_body_kernel_derivative_middle": "0",
+          "second_seller_mass_derivative": "0",
+          "joint_second_body_and_seller_change": "0",
+          "below_floor_price_atom_gap": "0"
+        },
+        "failures": {},
+        "factor_premises": [
+          "C*p^2=xl*(lambda+t)",
+          "C*(xl+delta)^2=xl*(lambda+delta)"
+        ],
+        "body_variation_identity": "Delta(W_pi-beta O)=m E[integral_a^Z (Pi([a,s])+s rho(s)-beta) ds], a<=Z<=b",
+        "below_floor_exact_difference": "m*(beta*(a-Z)-a*pi_a), 0<=Z<a; negative near a from below",
+        "above_ceiling_linear_slope": "m*(1-pi_tail)-beta <= m-beta < 0 when m<beta; this direction requires changing B1 too",
+        "all_zero": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "stationary_reconstruction_replay",
+      "statement": "The nine saved local identities have zero exact symbolic residual: D complete square; reconstructed (log P)_q, P_xi and P_xixi; D(q_l)=d*xi_l/P_l^2; xi_r=P_r^2*D(q_r)/d; the h-stationarity factor; the t-stationarity reduction modulo v^2*D(q_r)-C*q_r^2; and p-stationarity from the definition of P_l.",
+      "layers": [
+        "sympy"
+      ],
+      "scope": "Nine local D.6 identities replayed after insertion of the reverse construction into TeX; the existing physical-domain Arb box is not rerun.",
+      "old_keys": [
+        "fpm_repair_20260921_stationary_reverse_construction_algebra"
+      ],
+      "result": {
+        "residuals": {
+          "quadratic_complete_square": "0",
+          "reconstructed_logP_q": "0",
+          "reconstructed_P_xi": "0",
+          "reconstructed_P_xixi": "0",
+          "left_endpoint_D_identity": "0",
+          "right_endpoint_xi_identity": "0",
+          "h_stationarity_numerator_factor": "0",
+          "t_stationarity_mod_quadratic": "0",
+          "p_stationarity_from_Pl_definition": "0"
+        },
+        "all_zero": true,
+        "t_stationarity_difference_factor": "(-q - v + 2)/(q**3*v - q**3 + q**2*v**2 - 2*q**2*v + q**2 - q*v**2 + q*v)",
+        "t_stationarity_quadratic_factor": "-C*q**2 + v**2*(C + q**2 - q)",
+        "t_stationarity_difference_denominator": "q**3*v - q**3 + q**2*v**2 - 2*q**2*v + q**2 - q*v**2 + q*v",
+        "hypotheses": [
+          "D(q)=q^2-q+C; xi_q=-xi/D(q); P^2=d*xi/D(q), using the positive branch",
+          "All displayed denominators are nonzero; physical signs are checked separately by Arb",
+          "Left endpoint: xi_l=Pl-delta and C=(delta+d)*xi_l/Pl^2",
+          "Right endpoint: Pr=e/(1-q), h=d*q*(1-q)/(e*D(q)), e+v=1",
+          "h stationarity uses v^2*D(q)=C*q^2",
+          "t stationarity additionally uses (delta+d)/Pl^2=(t+d)/p^2"
+        ],
+        "scope": "Nine new local reverse-construction and stationarity identities only; no global curve existence or boundary exhaustion."
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_scalar_signs",
+      "statement": "((8*C + I*(2*C - 1) - 6)/(4*C - 1) < 0) & ((8*C + I*(2*C - 1) - 6)/((2*C - 1)*(4*C - 1)) > 0) under [C > 1/4, C < 1/2, I > 0]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_scalar_signs"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "scalar_signs",
+            "statement": "((8*C + I*(2*C - 1) - 6)/(4*C - 1) < 0) & ((8*C + I*(2*C - 1) - 6)/((2*C - 1)*(4*C - 1)) > 0) under [C > 1/4, C < 1/2, I > 0]",
+            "goal": "((8*C + I*(2*C - 1) - 6)/(4*C - 1) < 0) & ((8*C + I*(2*C - 1) - 6)/((2*C - 1)*(4*C - 1)) > 0)",
+            "assumptions": [
+              "C > 1/4",
+              "C < 1/2",
+              "I > 0"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_envelope_lower",
+      "statement": "C*y*(1 - C) + 2*C - 1 < 0 under [C > 0, C <= 1/4, y > 0, 2*C*y < 1]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_envelope_lower"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "envelope_lower",
+            "statement": "C*y*(1 - C) + 2*C - 1 < 0 under [C > 0, C <= 1/4, y > 0, 2*C*y < 1]",
+            "goal": "C*y*(1 - C) + 2*C - 1 < 0",
+            "assumptions": [
+              "C > 0",
+              "C <= 1/4",
+              "y > 0",
+              "2*C*y < 1"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_envelope_upper",
+      "statement": "C*y*(1 - C) + 2*C - 1 > 0 under [C >= 1/2, y > 0, C*y < 1]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_envelope_upper"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "envelope_upper",
+            "statement": "C*y*(1 - C) + 2*C - 1 > 0 under [C >= 1/2, y > 0, C*y < 1]",
+            "goal": "C*y*(1 - C) + 2*C - 1 > 0",
+            "assumptions": [
+              "C >= 1/2",
+              "y > 0",
+              "C*y < 1"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_gap_terms",
+      "statement": "E/p**2 - 2*Q*v + a*vp**2 >= 0 under [a >= 0, p > 0, E >= 0, Q >= 0, v <= 0]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_gap_terms"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "gap_terms",
+            "statement": "E/p**2 - 2*Q*v + a*vp**2 >= 0 under [a >= 0, p > 0, E >= 0, Q >= 0, v <= 0]",
+            "goal": "E/p**2 - 2*Q*v + a*vp**2 >= 0",
+            "assumptions": [
+              "a >= 0",
+              "p > 0",
+              "E >= 0",
+              "Q >= 0",
+              "v <= 0"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_density_positive",
+      "statement": "H*L - K + d**2 > 0 under [d > 0, L >= d, H >= 0, K <= H*(L - d)]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_density_positive"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "density_positive",
+            "statement": "H*L - K + d**2 > 0 under [d > 0, L >= d, H >= 0, K <= H*(L - d)]",
+            "goal": "H*L - K + d**2 > 0",
+            "assumptions": [
+              "d > 0",
+              "L >= d",
+              "H >= 0",
+              "K <= H*(L - d)"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_frontier_increasing",
+      "statement": "d*(S/(1 - 2*C) + 1) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_frontier_increasing"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "frontier_increasing",
+            "statement": "d*(S/(1 - 2*C) + 1) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]",
+            "goal": "d*(S/(1 - 2*C) + 1) > 0",
+            "assumptions": [
+              "C > 1/4",
+              "C < 1/2",
+              "S > 1",
+              "d > 0",
+              "sigma < 0"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_frontier_convex",
+      "statement": "-S**3*d*(2 - sigma)/(sigma*(1 - 2*C)**2) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_frontier_convex"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "frontier_convex",
+            "statement": "-S**3*d*(2 - sigma)/(sigma*(1 - 2*C)**2) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]",
+            "goal": "-S**3*d*(2 - sigma)/(sigma*(1 - 2*C)**2) > 0",
+            "assumptions": [
+              "C > 1/4",
+              "C < 1/2",
+              "S > 1",
+              "d > 0",
+              "sigma < 0"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_seller_atom",
+      "statement": "(T*d*eta >= 0) & (T*d*eta < 1) under [d > 0, eta > 0, T >= 0, T <= 1/(d*(d + eta))]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_seller_atom"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "seller_atom",
+            "statement": "(T*d*eta >= 0) & (T*d*eta < 1) under [d > 0, eta > 0, T >= 0, T <= 1/(d*(d + eta))]",
+            "goal": "(T*d*eta >= 0) & (T*d*eta < 1)",
+            "assumptions": [
+              "d > 0",
+              "eta > 0",
+              "T >= 0",
+              "T <= 1/(d*(d + eta))"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_strict_welfare",
+      "statement": "GM + MM - beta*(GG + MM) > 0 under [beta > 0, beta < 1, alpha >= 0, alpha < 1, GM > 0, MM >= 0, GG >= 0, GM*alpha >= GG*beta - MM*(1 - beta)]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_strict_welfare"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "strict_welfare",
+            "statement": "GM + MM - beta*(GG + MM) > 0 under [beta > 0, beta < 1, alpha >= 0, alpha < 1, GM > 0, MM >= 0, GG >= 0, GM*alpha >= GG*beta - MM*(1 - beta)]",
+            "goal": "GM + MM - beta*(GG + MM) > 0",
+            "assumptions": [
+              "beta > 0",
+              "beta < 1",
+              "alpha >= 0",
+              "alpha < 1",
+              "GM > 0",
+              "MM >= 0",
+              "GG >= 0",
+              "GM*alpha >= GG*beta - MM*(1 - beta)"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "single_unit_smoothing_support",
+      "statement": "(Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) > 0) & (Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) < Lambda) under [Lambda > 0, X >= 0, X <= Lambda, eps > 0, eps < 1/2, Z >= -1/2, Z <= 1/2]",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs.",
+      "old_keys": [
+        "fpm2_20260913_smoothing_support"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "smoothing_support",
+            "statement": "(Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) > 0) & (Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) < Lambda) under [Lambda > 0, X >= 0, X <= Lambda, eps > 0, eps < 1/2, Z >= -1/2, Z <= 1/2]",
+            "goal": "(Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) > 0) & (Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) < Lambda)",
+            "assumptions": [
+              "Lambda > 0",
+              "X >= 0",
+              "X <= Lambda",
+              "eps > 0",
+              "eps < 1/2",
+              "Z >= -1/2",
+              "Z <= 1/2"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "pricing_scalar",
+      "statement": "For b>=0, 1<=L<=1+b, E>=0 and |kernel_difference|<=(L-1)*E, |kernel_difference|*(1+b)<=b*L*E. Dividing by positive L*(1+b) gives the obstacle difference bound b/(1+b)*E. If E>=0, |x1-y1|<=E and |x2-y2|<=E, then |max(0,x1,x2)-max(0,y1,y2)|<=E. For d>0, 0<=s<=b and 1<=L<=1+b, the potential at constant cumulative mass 1+b and zero compensation equals d*s+1+b-L >= 0 after using the existing kernel mass identity. If old_prefix<=psi2 and psi1+psi2>=0, the updated prefix max(old_prefix,-psi1) is >=old_prefix, >=-psi1 and <=psi2.",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Replays only previously passing scalar/pointwise components. The existing 27-branch exact max-convexity certificate is reused.",
+      "old_keys": [
+        "fpm_20260921_pricing_scalar_new_smt"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "scalar_kernel_contraction_after_common_denominator",
+            "statement": "For b>=0, 1<=L<=1+b, E>=0 and |kernel_difference|<=(L-1)*E, |kernel_difference|*(1+b)<=b*L*E. Dividing by positive L*(1+b) gives the obstacle difference bound b/(1+b)*E.",
+            "goal": "(b + 1)*Abs(kernel_difference) <= E*L*b",
+            "assumptions": [
+              "b >= 0",
+              "L >= 1",
+              "L <= b + 1",
+              "E >= 0",
+              "Abs(kernel_difference) <= E*(L - 1)"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "two_obstacle_max_is_nonexpansive",
+            "statement": "If E>=0, |x1-y1|<=E and |x2-y2|<=E, then |max(0,x1,x2)-max(0,y1,y2)|<=E.",
+            "goal": "Abs(Max(0, x1, x2) - Max(0, y1, y2)) <= E",
+            "assumptions": [
+              "E >= 0",
+              "Abs(x1 - y1) <= E",
+              "Abs(x2 - y2) <= E"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "constant_cumulative_mass_feasible_scalar",
+            "statement": "For d>0, 0<=s<=b and 1<=L<=1+b, the potential at constant cumulative mass 1+b and zero compensation equals d*s+1+b-L >= 0 after using the existing kernel mass identity.",
+            "goal": "-L + b + d*s + 1 >= 0",
+            "assumptions": [
+              "d > 0",
+              "s >= 0",
+              "s <= b",
+              "L >= 1",
+              "L <= b + 1"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "finite_canonical_prefix_extension",
+            "statement": "If old_prefix<=psi2 and psi1+psi2>=0, the updated prefix max(old_prefix,-psi1) is >=old_prefix, >=-psi1 and <=psi2.",
+            "goal": "(Max(old_prefix, -psi1) >= old_prefix) & (Max(old_prefix, -psi1) <= psi2) & (Max(old_prefix, -psi1) >= -psi1)",
+            "assumptions": [
+              "old_prefix <= psi2",
+              "psi1 + psi2 >= 0"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "node_steps",
+      "statement": "For next_mass>=0, m=max(next_mass,obstacle1,obstacle2) is nonnegative and satisfies all three bounds; every competitor satisfying those bounds is at least m. If next_mass<=next_mass_upper and each obstacle is at most its upper counterpart, their three-way maximum has the same order. For weight>=0 and future_lower<=future_upper, weight*future_lower<=weight*future_upper. This is the termwise comparison in the positive finite kernel.",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Replays only previously passing scalar/pointwise components. The existing 27-branch exact max-convexity certificate is reused.",
+      "old_keys": [
+        "fpm_20260921_finite_node_max_steps_smt"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "one_backward_step_is_least_feasible",
+            "statement": "For next_mass>=0, m=max(next_mass,obstacle1,obstacle2) is nonnegative and satisfies all three bounds; every competitor satisfying those bounds is at least m.",
+            "goal": "(Max(next_mass, obstacle1, obstacle2) >= 0) & (Max(next_mass, obstacle1, obstacle2) >= next_mass) & (Max(next_mass, obstacle1, obstacle2) >= obstacle1) & (Max(next_mass, obstacle1, obstacle2) >= obstacle2) & (Max(next_mass, obstacle1, obstacle2) <= competitor)",
+            "assumptions": [
+              "next_mass >= 0",
+              "competitor >= next_mass",
+              "competitor >= obstacle1",
+              "competitor >= obstacle2"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "one_backward_step_is_order_preserving",
+            "statement": "If next_mass<=next_mass_upper and each obstacle is at most its upper counterpart, their three-way maximum has the same order.",
+            "goal": "Max(next_mass, obstacle1, obstacle2) <= Max(next_mass_upper, obstacle1_upper, obstacle2_upper)",
+            "assumptions": [
+              "next_mass <= next_mass_upper",
+              "obstacle1 <= obstacle1_upper",
+              "obstacle2 <= obstacle2_upper"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "positive_kernel_summand_preserves_future_bounds",
+            "statement": "For weight>=0 and future_lower<=future_upper, weight*future_lower<=weight*future_upper. This is the termwise comparison in the positive finite kernel.",
+            "goal": "future_lower*weight <= future_upper*weight",
+            "assumptions": [
+              "weight >= 0",
+              "future_lower <= future_upper"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "buyer_rounding",
+      "statement": "For 0<=rounded_buyer<=buyer<rounded_buyer+delta, delta>0 and seller>=0, 0<=(buyer-seller)_+-(rounded_buyer-seller)_+<=delta. For 0<=seller<price<=rounded_buyer<=buyer, [1+buyer-seller]-[1+rounded_buyer-seller]>=0. For 0<=rounded_buyer<price<=buyer and 0<=seller<price, the strict-seller/inclusive-buyer kernels differ by buyer-seller>=0. For rounded_buyer<=buyer, every real seller and price lies in one of: seller>=price; seller<price<=rounded_buyer; seller<price, rounded_buyer<price<=buyer; seller<price and buyer<price. The first and last branches have equal pointwise gain kernels.",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Replays only previously passing scalar/pointwise components. The existing 27-branch exact max-convexity certificate is reused.",
+      "old_keys": [
+        "fpm_20260921_buyer_rounding_pointwise_smt"
+      ],
+      "result": {
+        "checks": [
+          {
+            "name": "rounded_stoploss_loss_all_real_regions",
+            "statement": "For 0<=rounded_buyer<=buyer<rounded_buyer+delta, delta>0 and seller>=0, 0<=(buyer-seller)_+-(rounded_buyer-seller)_+<=delta.",
+            "goal": "(Max(0, buyer - seller) - Max(0, rounded_buyer - seller) >= 0) & (Max(0, buyer - seller) - Max(0, rounded_buyer - seller) <= delta)",
+            "assumptions": [
+              "rounded_buyer >= 0",
+              "buyer >= rounded_buyer",
+              "buyer < delta + rounded_buyer",
+              "delta > 0",
+              "seller >= 0"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "rounded_gain_both_buyers_accept",
+            "statement": "For 0<=seller<price<=rounded_buyer<=buyer, [1+buyer-seller]-[1+rounded_buyer-seller]>=0.",
+            "goal": "buyer - rounded_buyer >= 0",
+            "assumptions": [
+              "seller >= 0",
+              "seller < price",
+              "price <= rounded_buyer",
+              "rounded_buyer <= buyer"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "rounded_gain_only_original_buyer_accepts",
+            "statement": "For 0<=rounded_buyer<price<=buyer and 0<=seller<price, the strict-seller/inclusive-buyer kernels differ by buyer-seller>=0.",
+            "goal": "buyer - seller >= 0",
+            "assumptions": [
+              "rounded_buyer >= 0",
+              "rounded_buyer < price",
+              "price <= buyer",
+              "seller >= 0",
+              "seller < price"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "rounded_gain_acceptance_branches_are_exhaustive",
+            "statement": "For rounded_buyer<=buyer, every real seller and price lies in one of: seller>=price; seller<price<=rounded_buyer; seller<price, rounded_buyer<price<=buyer; seller<price and buyer<price. The first and last branches have equal pointwise gain kernels.",
+            "goal": "(seller >= price) | ((price <= rounded_buyer) & (seller < price)) | ((buyer < price) & (seller < price)) | ((price <= buyer) & (rounded_buyer < price) & (seller < price))",
+            "assumptions": [
+              "rounded_buyer <= buyer"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "D1_price_regions",
+      "statement": "The corrected four price regions are exhaustive and disjoint; the shifted terminal seller atom is assigned to the common-tail bound. The eight saved scalar implications hold.",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "D.1 price-domain and conditional gain algebra only; no measure convergence or entire realization lemma.",
+      "old_keys": [],
+      "result": {
+        "checks": [
+          {
+            "name": "price_partition",
+            "statement": "For 0<=a<=b and epsilon>0, price<=a; a<price<a+epsilon; a+epsilon<=price<b+epsilon; price>=b+epsilon form a disjoint exhaustive partition.",
+            "goal": "~((price <= a) & (price >= b + epsilon)) & ~((price <= a) & (price >= a + epsilon) & (price < b + epsilon)) & ~((price > a) & (price >= b + epsilon) & (price < a + epsilon)) & ((price <= a) | (price >= b + epsilon) | ((price > a) & (price < a + epsilon)) | ((price >= a + epsilon) & (price < b + epsilon)))",
+            "assumptions": [
+              "a >= 0",
+              "b >= a",
+              "epsilon > 0"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "terminal_atom_excluded_from_middle",
+            "statement": "The shifted terminal price b+epsilon belongs to the common-tail region and is excluded from the middle bound.",
+            "goal": "True",
+            "assumptions": [
+              "a >= 0",
+              "b >= a",
+              "epsilon > 0"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "middle_trace_is_half_open",
+            "statement": "In the middle region, the shifted trace belongs to [a,b), retaining the corrected half-open terminal convention.",
+            "goal": "(-epsilon + price >= a) & (-epsilon + price < b)",
+            "assumptions": [
+              "a >= 0",
+              "b >= a",
+              "epsilon > 0",
+              "(price >= a + epsilon) & (price < b + epsilon)"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "only_tail_buys_in_terminal_region",
+            "statement": "If the buyer body is bounded by b, every price>=b+epsilon strictly exceeds every body value.",
+            "goal": "price > body_value",
+            "assumptions": [
+              "a >= 0",
+              "b >= a",
+              "epsilon > 0",
+              "price >= b + epsilon",
+              "body_value <= b"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "second_seller_terminal_rejects_before_tail",
+            "statement": "Throughout the two middle price regions, the shifted high second-seller atom b+epsilon rejects.",
+            "goal": "price < b + epsilon",
+            "assumptions": [
+              "a >= 0",
+              "b >= a",
+              "epsilon > 0",
+              "((price > a) & (price < a + epsilon)) | ((price >= a + epsilon) & (price < b + epsilon))"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "second_buyer_body_rejects_middle",
+            "statement": "Throughout the two middle price regions, the second-buyer body a rejects.",
+            "goal": "price > a",
+            "assumptions": [
+              "a >= 0",
+              "b >= a",
+              "epsilon > 0",
+              "((price > a) & (price < a + epsilon)) | ((price >= a + epsilon) & (price < b + epsilon))"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "second_unit_tail_only_low_mass_bound",
+            "statement": "When only the low second-seller atom trades with the escaping tail, its gain m*(1-eta*epsilon) lies between zero and m; rejection gives zero.",
+            "goal": "(m*(-epsilon*eta + 1) >= 0) & (m*(-epsilon*eta + 1) <= m)",
+            "assumptions": [
+              "m >= 0",
+              "m <= 1",
+              "eta >= 0",
+              "epsilon > 0",
+              "epsilon*eta <= 1"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "combined_tail_bound",
+            "statement": "When both shifted seller marginals accept a common escaping tail, their total gain 2-eta*(M1+M2) is at most 2; above the tail the gain is zero.",
+            "goal": "-eta*(seller_mean1 + seller_mean2) + 2 <= 2",
+            "assumptions": [
+              "eta >= 0",
+              "seller_mean1 >= 0",
+              "seller_mean2 >= 0"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "D1_terminal_example",
+      "statement": "For the previously reported endpoint example m=2/3,b=5/6,eta=epsilon=1/100, the second-unit terminal-tail gain is exactly 89741/90000, greater than m and at most one; this endpoint belongs to the common-tail region after the correction.",
+      "layers": [
+        "exact"
+      ],
+      "scope": "Exact endpoint regression calculation; the old false m bound is not reasserted.",
+      "old_keys": [],
+      "result": {
+        "m": "2/3",
+        "b": "5/6",
+        "epsilon": "1/100",
+        "eta": "1/100",
+        "terminal_second_unit_gain": "89741/90000",
+        "residual_to_reported_fraction": "0",
+        "gain_minus_m": "29741/90000",
+        "terminal_region": true,
+        "all_passed": "True"
+      },
+      "status": "passed"
+    },
+    {
+      "name": "D4_ratio_comparison_algebra",
+      "statement": "For R=(M+2)/(M+G), K=(beta*G-(1-beta)*M-2)/(beta*D) equals (M+G)/D*(1-R/beta). Its coordinate derivative at fixed beta has the saved product-rule form and vanishes when R=beta and R_prime=0.",
+      "layers": [
+        "sympy"
+      ],
+      "scope": "D.4 local identities only. Differentiability, Fermat's condition and feasible variations remain analytic premises.",
+      "old_keys": [],
+      "result": {
+        "residuals": {
+          "normalized_comparison_ratio_identity": "0",
+          "comparison_coordinate_derivative": "0",
+          "stationarity_at_identified_trial_ratio": "0"
+        },
+        "general_derivative": "-O*R_prime/(D*beta) + (D*O_prime - D_prime*O)*(-R/beta + 1)/D**2",
+        "premises": "Denominators are nonzero; derivative is at fixed beta. The stationarity substitution assumes R=beta and R_prime=0.",
+        "all_zero": true
+      },
+      "status": "passed"
+    },
+    {
+      "name": "D4_ratio_minimum_comparison",
+      "statement": "With positive beta,D,O and beta*D*K=O*(beta-R), R>=beta implies K<=0 and equality is equivalent to R=beta. At fixed endpoints, K=constant-E reverses energy order.",
+      "layers": [
+        "z3",
+        "cvc5"
+      ],
+      "scope": "Scalar implication for the explicitly authorized beta=R_min branch. It does not establish existence, interiority or global uniqueness.",
+      "old_keys": [],
+      "result": {
+        "checks": [
+          {
+            "name": "global_ratio_lower_bound_gives_comparison_upper_zero",
+            "statement": "Under beta>0,D>0,O>0 and beta*D*K=O*(beta-R), R>=beta implies K<=0.",
+            "goal": "K <= 0",
+            "assumptions": [
+              "beta > 0",
+              "D > 0",
+              "O > 0",
+              "Eq(D*K*beta, O*(-R + beta))",
+              "R >= beta"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "attainment_at_identified_trial_ratio",
+            "statement": "Under the same positive-denominator premises, K=0 iff R=beta. Thus an attained global minimum beta of R is an attained global maximum zero of K.",
+            "goal": "(Implies(Eq(K, 0), Eq(R, beta))) & (Implies(Eq(R, beta), Eq(K, 0)))",
+            "assumptions": [
+              "beta > 0",
+              "D > 0",
+              "O > 0",
+              "Eq(D*K*beta, O*(-R + beta))"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          },
+          {
+            "name": "fixed_endpoint_energy_order",
+            "statement": "At fixed endpoints and fixed beta, K=constant-E reverses energy order: E1<=E2 implies K1>=K2.",
+            "goal": "-E1 + fixed_endpoint_constant >= -E2 + fixed_endpoint_constant",
+            "assumptions": [
+              "E1 <= E2"
+            ],
+            "status": "proved",
+            "solvers": {
+              "z3": "unsat",
+              "cvc5": "unsat"
+            },
+            "witness": null,
+            "replay": "",
+            "note": ""
+          }
+        ],
+        "all_passed": true
+      },
+      "status": "passed"
+    }
+  ],
+  "source_locations": [
+    "two_unit_family.tex:lem:2fam-realization",
+    "two_unit_family.tex:lem:2fam-boundary"
+  ],
+  "summary": {
+    "groups": 27,
+    "passed": 27,
+    "nonpassing": []
+  }
+}

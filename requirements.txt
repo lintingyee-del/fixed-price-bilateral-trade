@@ -1,0 +1,10 @@
+# Python >= 3.11
+sympy
+python-flint
+z3-solver
+cvc5
+numpy
+scipy
+mpmath
+cvxpy
+threadpoolctl

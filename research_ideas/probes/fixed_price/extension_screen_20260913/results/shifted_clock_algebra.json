@@ -1,0 +1,18 @@
+{
+  "scope": "Twelve local symbolic identities for the explicitly restricted family and its energy comparison. No all-instance reduction, free-endpoint optimality, or full proof audit.",
+  "residuals": {
+    "area_derivative_in_price": "0",
+    "first_unit_equalizer": "0",
+    "seller_cdf_derivative": "0",
+    "low_price_balance": "0",
+    "initial_seller_atom": "0",
+    "gain_density": "0",
+    "ratio_energy_reduction": "0",
+    "gap_density_identity": "0",
+    "Euler_first_integral": "0",
+    "Euler_equation_from_first_integral": "0",
+    "left_contact_density": "0",
+    "right_contact_density": "0"
+  },
+  "script_sha256": "733607fe29dccbc94b8e095da53bbb73e6da97d9b6e849eb918b5576e7df2a55"
+}

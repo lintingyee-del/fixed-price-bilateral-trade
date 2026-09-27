@@ -1,0 +1,189 @@
+{
+  "scope": "New components for the one-jump certificate dual and its global energy.\n\nThe exact part checks new algebra and a rational single-cut dual example.\nThe numerical part evaluates the deliberately relaxed energy upper bound\nonce at the saved continuous reference. It is discovery, not a credential.\nPreviously recorded equalizer identities are inputs and are not rerun.\n",
+  "exact": {
+    "identities": {
+      "single_cut_height_coefficient": "0",
+      "single_cut_compensation_integral": "0",
+      "price_gain_clock_derivative": "0",
+      "cdf_reconstruction_from_gain": "0",
+      "positive_energy_weight_numerator": "0",
+      "equalizer_compensation_difference": "0",
+      "full_primal_dual_gap_decomposition": "0"
+    },
+    "rational_example": {
+      "buyer_bodies": "Z1=Z2=3",
+      "d": "1/3",
+      "seller_nodes": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "seller_multiplier_masses": [
+        [
+          "1/30",
+          "1/15",
+          "0",
+          "1/15"
+        ],
+        [
+          "1/15",
+          "0",
+          "1/10",
+          "0"
+        ]
+      ],
+      "common_mass": "1/6",
+      "cut": "2",
+      "correct_cut_left_gap": "1/30",
+      "wrong_inclusive_cut_gap": "-1/15",
+      "all_cdf_gaps": [
+        "-1/30",
+        "1/30",
+        "-1/15",
+        "0"
+      ],
+      "price_kernel_tests": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "1/2",
+          "2/5"
+        ],
+        [
+          "1",
+          "2/5"
+        ],
+        [
+          "3/2",
+          "3/5"
+        ],
+        [
+          "2",
+          "3/5"
+        ],
+        [
+          "5/2",
+          "4/5"
+        ],
+        [
+          "3",
+          "4/5"
+        ],
+        [
+          "4",
+          "1/3"
+        ]
+      ],
+      "all_price_branches": [
+        {
+          "interval": "(0,1]",
+          "gain": "2/5"
+        },
+        {
+          "interval": "(1,2]",
+          "gain": "3/5"
+        },
+        {
+          "interval": "(2,3]",
+          "gain": "4/5"
+        },
+        {
+          "interval": "(3,infinity)",
+          "gain": "1/3"
+        }
+      ],
+      "tail_column_gain": "1/3",
+      "direct_objective": "32/45",
+      "energy_objective": "32/45",
+      "interpretation": "This is feasible for the single left-CDF constraint at cut 2 and for every price, but violates full stochastic seller order. It shows the distinction between dual feasible sets; it is not an outer counterexample."
+    }
+  },
+  "reference_discovery": {
+    "actual_layer": "floating discovery",
+    "source": "C:\\Users\\86131\\Documents\\research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\outer_screen.json",
+    "source_sha256": "4e77e9bef2a54aed1439ff894eb2347912e46074021a62a69db1356989dc1c46",
+    "reference_beta": 0.7290803625988177,
+    "d": 0.3715909127431238,
+    "b": 1.5258803867657975,
+    "common_boundary": 0.43299671434486653,
+    "per_unit_equalizer_B": [
+      1.3203631135573608,
+      1.3136171349201033
+    ],
+    "integral_max_weights": 1.1518255215979885,
+    "relaxed_upper_mass": 1.584822235942855,
+    "relaxed_upper_budget": 1.1554627704358857,
+    "reference_mass": 1.3715909127431238,
+    "excess_mass": 0.21323132319973115,
+    "excess_budget": 0.15546277043588574,
+    "crossings": [],
+    "blocks": [
+      {
+        "segment": 0,
+        "interval": [
+          0.0,
+          0.828691054158159
+        ],
+        "integral_weights": [
+          0.35709207773130053,
+          0.621551200116795
+        ],
+        "integral_max": 0.621551200116795,
+        "crossings": []
+      },
+      {
+        "segment": 1,
+        "interval": [
+          0.828691054158159,
+          0.9893750589221595
+        ],
+        "integral_weights": [
+          0.12081402411689894,
+          0.05970871599347538
+        ],
+        "integral_max": 0.12081402411689894,
+        "crossings": []
+      },
+      {
+        "segment": 2,
+        "interval": [
+          0.9893750589221595,
+          1.2453438666698853
+        ],
+        "integral_weights": [
+          0.19408184826697247,
+          0.0951156829047466
+        ],
+        "integral_max": 0.19408184826697247,
+        "crossings": []
+      },
+      {
+        "segment": 3,
+        "interval": [
+          1.2453438666698853,
+          1.5258803867657975
+        ],
+        "integral_weights": [
+          0.21537844909732215,
+          0.10424482156021972
+        ],
+        "integral_max": 0.21537844909732215,
+        "crossings": []
+      }
+    ],
+    "interpretation": "This drops all CDF consistency, the common terminal linkage and the cut constraint. It is only a coarse upper bound. The numerical value is not an interval enclosure or a universal credential."
+  },
+  "source_sha256": "f171a976aa57c90e232af3f10446763cbc3b73b93afff0475d4fce4092b72dbb",
+  "reused_without_rerun": [
+    "fp_ext_k2_prefix_obstacle_components_20260914: recorded equalizer identities"
+  ],
+  "not_certified": [
+    "Strong duality for the continuum seller problem",
+    "A universal one-step certificate at beta_star",
+    "An interchange of cut minimization and seller maximization",
+    "A sharp calibration of the dropped-CDF energy upper bound"
+  ]
+}

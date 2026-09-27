@@ -1,0 +1,113 @@
+[
+  {
+    "key": "fpm_20260921_pricing_obstacle_new_exact",
+    "statement": "For L != 0, L*(u-[1-d*s/L+epsilon*theta/L+I/L]) = (d*s-L+L*u-I)-epsilon*theta. For every a, the potential-compensation slack of the a-weighted combination of (d,u,I,theta) equals the a-weighted combination of the two slacks, with buyer L and seller s fixed. If psi1+theta1 >= 0, psi2-theta2 >= 0, and theta2-theta1 >= 0, then psi1+psi2 >= 0. The three Farkas multipliers are exactly 1. If 0 <= DeltaL <= delta and DeltaG >= 0, adding ideal-tail mass delta changes each potential by -DeltaL+DeltaG+delta >= 0. The two slack multipliers are exactly 1.",
+    "verified": [
+      "exact"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/results.json",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript (current included TeX)",
+    "note": "4 new checks: potential_minus_compensation_obstacle_identity, feasible_triple_affine_slack, ordered_compensation_farkas_certificate, rounding_tail_repair_farkas_certificate. Affine and Farkas components only; no continuum prefix or attainment theorem.",
+    "manifest_node_for_scoped_notes": "T_two_pricing",
+    "locations": [
+      {
+        "file": "two_units.tex",
+        "anchor": "eq:two-potential",
+        "lines": [
+          108
+        ]
+      },
+      {
+        "file": "two_units.tex",
+        "anchor": "eq:two-operator",
+        "lines": [
+          126
+        ]
+      }
+    ]
+  },
+  {
+    "key": "fpm_20260921_pricing_scalar_new_smt",
+    "statement": "For b>=0, 1<=L<=1+b, E>=0 and |kernel_difference|<=(L-1)*E, |kernel_difference|*(1+b)<=b*L*E. Dividing by positive L*(1+b) gives the obstacle difference bound b/(1+b)*E. If E>=0, |x1-y1|<=E and |x2-y2|<=E, then |max(0,x1,x2)-max(0,y1,y2)|<=E. For d>0, 0<=s<=b and 1<=L<=1+b, the potential at constant cumulative mass 1+b and zero compensation equals d*s+1+b-L >= 0 after using the existing kernel mass identity. If old_prefix<=psi2 and psi1+psi2>=0, the updated prefix max(old_prefix,-psi1) is >=old_prefix, >=-psi1 and <=psi2.",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/results.json",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript (current included TeX)",
+    "note": "4 new checks: scalar_kernel_contraction_after_common_denominator, two_obstacle_max_is_nonexpansive, constant_cumulative_mass_feasible_scalar, finite_canonical_prefix_extension. Scalar consequences conditional on the displayed integral bounds; no Banach-space or right-continuity argument is machine-proved.",
+    "manifest_node_for_scoped_notes": "T_two_pricing",
+    "locations": [
+      {
+        "file": "two_unit_pricing_proofs.tex",
+        "anchor": "app:two-pricing",
+        "lines": [
+          130
+        ]
+      }
+    ]
+  },
+  {
+    "key": "fpm_20260921_finite_node_max_steps_smt",
+    "statement": "For next_mass>=0, m=max(next_mass,obstacle1,obstacle2) is nonnegative and satisfies all three bounds; every competitor satisfying those bounds is at least m. If next_mass<=next_mass_upper and each obstacle is at most its upper counterpart, their three-way maximum has the same order. For weight>=0 and future_lower<=future_upper, weight*future_lower<=weight*future_upper. This is the termwise comparison in the positive finite kernel.",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/results.json",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript (current included TeX)",
+    "note": "3 new checks: one_backward_step_is_least_feasible, one_backward_step_is_order_preserving, positive_kernel_summand_preserves_future_bounds. Universal scalar steps used by the backwards induction, not a machine-formalized induction over arbitrary node counts or continuum extension.",
+    "manifest_node_for_scoped_notes": "P_two_finite_nodes",
+    "locations": [
+      {
+        "file": "two_unit_pricing_proofs.tex",
+        "anchor": "eq:two-backward",
+        "lines": [
+          295,
+          325
+        ]
+      },
+      {
+        "file": "two_unit_pricing_proofs.tex",
+        "anchor": "app:two-recurrence",
+        "lines": [
+          286
+        ]
+      }
+    ]
+  },
+  {
+    "key": "fpm_20260921_finite_node_max_steps_smt_three_way_max_convexity",
+    "statement": "For 0<=a<=1, max(a*r+(1-a)*r1,a*A+(1-a)*A1,a*B+(1-a)*B1) <= a*max(r,A,B)+(1-a)*max(r1,A1,B1).",
+    "verified": [],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/results.json",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript (current included TeX)",
+    "note": "Actual status unknown; no credential. Raw result preserved in results.json. Universal scalar steps used by the backwards induction, not a machine-formalized induction over arbitrary node counts or continuum extension."
+  },
+  {
+    "key": "fpm_20260921_buyer_rounding_pointwise_smt",
+    "statement": "For 0<=rounded_buyer<=buyer<rounded_buyer+delta, delta>0 and seller>=0, 0<=(buyer-seller)_+-(rounded_buyer-seller)_+<=delta. For 0<=seller<price<=rounded_buyer<=buyer, [1+buyer-seller]-[1+rounded_buyer-seller]>=0. For 0<=rounded_buyer<price<=buyer and 0<=seller<price, the strict-seller/inclusive-buyer kernels differ by buyer-seller>=0. For rounded_buyer<=buyer, every real seller and price lies in one of: seller>=price; seller<price<=rounded_buyer; seller<price, rounded_buyer<price<=buyer; seller<price and buyer<price. The first and last branches have equal pointwise gain kernels.",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/results.json",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript (current included TeX)",
+    "note": "4 new checks: rounded_stoploss_loss_all_real_regions, rounded_gain_both_buyers_accept, rounded_gain_only_original_buyer_accepts, rounded_gain_acceptance_branches_are_exhaustive. Pointwise real-variable implications only; expectation passage, floor measurability, optimal-price existence, and the supremum limit remain analytic.",
+    "manifest_node_for_scoped_notes": "T_two_pricing",
+    "locations": [
+      {
+        "file": "two_unit_pricing_proofs.tex",
+        "anchor": "Rounding the buyer bodies.",
+        "lines": [
+          261
+        ]
+      }
+    ]
+  }
+]

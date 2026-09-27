@@ -1,0 +1,98 @@
+{
+  "scope": "New exact components for the cumulative-price and energy interfaces.\n\nFinite symbolic identities and one local coordinate-domain obstruction only;\nnot an audit of the contraction/compactness theorem or a calibration proof.\n",
+  "script_sha256": "88de7dc4936956d6c75a395d2601c54a3591d000af6ee31d0a1fb1d71f01e265",
+  "identities": {
+    "cumulative_kernel_node_0": "0",
+    "cumulative_kernel_node_1": "0",
+    "cumulative_kernel_node_2": "0",
+    "cumulative_kernel_node_3": "0",
+    "contraction_weight_bound_identity": "0",
+    "pricing_scale_relation": "0",
+    "aggregate_energy_derivative": "0",
+    "energy_integration_by_parts": "0",
+    "common_clock_total_survival": "0",
+    "common_clock_first_curvature": "0",
+    "common_clock_second_curvature": "0",
+    "single_clock_energy_weight": "0",
+    "reciprocal_total_coordinate_order": "0",
+    "reciprocal_total_coordinate_box": "0",
+    "reciprocal_total_clock_length_preserved": "0",
+    "equalizer_total_mass": "0",
+    "equalizer_body_price_1": "0",
+    "equalizer_body_price_2": "0",
+    "equalizer_body_price_3": "0"
+  },
+  "local_common_clock_nonconvexity": [
+    {
+      "jet": {
+        "x": "1/4",
+        "z": "7/10",
+        "xd": "1",
+        "zd": "2/5",
+        "xdd": "-2",
+        "zdd": "-28/5"
+      },
+      "H1": "3/5",
+      "H2": "2/5",
+      "dot_H1": "0",
+      "dot_H2": "-2",
+      "box_and_order": true,
+      "state_box": true
+    },
+    {
+      "jet": {
+        "x": "1/4",
+        "z": "3/5",
+        "xd": "1",
+        "zd": "0",
+        "xdd": "-1",
+        "zdd": "-12/5"
+      },
+      "H1": "3/5",
+      "H2": "2/5",
+      "dot_H1": "0",
+      "dot_H2": "-1",
+      "box_and_order": true,
+      "state_box": true
+    },
+    {
+      "jet": {
+        "x": "1/4",
+        "z": "13/20",
+        "xd": "1",
+        "zd": "1/5",
+        "xdd": "-3/2",
+        "zdd": "-4"
+      },
+      "H1": "3/5",
+      "H2": "2/5",
+      "dot_H1": "1/40",
+      "dot_H2": "-61/40",
+      "box_and_order": true,
+      "state_box": true
+    }
+  ],
+  "reciprocal_total_energy_curvature": "-381/4000",
+  "equalizer_example": {
+    "nodes": [
+      "0",
+      "2/5",
+      "7/5",
+      "3"
+    ],
+    "buyer": [
+      "0",
+      "1/4",
+      "1/2",
+      "1/4"
+    ],
+    "seller": [
+      "20/51",
+      "40/2193",
+      "3110/15351",
+      "5941/15351"
+    ]
+  },
+  "second_layer_run": false,
+  "development_note": "The initial run stopped at the midpoint equality because Python integer division produced a float in one jet component. Explicit symbolic division corrected the checker; no mathematical identity changed."
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Two explicit obstructions to reducing the second buyer (Section 'Open questions')",
+  "coordinate_compression": {
+    "claim": "With the other three marginal laws fixed, replacing the second buyer value by its mean can raise the optimal posted-price welfare ratio, here from 67/70 to 1.",
+    "model": "Two units, buyer vector (B1,B2) with B1>=B2, seller vector (S1,S2) with S1<=S2, vectors independent, inclusive trade rule S_i<=z<=B_i.",
+    "buyer_vectors": [["3", "1"], ["3", "3"]],
+    "buyer_probabilities": ["1/2", "1/2"],
+    "seller_vectors": [["1/10", "1/10"], ["1/10", "2"]],
+    "seller_probabilities": ["1/2", "1/2"],
+    "expected": {"OPT": "21/4", "best_welfare": "201/40", "ratio": "67/70"},
+    "compressed_buyer_vectors": [["3", "2"]],
+    "compressed_buyer_probabilities": ["1"],
+    "expected_compressed": {"OPT": "5", "best_welfare": "5", "ratio": "1"}
+  },
+  "value_convexity": {
+    "claim": "The jointly optimized first-unit value V_lambda is not convex in the law of the second buyer body: V(mix) - (V(delta_1)+V(delta_2))/2 >= lambda/10 for every lambda >= 25/72.",
+    "model": "Normalized limiting problem with common escaping buyer tails of first moment one; bodies 1<=Z2<=Z1<=2; S2 = 0 w.p. 1/10 and 2 w.p. 9/10; 0<=S1<=S2; kernel g_p(s,z) = 1{s<p} (1 + (z-s) 1{p<=z}); gain cap E g_p(S1,Z1) + E g_p(S2,Z2) <= 2 at every body price p; G = 2 + sum_q E(Z_q-S_q)_+, M = E(S1+S2); V_lambda(mu) = sup { G - lambda M } over first-unit laws, with Z2 ~ mu.",
+    "second_seller": [["0", "1/10"], ["2", "9/10"]],
+    "lambda_min": "25/72",
+    "dual_measure": "nu = (1/3) delta_1 + (2/(3 p^2)) 1_(1,2)(p) dp, total mass 2/3",
+    "pointwise_inequality": "1 + (z-s)_+ - lambda*s <= 1 + integral g_p(s,z) nu(dp) for 1<=z<=2, 0<=s<=2",
+    "remainders": {
+      "case_s_below_1": {
+        "domain": "0<=s<1",
+        "direct": "lambda*s + 2*s/(3*z)",
+        "nonnegative_form": "s*(lambda + 2/(3*z))"
+      },
+      "case_s_between_1_and_z": {
+        "domain": "1<=s<z<=2",
+        "direct": "2/(3*s) - 1/3 + 2*(z-s)**2/(3*s*z) - z + (1+lambda)*s",
+        "nonnegative_form": "(11*s-12)**2/(72*s) + (lambda - 25/72)*s + (2-z)*(1 - 2/(3*s) + s/(3*z))"
+      },
+      "case_s_at_least_z": {
+        "domain": "1<=z<=s<=2",
+        "direct": "2/(3*s) - 1/3 + lambda*s",
+        "nonnegative_form": "(2-s)/(3*s) + lambda*s"
+      }
+    },
+    "upper_bound_at_delta_1": "10/3 - 9*lambda/5",
+    "value_at_delta_2": "10/3 - 8*lambda/3",
+    "witness_at_delta_2": {"Z1": [["2", "1"]], "S1": [["0", "17/30"], ["2", "13/30"]], "G": "10/3", "M": "8/3"},
+    "witness_at_mixture": {"Z1_equals_Z2": [["1", "1/2"], ["2", "1/2"]], "S1": [["0", "7/10"], ["1", "4/15"], ["2", "1/30"]], "G": "10/3", "M": "32/15"},
+    "gap": "lambda/10"
+  }
+}

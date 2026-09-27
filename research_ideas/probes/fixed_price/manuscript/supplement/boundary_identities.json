@@ -1,0 +1,12 @@
+{
+  "residuals": {
+    "zero_left_contact": "0",
+    "zero_right_contact": "0",
+    "p_equals_one_gap": "0",
+    "buyer_mean_identity": "0"
+  },
+  "small_m_domain": "0<m<=1/32, 0<beta<=3/4",
+  "positive_derivative_numerator_lower": "207/1024",
+  "compact_upper_at_one_over_32": "[-0.2694878749604922152449109068764108873204987908 +/- 4.45e-47]",
+  "precision_bits": 160
+}

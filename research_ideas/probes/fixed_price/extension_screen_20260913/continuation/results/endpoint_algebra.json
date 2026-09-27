@@ -1,0 +1,20 @@
+{
+  "scope": "Exact local checks for inverse-clock calibration and endpoint equations.\n\nThe credential covers these identities, not existence of a stationary root or\na reduction from the full ordered-marginal problem.",
+  "residuals": {
+    "q_derivative_quadrature": "0",
+    "gradient_quadrature": "0",
+    "total_gradient_endpoint_formula": "0",
+    "inverse_time_integration_by_parts": "0",
+    "inverse_derivative_Bregman_gap": "0",
+    "inverse_left_contact_density": "0",
+    "inverse_right_contact_density": "0",
+    "inverse_interior_density": "0",
+    "right_contact_mass_primitive": "0",
+    "right_transversality_equals_contact_mass": "0",
+    "envelope_p0": "0",
+    "envelope_t": "0",
+    "envelope_h": "0"
+  },
+  "failures": {},
+  "script_sha256": "345a66dea593af1c4f3e5a9e74f42671695cfebb1dc649c8391e6dab917ef52f"
+}

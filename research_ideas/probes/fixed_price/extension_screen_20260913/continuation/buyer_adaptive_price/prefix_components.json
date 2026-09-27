@@ -1,0 +1,699 @@
+{
+  "scope": "Named first-layer components for finite-buyer seller-prefix separation.\n\nThis checks algebra and one rational example. It does not machine-prove the\ncontinuous-domain reduction or a universal approximation guarantee. Existing\nprefix certificates and finite-tail seller identities are reused, not rerun.\n",
+  "actual_layer": "exact",
+  "symbolic_identities": {
+    "normalized_single_seller_welfare": "0",
+    "projected_new_trade_nonnegative_decomposition": "0",
+    "seller_price_atom_jump": "0",
+    "interior_seller_potential_slope": "0",
+    "four_node_cdf_transfer_abel_decomposition": "0",
+    "ordered_pair_transfer_decomposition": "0",
+    "node_increment_combines_affine_piece_and_downward_jump": "0",
+    "nonnegative_interval_slope_decomposition": "0",
+    "double_contact_first_increment": "0",
+    "double_contact_second_increment": "0",
+    "frozen_single_contact_increment": "0"
+  },
+  "rational_example": {
+    "buyers": [
+      [
+        [
+          "1",
+          "1/3"
+        ],
+        [
+          "3",
+          "2/3"
+        ]
+      ],
+      [
+        [
+          "1/2",
+          "1/2"
+        ],
+        [
+          "2",
+          "1/2"
+        ]
+      ]
+    ],
+    "posted_price_masses": [
+      [
+        "1/2",
+        "1/10"
+      ],
+      [
+        "1",
+        "1/5"
+      ],
+      [
+        "2",
+        "1/4"
+      ],
+      [
+        "3",
+        "1/5"
+      ]
+    ],
+    "tail_mass": "1/4",
+    "beta": "3/4",
+    "projection_comparisons": [
+      {
+        "unit": 1,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "0",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "1/8",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "1/4",
+        "gap": "37/12"
+      },
+      {
+        "unit": 1,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "3/8",
+        "gap": "71/24"
+      },
+      {
+        "unit": 1,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "1/2",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "9/4",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "4",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/4",
+        "new": "1",
+        "seller": "0",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/4",
+        "new": "1",
+        "seller": "1/4",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/4",
+        "new": "1",
+        "seller": "1/2",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/4",
+        "new": "1",
+        "seller": "5/8",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/4",
+        "new": "1",
+        "seller": "3/4",
+        "gap": "31/12"
+      },
+      {
+        "unit": 1,
+        "old": "3/4",
+        "new": "1",
+        "seller": "7/8",
+        "gap": "59/24"
+      },
+      {
+        "unit": 1,
+        "old": "3/4",
+        "new": "1",
+        "seller": "1",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/4",
+        "new": "1",
+        "seller": "5/2",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/4",
+        "new": "1",
+        "seller": "4",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/2",
+        "new": "2",
+        "seller": "0",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/2",
+        "new": "2",
+        "seller": "1/2",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/2",
+        "new": "2",
+        "seller": "1",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/2",
+        "new": "2",
+        "seller": "5/4",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/2",
+        "new": "2",
+        "seller": "3/2",
+        "gap": "2"
+      },
+      {
+        "unit": 1,
+        "old": "3/2",
+        "new": "2",
+        "seller": "7/4",
+        "gap": "11/6"
+      },
+      {
+        "unit": 1,
+        "old": "3/2",
+        "new": "2",
+        "seller": "2",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/2",
+        "new": "2",
+        "seller": "3",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "3/2",
+        "new": "2",
+        "seller": "4",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "5/2",
+        "new": "3",
+        "seller": "0",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "5/2",
+        "new": "3",
+        "seller": "1",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "5/2",
+        "new": "3",
+        "seller": "2",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "5/2",
+        "new": "3",
+        "seller": "9/4",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "5/2",
+        "new": "3",
+        "seller": "5/2",
+        "gap": "4/3"
+      },
+      {
+        "unit": 1,
+        "old": "5/2",
+        "new": "3",
+        "seller": "11/4",
+        "gap": "7/6"
+      },
+      {
+        "unit": 1,
+        "old": "5/2",
+        "new": "3",
+        "seller": "3",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "5/2",
+        "new": "3",
+        "seller": "7/2",
+        "gap": "0"
+      },
+      {
+        "unit": 1,
+        "old": "5/2",
+        "new": "3",
+        "seller": "4",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "0",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "1/8",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "1/4",
+        "gap": "2"
+      },
+      {
+        "unit": 2,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "3/8",
+        "gap": "15/8"
+      },
+      {
+        "unit": 2,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "1/2",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "9/4",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "1/4",
+        "new": "1/2",
+        "seller": "4",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/4",
+        "new": "1",
+        "seller": "0",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/4",
+        "new": "1",
+        "seller": "1/4",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/4",
+        "new": "1",
+        "seller": "1/2",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/4",
+        "new": "1",
+        "seller": "5/8",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/4",
+        "new": "1",
+        "seller": "3/4",
+        "gap": "13/8"
+      },
+      {
+        "unit": 2,
+        "old": "3/4",
+        "new": "1",
+        "seller": "7/8",
+        "gap": "25/16"
+      },
+      {
+        "unit": 2,
+        "old": "3/4",
+        "new": "1",
+        "seller": "1",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/4",
+        "new": "1",
+        "seller": "5/2",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/4",
+        "new": "1",
+        "seller": "4",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/2",
+        "new": "2",
+        "seller": "0",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/2",
+        "new": "2",
+        "seller": "1/2",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/2",
+        "new": "2",
+        "seller": "1",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/2",
+        "new": "2",
+        "seller": "5/4",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/2",
+        "new": "2",
+        "seller": "3/2",
+        "gap": "5/4"
+      },
+      {
+        "unit": 2,
+        "old": "3/2",
+        "new": "2",
+        "seller": "7/4",
+        "gap": "9/8"
+      },
+      {
+        "unit": 2,
+        "old": "3/2",
+        "new": "2",
+        "seller": "2",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/2",
+        "new": "2",
+        "seller": "3",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "3/2",
+        "new": "2",
+        "seller": "4",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "5/2",
+        "new": "3",
+        "seller": "0",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "5/2",
+        "new": "3",
+        "seller": "1",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "5/2",
+        "new": "3",
+        "seller": "2",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "5/2",
+        "new": "3",
+        "seller": "9/4",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "5/2",
+        "new": "3",
+        "seller": "5/2",
+        "gap": "1"
+      },
+      {
+        "unit": 2,
+        "old": "5/2",
+        "new": "3",
+        "seller": "11/4",
+        "gap": "1"
+      },
+      {
+        "unit": 2,
+        "old": "5/2",
+        "new": "3",
+        "seller": "3",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "5/2",
+        "new": "3",
+        "seller": "7/2",
+        "gap": "0"
+      },
+      {
+        "unit": 2,
+        "old": "5/2",
+        "new": "3",
+        "seller": "4",
+        "gap": "0"
+      }
+    ],
+    "affine_interval_replays": [
+      {
+        "unit": 1,
+        "interval": [
+          "0",
+          "1/2"
+        ],
+        "slope": "2/5"
+      },
+      {
+        "unit": 1,
+        "interval": [
+          "1/2",
+          "1"
+        ],
+        "slope": "1/2"
+      },
+      {
+        "unit": 1,
+        "interval": [
+          "1",
+          "2"
+        ],
+        "slope": "9/20"
+      },
+      {
+        "unit": 1,
+        "interval": [
+          "2",
+          "3"
+        ],
+        "slope": "37/60"
+      },
+      {
+        "unit": 2,
+        "interval": [
+          "0",
+          "1/2"
+        ],
+        "slope": "27/40"
+      },
+      {
+        "unit": 2,
+        "interval": [
+          "1/2",
+          "1"
+        ],
+        "slope": "2/5"
+      },
+      {
+        "unit": 2,
+        "interval": [
+          "1",
+          "2"
+        ],
+        "slope": "1/2"
+      },
+      {
+        "unit": 2,
+        "interval": [
+          "2",
+          "3"
+        ],
+        "slope": "1/4"
+      }
+    ],
+    "atom_jump_replays": [
+      {
+        "unit": 1,
+        "node": "1/2",
+        "left_trace": "3/10",
+        "right_value": "1/60",
+        "jump": "17/60"
+      },
+      {
+        "unit": 1,
+        "node": "1",
+        "left_trace": "4/15",
+        "right_value": "-1/5",
+        "jump": "7/15"
+      },
+      {
+        "unit": 1,
+        "node": "2",
+        "left_trace": "1/4",
+        "right_value": "-1/6",
+        "jump": "5/12"
+      },
+      {
+        "unit": 1,
+        "node": "3",
+        "left_trace": "9/20",
+        "right_value": "1/4",
+        "jump": "1/5"
+      },
+      {
+        "unit": 2,
+        "node": "1/2",
+        "left_trace": "9/40",
+        "right_value": "1/20",
+        "jump": "7/40"
+      },
+      {
+        "unit": 2,
+        "node": "1",
+        "left_trace": "1/4",
+        "right_value": "-1/20",
+        "jump": "3/10"
+      },
+      {
+        "unit": 2,
+        "node": "2",
+        "left_trace": "9/20",
+        "right_value": "1/5",
+        "jump": "1/4"
+      },
+      {
+        "unit": 2,
+        "node": "3",
+        "left_trace": "9/20",
+        "right_value": "1/4",
+        "jump": "1/5"
+      }
+    ],
+    "node_potentials": [
+      [
+        "1/10",
+        "1/60",
+        "-1/5",
+        "-1/6",
+        "1/4"
+      ],
+      [
+        "-9/80",
+        "1/20",
+        "-1/20",
+        "1/5",
+        "1/4"
+      ]
+    ],
+    "canonical_prefix": [
+      "-1/10",
+      "-1/60",
+      "1/5",
+      "1/5",
+      "1/5"
+    ],
+    "minimum_pair_slack": "-1/4",
+    "scope": "One rational example of the new tail-normalized kernels only. Its arbitrary chosen price policy is not asserted optimal or feasible at beta."
+  },
+  "source_sha256": "8a5b529475ac8dbf870d39e92a75ef0a65705f02d34db0e403a03e9869b3e3be",
+  "reused_without_rerun": [
+    "fp_ext_k2_prefix_initial_freeze_exact_20260913",
+    "fp_ext_k2_prefix_multistage_exact_20260913",
+    "fp_ext_k2_continuous_switching_components_20260914: tail_seller_constant_piece and tail_seller_outside_piece"
+  ],
+  "not_certified": [
+    "Continuous-domain finite-event reduction as a complete argument",
+    "Any universal lower bound over buyer pairs",
+    "Optimal-policy switching pattern or number of switches"
+  ]
+}

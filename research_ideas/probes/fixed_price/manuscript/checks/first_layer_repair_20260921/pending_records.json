@@ -1,0 +1,314 @@
+[
+  {
+    "key": "fpm_repair_20260921_single_unit_algebra",
+    "statement": "The local identities listed in manuscript/first_layer.py algebra() have zero residual, including the new EL first integral and strict-welfare decomposition.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_algebra",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "46 local identities from the current included single-unit proof. Replays original component(s): ['fpm2_20260913_algebra']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_jensen_helper",
+    "statement": "At d=theta=1/2 the two stated rational two-step controls have Jensen gap 11/1728.",
+    "verified": [
+      "exact"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_jensen_helper",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Incidental exact calculation actually performed by the reused original helper; fixed rational witness only. Replays original component(s): ['fpm2_20260913_jensen_exact']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_displayed_steps",
+    "statement": "The six listed local endpoint and first-variation identities have zero residual; the obstacle multiplier for the displayed energy is 2Q.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group displayed_steps",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Six local derivatives and first-variation identities. Replays original component(s): ['fpm3_20260913_displayed_steps']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_granularity_symbolic_only",
+    "statement": "The 22 exact symbolic intermediate formulas in the recorded Lemma 6.1, Lemma 7.1 and Corollary B' expansion again have zero residual.",
+    "verified": [
+      "exact"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group granularity_symbolic_only",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Only the old script's symbolic prefix is executed; four floating quadratures are excluded. Replays original component(s): ['fp_manuscript_granularity_intermediate_identities_20260918']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_shifted",
+    "statement": "The twelve local identities in shifted_algebra.py, including the restricted two-unit objective reduction to positive shifted-clock log energy, have zero symbolic residual.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group shifted",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded. Replays original component(s): ['fp_ext_k2_shifted_clock_algebra_20260913']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_endpoint",
+    "statement": "The endpoint quadrature, inverse-clock convex-gap and contact-density identities, and the three envelope derivatives in continuation/endpoint_algebra.py have zero symbolic residual.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group endpoint",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded. Replays original component(s): ['fp_ext_k2_inverse_endpoint_algebra_20260913']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_outer_boundary",
+    "statement": "The four recorded zero-left-contact, zero-right-contact, p=1 gap and buyer-mean identities have zero symbolic residual.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group outer_boundary",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded. Replays original component(s): ['fp_ext_k2_outer_boundary_algebra_20260913']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_branch_elimination",
+    "statement": "The four rational identities reducing the interior algebraic endpoint stationarity conditions to the two-variable branch in continuation/branch_reduction.py have zero symbolic residual.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group branch_elimination",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded. Replays original component(s): ['fp_ext_k2_branch_elimination_algebra_20260913']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_second_body_kernel",
+    "statement": "Ten recorded conditional identities for the reference price density, the second buyer body's priced-comparison difference, its joint change with the second seller endpoint mass and high mean, and the below-floor price-atom gap expand to zero. The price-atom factor uses both the left Euler first integral and p-stationarity. This does not prove general k=2 reduction.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group second_body_kernel",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Ten conditional local kernel identities; the unchanged Arb sign cover is reused. Replays original component(s): ['fp_ext_k2_second_body_kernel_algebra_20260913']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_stationary_reconstruction_replay",
+    "statement": "The nine saved local identities have zero exact symbolic residual: D complete square; reconstructed (log P)_q, P_xi and P_xixi; D(q_l)=d*xi_l/P_l^2; xi_r=P_r^2*D(q_r)/d; the h-stationarity factor; the t-stationarity reduction modulo v^2*D(q_r)-C*q_r^2; and p-stationarity from the definition of P_l.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group stationary_reconstruction_replay",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Nine local D.6 identities replayed after insertion of the reverse construction into TeX; the existing physical-domain Arb box is not rerun. Replays original component(s): ['fpm_repair_20260921_stationary_reverse_construction_algebra']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_scalar_signs",
+    "statement": "((8*C + I*(2*C - 1) - 6)/(4*C - 1) < 0) & ((8*C + I*(2*C - 1) - 6)/((2*C - 1)*(4*C - 1)) > 0) under [C > 1/4, C < 1/2, I > 0]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_scalar_signs",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_scalar_signs']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_envelope_lower",
+    "statement": "C*y*(1 - C) + 2*C - 1 < 0 under [C > 0, C <= 1/4, y > 0, 2*C*y < 1]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_envelope_lower",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_envelope_lower']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_envelope_upper",
+    "statement": "C*y*(1 - C) + 2*C - 1 > 0 under [C >= 1/2, y > 0, C*y < 1]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_envelope_upper",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_envelope_upper']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_gap_terms",
+    "statement": "E/p**2 - 2*Q*v + a*vp**2 >= 0 under [a >= 0, p > 0, E >= 0, Q >= 0, v <= 0]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_gap_terms",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_gap_terms']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_density_positive",
+    "statement": "H*L - K + d**2 > 0 under [d > 0, L >= d, H >= 0, K <= H*(L - d)]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_density_positive",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_density_positive']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_frontier_increasing",
+    "statement": "d*(S/(1 - 2*C) + 1) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_frontier_increasing",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_frontier_increasing']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_frontier_convex",
+    "statement": "-S**3*d*(2 - sigma)/(sigma*(1 - 2*C)**2) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_frontier_convex",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_frontier_convex']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_seller_atom",
+    "statement": "(T*d*eta >= 0) & (T*d*eta < 1) under [d > 0, eta > 0, T >= 0, T <= 1/(d*(d + eta))]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_seller_atom",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_seller_atom']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_strict_welfare",
+    "statement": "GM + MM - beta*(GG + MM) > 0 under [beta > 0, beta < 1, alpha >= 0, alpha < 1, GM > 0, MM >= 0, GG >= 0, GM*alpha >= GG*beta - MM*(1 - beta)]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_strict_welfare",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_strict_welfare']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_single_unit_smoothing_support",
+    "statement": "(Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) > 0) & (Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) < Lambda) under [Lambda > 0, X >= 0, X <= Lambda, eps > 0, eps < 1/2, Z >= -1/2, Z <= 1/2]",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_smoothing_support",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_smoothing_support']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_pricing_scalar",
+    "statement": "For b>=0, 1<=L<=1+b, E>=0 and |kernel_difference|<=(L-1)*E, |kernel_difference|*(1+b)<=b*L*E. Dividing by positive L*(1+b) gives the obstacle difference bound b/(1+b)*E. If E>=0, |x1-y1|<=E and |x2-y2|<=E, then |max(0,x1,x2)-max(0,y1,y2)|<=E. For d>0, 0<=s<=b and 1<=L<=1+b, the potential at constant cumulative mass 1+b and zero compensation equals d*s+1+b-L >= 0 after using the existing kernel mass identity. If old_prefix<=psi2 and psi1+psi2>=0, the updated prefix max(old_prefix,-psi1) is >=old_prefix, >=-psi1 and <=psi2.",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group pricing_scalar",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Replays only previously passing scalar/pointwise components. The existing 27-branch exact max-convexity certificate is reused. Replays original component(s): ['fpm_20260921_pricing_scalar_new_smt']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_node_steps",
+    "statement": "For next_mass>=0, m=max(next_mass,obstacle1,obstacle2) is nonnegative and satisfies all three bounds; every competitor satisfying those bounds is at least m. If next_mass<=next_mass_upper and each obstacle is at most its upper counterpart, their three-way maximum has the same order. For weight>=0 and future_lower<=future_upper, weight*future_lower<=weight*future_upper. This is the termwise comparison in the positive finite kernel.",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group node_steps",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Replays only previously passing scalar/pointwise components. The existing 27-branch exact max-convexity certificate is reused. Replays original component(s): ['fpm_20260921_finite_node_max_steps_smt']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_buyer_rounding",
+    "statement": "For 0<=rounded_buyer<=buyer<rounded_buyer+delta, delta>0 and seller>=0, 0<=(buyer-seller)_+-(rounded_buyer-seller)_+<=delta. For 0<=seller<price<=rounded_buyer<=buyer, [1+buyer-seller]-[1+rounded_buyer-seller]>=0. For 0<=rounded_buyer<price<=buyer and 0<=seller<price, the strict-seller/inclusive-buyer kernels differ by buyer-seller>=0. For rounded_buyer<=buyer, every real seller and price lies in one of: seller>=price; seller<price<=rounded_buyer; seller<price, rounded_buyer<price<=buyer; seller<price and buyer<price. The first and last branches have equal pointwise gain kernels.",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group buyer_rounding",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Replays only previously passing scalar/pointwise components. The existing 27-branch exact max-convexity certificate is reused. Replays original component(s): ['fpm_20260921_buyer_rounding_pointwise_smt']. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_D1_price_regions",
+    "statement": "The corrected four price regions are exhaustive and disjoint; the shifted terminal seller atom is assigned to the common-tail bound. The eight saved scalar implications hold.",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group D1_price_regions",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "D.1 price-domain and conditional gain algebra only; no measure convergence or entire realization lemma. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_D1_terminal_example",
+    "statement": "For the previously reported endpoint example m=2/3,b=5/6,eta=epsilon=1/100, the second-unit terminal-tail gain is exactly 89741/90000, greater than m and at most one; this endpoint belongs to the common-tail region after the correction.",
+    "verified": [
+      "exact"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group D1_terminal_example",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Exact endpoint regression calculation; the old false m bound is not reasserted. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_D4_ratio_comparison_algebra",
+    "statement": "For R=(M+2)/(M+G), K=(beta*G-(1-beta)*M-2)/(beta*D) equals (M+G)/D*(1-R/beta). Its coordinate derivative at fixed beta has the saved product-rule form and vanishes when R=beta and R_prime=0.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group D4_ratio_comparison_algebra",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "D.4 local identities only. Differentiability, Fermat's condition and feasible variations remain analytic premises. No complete analytic theorem is machine-certified."
+  },
+  {
+    "key": "fpm_repair_20260921_D4_ratio_minimum_comparison",
+    "statement": "With positive beta,D,O and beta*D*K=O*(beta-R), R>=beta implies K<=0 and equality is equivalent to R=beta. At fixed endpoints, K=constant-E reverses energy order.",
+    "verified": [
+      "z3",
+      "cvc5"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group D4_ratio_minimum_comparison",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript: repaired included TeX",
+    "note": "Scalar implication for the explicitly authorized beta=R_min branch. It does not establish existence, interiority or global uniqueness. No complete analytic theorem is machine-certified."
+  }
+]

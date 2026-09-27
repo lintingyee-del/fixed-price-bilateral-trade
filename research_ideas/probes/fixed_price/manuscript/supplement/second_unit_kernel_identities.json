@@ -1,0 +1,21 @@
+{
+  "residuals": {
+    "left_price_atom_factor": "0",
+    "left_kernel_positive_factor": "0",
+    "middle_density_derivative": "0",
+    "right_density_derivative": "0",
+    "right_kernel_derivative": "0",
+    "second_body_kernel": "0",
+    "first_body_kernel_derivative_middle": "0",
+    "second_seller_mass_derivative": "0",
+    "joint_second_body_and_seller_change": "0",
+    "below_floor_price_atom_gap": "0"
+  },
+  "factor_premises": [
+    "C*p^2=xl*(lambda+t)",
+    "C*(xl+delta)^2=xl*(lambda+delta)"
+  ],
+  "body_variation_identity": "Delta(W_pi-beta O)=m E[integral_a^Z (Pi([a,s])+s rho(s)-beta) ds], a<=Z<=b",
+  "below_floor_exact_difference": "m*(beta*(a-Z)-a*pi_a), 0<=Z<a; negative near a from below",
+  "above_ceiling_linear_slope": "m*(1-pi_tail)-beta <= m-beta < 0 when m<beta; this direction requires changing B1 too"
+}

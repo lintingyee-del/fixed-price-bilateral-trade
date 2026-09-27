@@ -1,0 +1,154 @@
+{
+  "statement": "Eight symbolic identities, six nonnegative clipping-loss differences, and three exact finite ordered instance replays establish the displayed components of the tail-active reduction. The all-instance statement is the separate analytic proof in tail_active_reduction.tex.",
+  "symbolic": {
+    "residuals": {
+      "all_price_gap": "0",
+      "ratio_gap": "0",
+      "clipping_b_s_c": "0",
+      "clipping_b_c_s": "0",
+      "clipping_s_b_c": "0",
+      "clipping_s_c_b": "0",
+      "clipping_c_b_s": "0",
+      "clipping_c_s_b": "0"
+    },
+    "clipping_cases": [
+      {
+        "order": "b <= s <= c",
+        "residual": "0",
+        "seller_excess_minus_loss": "0"
+      },
+      {
+        "order": "b <= c <= s",
+        "residual": "0",
+        "seller_excess_minus_loss": "0"
+      },
+      {
+        "order": "s <= b <= c",
+        "residual": "0",
+        "seller_excess_minus_loss": "0"
+      },
+      {
+        "order": "s <= c <= b",
+        "residual": "0",
+        "seller_excess_minus_loss": "0"
+      },
+      {
+        "order": "c <= b <= s",
+        "residual": "0",
+        "seller_excess_minus_loss": "first"
+      },
+      {
+        "order": "c <= s <= b",
+        "residual": "0",
+        "seller_excess_minus_loss": "first"
+      }
+    ],
+    "price_gap": "eta*(K1+K2)+(e1-e2)*(f1-f2)/2+epsilon*(f1*H1+f2*H2)+eta*(t1+t2)",
+    "price_gap_hypotheses": "eta,epsilon,Kq,fq,Hq,tq>=0, e1>=e2, f1>=f2",
+    "ratio_gap": "O*(C-D)+(O-N)*D",
+    "ratio_gap_hypotheses": "O>0, N<=O, 0<=D<=C, O-D>0"
+  },
+  "finite_example": {
+    "source_receipt": "continuation\\results\\buyer_atom_example.json",
+    "reused_source_credential": "fp_ext_k2_buyer_atom_example_20260913",
+    "original_M": "23/20",
+    "original_OPT": "21/4",
+    "original_max_gain": "31/8",
+    "original_ratio": "67/70",
+    "cutoff": "9/16",
+    "removed_buyer_moments": [
+      "39/16",
+      "23/16"
+    ],
+    "C": "23/32",
+    "D": "1/4",
+    "limiting_ratio": "689/800",
+    "ratio_improvement": "537/5600",
+    "unshifted_inclusive_gain_at_cutoff": "731/160",
+    "unshifted_cap_violation": "111/160",
+    "positive_finite_instances": [
+      {
+        "eta": "1/10",
+        "epsilon": "1/100",
+        "tail": "155/8",
+        "M": "361/800",
+        "OPT": "1223/250",
+        "max_gain": "30639/8000",
+        "ratio": "34249/39136",
+        "price_events": [
+          {
+            "price": "11/100",
+            "gain": "5601/1600"
+          },
+          {
+            "price": "9/16",
+            "gain": "5601/1600"
+          },
+          {
+            "price": "229/400",
+            "gain": "30639/8000"
+          },
+          {
+            "price": "155/8",
+            "gain": "30639/8000"
+          }
+        ]
+      },
+      {
+        "eta": "1/100",
+        "epsilon": "1/10000",
+        "tail": "775/4",
+        "M": "8629/20000",
+        "OPT": "9977599/2000000",
+        "max_gain": "7741371/2000000",
+        "ratio": "8604271/9977599",
+        "price_events": [
+          {
+            "price": "1001/10000",
+            "gain": "287313/80000"
+          },
+          {
+            "price": "9/16",
+            "gain": "287313/80000"
+          },
+          {
+            "price": "2813/5000",
+            "gain": "7741371/2000000"
+          },
+          {
+            "price": "775/4",
+            "gain": "7741371/2000000"
+          }
+        ]
+      },
+      {
+        "eta": "1/1000",
+        "epsilon": "1/1000000",
+        "tail": "3875/2",
+        "M": "107813/250000",
+        "OPT": "9997750999/2000000000",
+        "max_gain": "968642187/250000000",
+        "ratio": "8611641496/9997750999",
+        "price_events": [
+          {
+            "price": "100001/1000000",
+            "gain": "14396619/4000000"
+          },
+          {
+            "price": "9/16",
+            "gain": "14396619/4000000"
+          },
+          {
+            "price": "562501/1000000",
+            "gain": "968642187/250000000"
+          },
+          {
+            "price": "3875/2",
+            "gain": "968642187/250000000"
+          }
+        ]
+      }
+    ]
+  },
+  "scope": "First-layer algebra and rational finite replay only; no independent second-layer proof review. The full reduction does not assert the target general numerical ratio."
+}

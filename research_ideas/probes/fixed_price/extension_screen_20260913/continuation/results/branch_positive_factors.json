@@ -1,0 +1,30 @@
+{
+  "scope": "Positive-factor certificates for algebraic branch monotonicity and compact bounds.\n\nThese algebraic bounds concern interior stationary points. They do not prove\nthat every restricted-family optimum is such a point.",
+  "monotonicity_premises": "0<t<p<1, lambda>0, Pl>p, Pl^2(t+lambda)=p^2(delta+lambda), delta=(p+t)/2, e=(1+t)/2, v=1-e, 0<q<v, v^2(q^2-q+C)=Cq^2, C=(lambda+delta)(Pl-delta)/Pl^2.",
+  "compactness_additional_premises": "37/100<=lambda<=3/8; natural t condition A=v(v-q)/(e(v+q)); q<k=(Pl-delta)/Pl.",
+  "residuals": {
+    "C_p_mod_left_stationarity": "0",
+    "C_p_upper_positive_gap": "0",
+    "f_C_derivative": "0",
+    "f_C_lower_positive_gap": "0",
+    "f_C_positive_denominator": "0",
+    "R_p_positive_decomposition": "0",
+    "small_t_large_p_exclusion": "0",
+    "Pl_ratio_bound": "0",
+    "lambda_delta_ratio_bound": "0",
+    "ordered_phase_mass_sign": "0",
+    "large_t_bound_increasing": "0"
+  },
+  "positive_constants": {
+    "r_squared_coefficient_lower": "851/2500",
+    "r_times_t_coefficient_lower": "4957/5000",
+    "t_squared_coefficient_lower": "4899/40000",
+    "square_root_comparison_gap": "53/8550",
+    "k_upper_gap_below_three_tenths": "41/1120",
+    "phase_threshold_square_gap": "23/2064",
+    "large_t_exclusion_margin": "1958756791/251859461000"
+  },
+  "conclusions": "R_p>0 for the algebraic residual R=-A+v(v-q)/(e(v+q)). Physical stationary points satisfy 1/5<t<421/1000.",
+  "R_p_positive_case": "1/p^2+2(lambda+t)(e-t)/(e p^3)+2 slack/e+increment C_p",
+  "R_p_nonpositive_C_p_case": "1/p^2+2(lambda+t)/p^3+(-f_C)(-C_p)"
+}

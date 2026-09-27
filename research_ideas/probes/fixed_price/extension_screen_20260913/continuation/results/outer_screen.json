@@ -1,0 +1,345 @@
+{
+  "scope": "Floating exploration and stationary equations only. No global endpoint certificate.",
+  "root": {
+    "m": 0.48235071020462383,
+    "t": 0.31782752013125437,
+    "p0": 0.6716013548759502,
+    "a": 0.828691054158159,
+    "c": 0.1768869173723479,
+    "delta": 0.4947144375036023,
+    "e": 0.6589137600656272,
+    "C": 0.39454752717994257,
+    "x0": 0.6755668755757609,
+    "T": 0.6971893326076385,
+    "gradient_energy": 0.11919047700710095,
+    "M": 1.2904776963609716,
+    "G": 3.222711610551665,
+    "ratio": 0.7290803625988177,
+    "Pl": 0.7528450798404208,
+    "Pr": 0.8759330336993708,
+    "xl": 0.25813064233681854,
+    "xr": 0.429835670464684,
+    "h": 0.5048889344133066,
+    "yr": 0.5099371515267958,
+    "ql": 0.34287351973069147,
+    "qr": 0.2477578368259448,
+    "lam": 0.3715909127431239,
+    "Tmid": 0.2559688077477259,
+    "grad_mid": 0.04535141384892169
+  },
+  "root_residuals": [
+    1.1102230246251565e-16,
+    -2.220446049250313e-16,
+    1.6653345369377348e-16,
+    4.996003610813204e-16
+  ],
+  "samples": 15000,
+  "valid_samples": 5545,
+  "random_best": 0.7312857803536746,
+  "local_runs": [
+    {
+      "start": 0,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.48235070689745646,
+        0.6716013611425967,
+        0.2581306398763214,
+        0.3945475135936047
+      ]
+    },
+    {
+      "start": 1,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988175,
+      "parameters": [
+        0.48235071220596026,
+        0.671601358144996,
+        0.2581306446694973,
+        0.39454753541665855
+      ]
+    },
+    {
+      "start": 2,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.4823507105764897,
+        0.6716013491707187,
+        0.25813062129172726,
+        0.3945474057007748
+      ]
+    },
+    {
+      "start": 3,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.4823507118118337,
+        0.671601356580489,
+        0.25813064139599823,
+        0.39454750835950575
+      ]
+    },
+    {
+      "start": 4,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.48235070290891313,
+        0.6716013516622293,
+        0.25813065588555595,
+        0.39454756236277144
+      ]
+    },
+    {
+      "start": 5,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.4823507131176355,
+        0.6716013633098668,
+        0.2581306410164606,
+        0.39454754392820757
+      ]
+    },
+    {
+      "start": 6,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.48235070432861693,
+        0.6716013507622778,
+        0.2581306344966678,
+        0.3945474351307353
+      ]
+    },
+    {
+      "start": 7,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988177,
+      "parameters": [
+        0.48235070198404156,
+        0.6716013559667926,
+        0.2581306122696323,
+        0.3945473600007591
+      ]
+    },
+    {
+      "start": 8,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.4823507117729896,
+        0.6716013578969,
+        0.25813063621083104,
+        0.3945475201932246
+      ]
+    },
+    {
+      "start": 9,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7296896078895613,
+      "parameters": [
+        0.48305075014543747,
+        0.6979974021384181,
+        0.1897808662749228,
+        0.19038636449665097
+      ]
+    },
+    {
+      "start": 10,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988177,
+      "parameters": [
+        0.4823507035478464,
+        0.6716013511208068,
+        0.2581306103016825,
+        0.394547284574575
+      ]
+    },
+    {
+      "start": 11,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988177,
+      "parameters": [
+        0.48235070664624624,
+        0.6716013404101475,
+        0.2581306213474973,
+        0.394547411906271
+      ]
+    },
+    {
+      "start": 12,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988175,
+      "parameters": [
+        0.4823507144975786,
+        0.6716013564195442,
+        0.25813063465062824,
+        0.39454746876791913
+      ]
+    },
+    {
+      "start": 13,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.482350708571966,
+        0.6716013577003332,
+        0.25813065767684107,
+        0.3945476107067471
+      ]
+    },
+    {
+      "start": 14,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988177,
+      "parameters": [
+        0.48235071557209785,
+        0.6716013467633855,
+        0.2581306758406194,
+        0.39454774172315804
+      ]
+    },
+    {
+      "start": 15,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7294339617566858,
+      "parameters": [
+        0.4826310349890422,
+        0.6686984199393465,
+        0.33219700254198414,
+        2.399076532039602
+      ]
+    },
+    {
+      "start": 16,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7499999889683426,
+      "parameters": [
+        0.5000000103641107,
+        0.9999998823289798,
+        0.3333333215371318,
+        0.29703455155143715
+      ]
+    },
+    {
+      "start": 17,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.48235071035568894,
+        0.6716013597194108,
+        0.25813064828155086,
+        0.3945475523060139
+      ]
+    },
+    {
+      "start": 18,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7324941345801775,
+      "parameters": [
+        0.4853298690977069,
+        0.6802627698507637,
+        0.4443502526359776,
+        72004899337.2375
+      ]
+    },
+    {
+      "start": 19,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.729689607889641,
+      "parameters": [
+        0.4830507546054333,
+        0.6979973989767615,
+        0.18978086275112763,
+        0.19038634774288463
+      ]
+    },
+    {
+      "start": 20,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7294843177899037,
+      "parameters": [
+        0.4828181998284082,
+        0.6777483337317101,
+        0.33061119864708444,
+        12104001.076143576
+      ]
+    },
+    {
+      "start": 21,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988176,
+      "parameters": [
+        0.48235070791732526,
+        0.6716013581141607,
+        0.25813061974735096,
+        0.39454740309150527
+      ]
+    },
+    {
+      "start": 22,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7290803625988178,
+      "parameters": [
+        0.482350722792398,
+        0.6716013509317424,
+        0.2581306123081055,
+        0.3945473454169931
+      ]
+    },
+    {
+      "start": 23,
+      "success": true,
+      "message": "Optimization terminated successfully.",
+      "ratio": 0.7294843177348972,
+      "parameters": [
+        0.4828181902651922,
+        0.6777483411203147,
+        0.3306112016510239,
+        28692188.70633842
+      ]
+    }
+  ],
+  "boundary_search": [
+    {
+      "boundary": "left_line",
+      "ratio": 0.7345116297837541,
+      "m": 0.4866068282085385,
+      "p0": 0.7082754171298784,
+      "success": true
+    },
+    {
+      "boundary": "right_line",
+      "ratio": 0.7330058907037044,
+      "m": 0.48681593704126486,
+      "p0": 0.7845272461339982,
+      "success": true
+    }
+  ]
+}

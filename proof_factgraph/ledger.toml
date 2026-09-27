@@ -1,0 +1,892 @@
+# Fixed-price machine-evidence excerpt of the shared proof ledger.
+# Selected records retain their original statements, scope, and evidence.
+# This export is not a new verification run.
+
+[claims.fpm2_20260913_algebra]
+statement = "The local identities listed in manuscript/first_layer.py algebra() have zero residual, including the new EL first integral and strict-welfare decomposition."
+verified = ["sympy"]
+evidence = "research_ideas\\probes\\fixed_price\\manuscript\\checks\\first_layer_v2.json group algebra"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+note = "Local claim only; no credential for a universal welfare theorem."
+
+[claims.fpm2_20260913_scalar_signs]
+statement = "((8*C + I*(2*C - 1) - 6)/(4*C - 1) < 0) & ((8*C + I*(2*C - 1) - 6)/((2*C - 1)*(4*C - 1)) > 0) under [C > 1/4, C < 1/2, I > 0]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_envelope_lower]
+statement = "C*y*(1 - C) + 2*C - 1 < 0 under [C > 0, C <= 1/4, y > 0, 2*C*y < 1]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_envelope_upper]
+statement = "C*y*(1 - C) + 2*C - 1 > 0 under [C >= 1/2, y > 0, C*y < 1]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_gap_terms]
+statement = "E/p**2 - 2*Q*v + a*vp**2 >= 0 under [a >= 0, p > 0, E >= 0, Q >= 0, v <= 0]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_density_positive]
+statement = "H*L - K + d**2 > 0 under [d > 0, L >= d, H >= 0, K <= H*(L - d)]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_frontier_increasing]
+statement = "d*(S/(1 - 2*C) + 1) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_frontier_convex]
+statement = "-S**3*d*(2 - sigma)/(sigma*(1 - 2*C)**2) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_seller_atom]
+statement = "(T*d*eta >= 0) & (T*d*eta < 1) under [d > 0, eta > 0, T >= 0, T <= 1/(d*(d + eta))]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_strict_welfare]
+statement = "GM + MM - beta*(GG + MM) > 0 under [beta > 0, beta < 1, alpha >= 0, alpha < 1, GM > 0, MM >= 0, GG >= 0, GM*alpha >= GG*beta - MM*(1 - beta)]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_smoothing_support]
+statement = "(Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) > 0) & (Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) < Lambda) under [Lambda > 0, X >= 0, X <= Lambda, eps > 0, eps < 1/2, Z >= -1/2, Z <= 1/2]"
+verified = ["z3", "cvc5"]
+evidence = "negation unsat (z3=unsat, cvc5=unsat) (hz_certify.decide; research_ideas\\probes\\fixed_price\\manuscript\\first_layer.py)"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+
+[claims.fpm2_20260913_interval]
+statement = "The manuscript arctangent formula has the recorded sign bracket and beta image enclosure; this is a scalar enclosure only."
+verified = ["arb"]
+evidence = "research_ideas\\probes\\fixed_price\\manuscript\\checks\\first_layer_v2.json group interval"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+note = "Local claim only; no credential for a universal welfare theorem."
+
+[claims.fpm2_20260913_jensen_exact]
+statement = "At d=theta=1/2 the two stated rational two-step controls have Jensen gap 11/1728."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\manuscript\\checks\\first_layer_v2.json algebra.Jensen_witness"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+note = "Exact arithmetic conditional on the formulas, not their mechanism interpretation."
+
+[claims.fpm2_20260913_finite_exact]
+statement = "Given the displayed rational beta bracket, rational propagation gives 7/20<d<9/25 and the stated finite-pair ratio and support bounds."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\manuscript\\checks\\first_layer_v2.json interval.rational_ratio_bound"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+note = "Exact arithmetic conditional on the formulas, not their mechanism interpretation."
+
+[claims.fpm3_20260913_displayed_steps]
+statement = "The six listed local endpoint and first-variation identities have zero residual; the obstacle multiplier for the displayed energy is 2Q."
+verified = ["sympy"]
+evidence = "research_ideas\\probes\\fixed_price\\manuscript\\checks\\register_displayed_steps_20260913.json"
+date = "2026-09-13"
+paper = "fixed-price bilateral trade manuscript"
+note = "Local algebra only; does not certify endpoint coverage, an a.e. argument, or global optimality."
+
+[claims.fp_ext_k2_rational_witness_v1_20260913]
+statement = "The explicitly stored positive ordered two-unit rational instance has optimal common-price welfare ratio < 9114/12500 = 0.72912. Marginal and full joint sequential-trade enumeration agree at every finite support price."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\results\\k2_exact_witness_v1.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "All distributions, order constraints and welfare values replayed with Fraction. Between support events allocations are constant. Above/below all supports there is no trade. This is an upper witness only, not the optimal k=2 ratio."
+
+[claims.fp_ext_k2_sym_rational_witness_v1_20260913]
+statement = "The explicitly stored positive ordered symmetric two-unit rational instance has optimal common-price welfare ratio < 83693/100000. Marginal and full joint sequential-trade enumeration agree at every finite support price."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\results\\k2_sym_exact_witness_v1.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "All distributions, order constraints and welfare values replayed with Fraction. Between support events allocations are constant. Above/below all supports there is no trade. This is an upper witness only, not the optimal k=2 ratio."
+
+[claims.fp_ext_k2_free_rational_witness_v2_20260913]
+statement = "The explicitly stored positive ordered two-unit rational instance has optimal common-price welfare ratio < 91137/125000. Marginal and full joint sequential-trade enumeration agree at every finite support price."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\results\\k2_free_exact_witness_v2.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "All distributions, order constraints and welfare values replayed with Fraction. Between support events allocations are constant. Above/below all supports there is no trade. This is an upper witness only, not the optimal k=2 ratio."
+
+[claims.fp_ext_k2_shifted_clock_algebra_20260913]
+statement = "The twelve local identities in shifted_algebra.py, including the restricted two-unit objective reduction to positive shifted-clock log energy, have zero symbolic residual."
+verified = ["sympy"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\results\\shifted_clock_algebra.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Twelve local symbolic identities for the explicitly restricted family and its energy comparison. No all-instance reduction, free-endpoint optimality, or full proof audit."
+
+[claims.fp_ext_k2_euler_rational_witness_v3_20260913]
+statement = "The explicitly stored positive ordered two-unit rational instance has optimal common-price welfare ratio < 182271/250000. Marginal and full joint sequential-trade enumeration agree at every finite support price."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\results\\k2_euler_exact_witness_v3.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "All distributions, order constraints and welfare values replayed with Fraction. Between support events allocations are constant. Above/below all supports there is no trade. This is an upper witness only, not the optimal k=2 ratio."
+
+[claims.fp_ext_k2_inverse_endpoint_algebra_20260913]
+statement = "The endpoint quadrature, inverse-clock convex-gap and contact-density identities, and the three envelope derivatives in continuation/endpoint_algebra.py have zero symbolic residual."
+verified = ["sympy"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\endpoint_algebra.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Exact local checks for inverse-clock calibration and endpoint equations.  The credential covers these identities, not existence of a stationary root or a reduction from the full ordered-marginal problem."
+
+[claims.fp_ext_k2_straight_boundaries_073_20260913]
+statement = "Both rational straight-line boundary functionals defined in continuation/boundary_certificate.py satisfy R >= 73/100 over their entire physical two-parameter domains."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\boundary_certificate.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Exact Bernstein certificates for two straight-line degenerations.  Certifies R >= 73/100 for each whole two-parameter boundary. This does not exhaust the boundary of the full k=2 problem or of every Euler parametrization."
+
+[claims.fp_ext_k2_branch_elimination_algebra_20260913]
+statement = "The four rational identities reducing the interior algebraic endpoint stationarity conditions to the two-variable branch in continuation/branch_reduction.py have zero symbolic residual."
+verified = ["sympy"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\branch_elimination_algebra.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Rational elimination of the three algebraic endpoint stationarity conditions. The physical sign conditions remain part of the branch definition; this is not global root isolation."
+
+[claims.fp_ext_k2_branch_positive_factors_20260913]
+statement = "The explicit positive-factor decompositions and rational constants in continuation/branch_monotonicity.py replay exactly; under the stated stationary-state premises they prove strict p0 monotonicity of the algebraic residual and 1/5<t<421/1000 for 37/100<=lambda<=3/8."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\branch_positive_factors.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Positive-factor certificates for algebraic branch monotonicity and compact bounds.  These algebraic bounds concern interior stationary points. They do not prove that every restricted-family optimum is such a point."
+
+[claims.fp_ext_k2_stationary_branch_arb_20260913]
+statement = "At beta=18227/25000, conditional on the recorded stationary-state identities, p0 monotonicity and 1/5<t<421/1000 bounds, the Arb cover in continuation/branch_interval.py encloses exactly one physical interior stationary point and its comparison beta G-(1-beta)M-2 is strictly negative."
+verified = ["arb"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\stationary_branch_arb.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Arb enclosure of all physical interior stationary points at beta=.72908.  Uses the exact algebraic residual monotonicity and t bounds recorded by branch_monotonicity.py. This is not a boundary-exhaustion or general-k2 proof."
+
+[claims.fp_ext_k2_stationary_branch_uniform_arb_20260913]
+statement = "For every beta in [18227/25000,729081/1000000], conditional on the recorded stationary-state identities, p0 monotonicity and 1/5<t<421/1000 bounds, the Arb cover in continuation/branch_interval_uniform.py encloses exactly one physical interior stationary point in a common admissible root strip."
+verified = ["arb"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\stationary_branch_uniform_arb.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Uniform Arb enclosure of interior stationary points for .72908<=beta<=.729081.  Uses the exact algebraic residual monotonicity and t bounds recorded by branch_monotonicity.py. This is not a boundary-exhaustion or general-k2 proof."
+
+[claims.fp_ext_k2_polygon_finite_upper_20260913]
+statement = "The explicit rational concave polygon and the positive finite ordered two-unit instance in continuation/results/polygon_witness.json each have common-price welfare ratio <729081/1000000. The finite ratio is replayed at every valuation event by exact sequential-trade integer arithmetic."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\polygon_witness.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Finite upper witness and restricted polygon only. No universal lower bound."
+
+[claims.fp_ext_k2_outer_boundary_algebra_20260913]
+statement = "The four local boundary/mean identities in continuation/outer_boundary_algebra.py have zero symbolic residual, the stated small-m bound is increasing on (0,1/32], and its endpoint upper enclosure is strictly negative for beta<=3/4."
+verified = ["sympy", "arb"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\results\\outer_boundary_algebra.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Boundary derivative algebra and scalar enclosure only; feasible perturbations and compactness require the mathematical argument."
+
+[claims.fp_ext_k2_prefix_initial_freeze_exact_20260913]
+statement = "The rational buyer marginals and price policy in the receipt are normalized and ordered, and all 66 right-limit ordered-seller vertex comparisons at beta=8028913/10000000 are strictly positive. The continuum-seller interpretation requires the finite-buyer reduction in general_dual_note.tex."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\general_dual\\results\\prefix_exact.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Completed first-layer agent receipt integrated by coordinator. No second-layer natural-language audit was run."
+
+[claims.fp_ext_k2_prefix_multistage_exact_20260913]
+statement = "The rational buyer marginals and price policy in the receipt are normalized and ordered, and all 66 right-limit ordered-seller vertex comparisons at beta=2019309/2500000 are strictly positive. Its canonical transfer increases, is constant on indices 4 through 6, and increases again later. No necessity claim for all optimal policies."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\general_dual\\results\\prefix_multistage_exact.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "Completed first-layer agent receipt integrated by coordinator. No second-layer natural-language audit was run."
+
+[claims.fp_ext_k2_second_body_kernel_algebra_20260913]
+statement = "Ten recorded conditional identities for the reference price density, the second buyer body's priced-comparison difference, its joint change with the second seller endpoint mass and high mean, and the below-floor price-atom gap expand to zero. The price-atom factor uses both the left Euler first integral and p-stationarity. This does not prove general k=2 reduction."
+verified = ["sympy"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\general_dual\\results\\second_body_kernel_algebra.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "The final run includes the added joint-change and below-floor identities. Earlier successful eight-identity runs were subsumed; do not count them as independent evidence.  First-layer receipt only; complete natural-language review remains deferred."
+
+[claims.fp_ext_k2_second_body_kernel_arb_20260913]
+statement = "On the saved uniform stationary root hull for .72908<=beta<=.729081, a complete 8 by 8 rational rectangle cover certifies positive price masses, q_l<1/2, positive middle K derivative margin, K(b)>0, beta>m, and a strictly negative second-seller zero-mass coefficient. The input root enclosure is reused, not reverified; only the fixed-reference kernel sign hypotheses are established."
+verified = ["arb"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\general_dual\\results\\second_body_kernel_arb.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "192-bit Arb; all 64 rectangles covered. The subsequent run after adding symbolic identities returned the same bounds and is not independent evidence.  First-layer receipt only; complete natural-language review remains deferred."
+
+[claims.fp_ext_k2_tail_active_components_20260913]
+statement = "Eight symbolic identities, six nonnegative clipping-loss differences, and three exact finite ordered instance replays establish the displayed components of the tail-active reduction. The all-instance statement is the separate analytic proof in tail_active_reduction.tex."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\general_certificate_resume\\tail_active_exact.json"
+date = "2026-09-13"
+paper = "fixed-price extension screen"
+note = "First-layer derivation component only; no universal minimax credential is inferred."
+
+[claims.fp_ext_k2_continuous_switching_components_20260914]
+statement = "The twenty named rational identities in continuous_switching_exact.json vanish exactly. They cover the mass and endpoint of the linear low-price density, low-buyer and low-seller polynomial potentials, the low ordered-seller square decomposition, finite-tail buyer and seller pieces, first-buyer/first-seller stationary boundary factors, two contact-clock identities, the identity alpha1(b)+alpha2(b)+2pT-2beta=-beta*D*K_beta under those contact identities, and the common-zero-mass envelope normalization algebra."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\unified_principle\\continuous_switching_exact.json"
+date = "2026-09-14"
+paper = "fixed-price extension screen"
+note = "Only the receipt's exact subsection belongs to this credential. No general proof audit, PMP/Kelley theorem, global joint-instance inequality, or optimization claim is covered."
+
+[claims.fp_ext_k2_continuous_switching_new_signs_20260914]
+statement = "On the existing stationary root hull and beta interval, the new linear low-price density has positive intercept and slope; the first-seller low-potential monotonicity margin exceeds .142339; the low ordered-seller square margin exceeds .0588997; the first-buyer final tail slope exceeds .0465033; and the ordered-buyer finite-tail quadratic margin exceeds .0754948. The actual highest price is finite and lies between 2.72170 and 2.88215."
+verified = ["arb"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\unified_principle\\continuous_switching_exact.json"
+date = "2026-09-14"
+paper = "fixed-price extension screen"
+note = "This covers new scalar signs on the complete input-box cover, not every step of the companion measure-level argument. Existing second-body positive-kernel credentials are cited separately and not counted as new evidence."
+
+[claims.fp_ext_k2_buyer_adaptive_prefix_components_20260914]
+statement = "The eleven named symbolic identities in prefix_components.json vanish exactly, including normalized seller welfare, price-projection gain decomposition, atom jump, affine slope, a four-node CDF transfer Abel identity, and the double-contact/frozen-contact node recurrences. One rational two-atom-per-unit buyer example gives 68 nonnegative price-projection comparisons, eight exact affine interval replays, eight exact downward price-atom jumps, and equality of all-pair and canonical-prefix minima."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\buyer_adaptive_price\\prefix_components.json"
+date = "2026-09-14"
+paper = "fixed-price extension screen"
+note = "Existing prefix fixed-instance certificates and the two finite-tail seller algebra components were looked up and reused without rerunning. This credential covers components only. sentstats cannot parse these Chinese Markdown proof paragraphs (proofs=0 and a spurious whole-document sentence-length flag); it supplies no mathematical evidence."
+
+[claims.fp_ext_k2_buyer_adaptive_continuous_components_20260914]
+statement = "The fourteen new named symbolic identities in continuous_components.json vanish exactly. They cover the future-price kernel, its Leibniz derivative, backward price and regular seller/gamma ODEs, coincident buyer/price atom gamma traces, atomic canonical-reflection branches and the regular price-gain derivative Gamma'=sum(C_i f_i-A_i h_i). Exact rational branch formulas also give nonnegative single-seller potentials for two distinct price policies at Z1=Z2=1 and beta=3/4, while the displayed ordered seller example gives the same per-unit welfare 3/2 for all positive-price branches and normalized optimum 2."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\buyer_adaptive_price\\continuous_components.json"
+date = "2026-09-14"
+paper = "fixed-price extension screen"
+note = "Only new components were run once. The previous eleven prefix identities and old finite-tail identities were reused without rerunning. This does not certify global price construction, multiplier existence, policy uniqueness, or a general lower bound. sentstats found zero parseable proofs in the Chinese Markdown and emitted a whole-document sentence-length flag; this is a formatting limitation, not mathematical evidence."
+
+[claims.fp_ext_k2_prefix_obstacle_components_20260914]
+statement = "The nineteen named new symbolic identities in obstacle_components.json vanish exactly. They include four finite cumulative-price Fubini expansions retaining common buyer/price atoms, the positive kernel weight bound identity, price scaling, regular block-energy and common-clock algebra, a fixed-body-length perturbation, and four equalizing-measure identities for one stated rational buyer. Rational jet evaluation gives midpoint dot(H1)=1/40 while both endpoint jets satisfy the stated local constraints. The explicit three-block ratio energy has second derivative -381/4000 along the mean/length-preserving direction."
+verified = ["exact"]
+evidence = "research_ideas\\probes\\fixed_price\\extension_screen_20260913\\continuation\\buyer_adaptive_price\\obstacle_components.json"
+date = "2026-09-14"
+paper = "fixed-price extension screen"
+note = "New first-layer components. Initial checker execution stopped because one midpoint jet used Python float division; corrected to symbolic rational division, then recomputed. After adding energy/equalizer components the changed SymPy script was recomputed in full. These are not independent audits of the contraction, minimum-attainment, pricing theorem, or full calibration."
+
+[claims.fp_manuscript_granularity_intermediate_identities_20260918]
+statement = "The intermediate formulas added on 2026-09-18 to the proofs of Lemma 6.1 (two exact derivatives, the two integrals expressing U_d through Z_d, the common form of the total derivative of D_C(Y_d(C))), Lemma 7.1 (three contact identities, the line and middle-arc integrals, the closed form of Phi_d, the y-derivative check of identity (28), the derivative of Phi_d along the branch as an expression affine in Z_d with its two coefficient identities, the two forms of dPhi_d/dx, and the multiplier identity -1/x + int 2Q_x/(x+a) = 1/x^2-(1+x)/P_e^2) and Corollary B' (the exponent algebra giving the constant e/8) hold as exact symbolic identities; the three-piece energy integral agrees with the closed form to 20 digits at four parameter points."
+verified = ["exact"]
+evidence = 'research_ideas\probes\fixed_price\manuscript\checks\granularity_hard_first_layer_20260918.json'
+date = "2026-09-18"
+paper = "fixed-price bilateral trade manuscript"
+note = "SymPy exact for 22 identities; the four three-piece energy checks are mpmath 30-digit numerics, not exact. Presentation-layer expansion of existing proofs: no statement changed, no second-layer review. Script: manuscript/verify_granularity_hard_20260918.py."
+
+[claims.fpm_20260921_pricing_obstacle_new_exact]
+statement = "For L != 0, L*(u-[1-d*s/L+epsilon*theta/L+I/L]) = (d*s-L+L*u-I)-epsilon*theta. For every a, the potential-compensation slack of the a-weighted combination of (d,u,I,theta) equals the a-weighted combination of the two slacks, with buyer L and seller s fixed. If psi1+theta1 >= 0, psi2-theta2 >= 0, and theta2-theta1 >= 0, then psi1+psi2 >= 0. The three Farkas multipliers are exactly 1. If 0 <= DeltaL <= delta and DeltaG >= 0, adding ideal-tail mass delta changes each potential by -DeltaL+DeltaG+delta >= 0. The two slack multipliers are exactly 1."
+verified = ["exact"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/results.json"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript (current included TeX)"
+note = "4 new checks: potential_minus_compensation_obstacle_identity, feasible_triple_affine_slack, ordered_compensation_farkas_certificate, rounding_tail_repair_farkas_certificate. Affine and Farkas components only; no continuum prefix or attainment theorem."
+
+[claims.fpm_20260921_pricing_scalar_new_smt]
+statement = "For b>=0, 1<=L<=1+b, E>=0 and |kernel_difference|<=(L-1)*E, |kernel_difference|*(1+b)<=b*L*E. Dividing by positive L*(1+b) gives the obstacle difference bound b/(1+b)*E. If E>=0, |x1-y1|<=E and |x2-y2|<=E, then |max(0,x1,x2)-max(0,y1,y2)|<=E. For d>0, 0<=s<=b and 1<=L<=1+b, the potential at constant cumulative mass 1+b and zero compensation equals d*s+1+b-L >= 0 after using the existing kernel mass identity. If old_prefix<=psi2 and psi1+psi2>=0, the updated prefix max(old_prefix,-psi1) is >=old_prefix, >=-psi1 and <=psi2."
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/results.json"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript (current included TeX)"
+note = "4 new checks: scalar_kernel_contraction_after_common_denominator, two_obstacle_max_is_nonexpansive, constant_cumulative_mass_feasible_scalar, finite_canonical_prefix_extension. Scalar consequences conditional on the displayed integral bounds; no Banach-space or right-continuity argument is machine-proved."
+
+[claims.fpm_20260921_finite_node_max_steps_smt]
+statement = "For next_mass>=0, m=max(next_mass,obstacle1,obstacle2) is nonnegative and satisfies all three bounds; every competitor satisfying those bounds is at least m. If next_mass<=next_mass_upper and each obstacle is at most its upper counterpart, their three-way maximum has the same order. For weight>=0 and future_lower<=future_upper, weight*future_lower<=weight*future_upper. This is the termwise comparison in the positive finite kernel."
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/results.json"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript (current included TeX)"
+note = "3 new checks: one_backward_step_is_least_feasible, one_backward_step_is_order_preserving, positive_kernel_summand_preserves_future_bounds. Universal scalar steps used by the backwards induction, not a machine-formalized induction over arbitrary node counts or continuum extension."
+
+[claims.fpm_20260921_buyer_rounding_pointwise_smt]
+statement = "For 0<=rounded_buyer<=buyer<rounded_buyer+delta, delta>0 and seller>=0, 0<=(buyer-seller)_+-(rounded_buyer-seller)_+<=delta. For 0<=seller<price<=rounded_buyer<=buyer, [1+buyer-seller]-[1+rounded_buyer-seller]>=0. For 0<=rounded_buyer<price<=buyer and 0<=seller<price, the strict-seller/inclusive-buyer kernels differ by buyer-seller>=0. For rounded_buyer<=buyer, every real seller and price lies in one of: seller>=price; seller<price<=rounded_buyer; seller<price, rounded_buyer<price<=buyer; seller<price and buyer<price. The first and last branches have equal pointwise gain kernels."
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/results.json"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript (current included TeX)"
+note = "4 new checks: rounded_stoploss_loss_all_real_regions, rounded_gain_both_buyers_accept, rounded_gain_only_original_buyer_accepts, rounded_gain_acceptance_branches_are_exhaustive. Pointwise real-variable implications only; expectation passage, floor measurability, optimal-price existence, and the supremum limit remain analytic."
+
+[claims.fpm_20260921_finite_node_max_convexity_exact]
+statement = "For all real x0,x1,x2,y0,y1,y2 and 0<=a<=1, max_k(a*xk+(1-a)*yk) <= a*max_k(xk)+(1-a)*max_k(yk). All 27 triples of active endpoint/mixed maxima have the exact nonnegative decomposition a*(xi-xk)+(1-a)*(yj-yk), with zero polynomial residual. Ties belong to one or more covered branches."
+verified = ["exact"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/max_convexity_exact.json"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript (current included TeX)"
+note = "Exact certificate for the scalar max convexity step in two_unit_pricing_proofs.tex, eq:two-backward. The 27 branch certificates cover all endpoint and mixed max active indices. This resolves the preceding dual-solver timeout without rerunning or changing that receipt. No continuum or arbitrary-node-count proof is claimed."
+
+[claims.fpm_repair_20260921_stationary_physical_cartesian_arb]
+statement = "On the entire exact rational Cartesian root hull saved in manuscript/supplement/stationary_uniform_cover.json, the recovery formulas satisfy 0<t<p<1, C>1/4, c<xi_l<xi_r<xi_0, 0<q_r<q_l<1, 0<h<1 and 0<q_r<v. Hence D(u)=(u-1/2)^2+C-1/4 is positive for every real u. Exact rational inputs: {\"t\":[\"1332853481/4194304000\",\"1333276033/4194304000\"],\"p\":[\"754340808478301733/1125899906842624000\",\"757970502520020517/1125899906842624000\"],\"beta\":[\"18227/25000\",\"729081/1000000\"]}."
+verified = ["arb"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/physical_conditions.json"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript"
+note = "One full Cartesian box at 256-bit Arb, not point samples. The inherited stationary root cover is not rerun. Formula-to-curve realization remains an analytic argument. Actual status proved."
+
+[claims.fpm_repair_20260921_stationary_reverse_construction_algebra]
+statement = "The nine saved local identities have zero exact symbolic residual: D complete square; reconstructed (log P)_q, P_xi and P_xixi; D(q_l)=d*xi_l/P_l^2; xi_r=P_r^2*D(q_r)/d; the h-stationarity factor; the t-stationarity reduction modulo v^2*D(q_r)-C*q_r^2; and p-stationarity from the definition of P_l."
+verified = ["sympy"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/physical_conditions.json"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript"
+note = "Conditional local algebra, with all denominator and stationary premises retained in the receipt. Does not certify global existence, gluing, or optimization."
+
+[claims.fpm_repair_20260921_single_unit_algebra]
+statement = "The local identities listed in manuscript/first_layer.py algebra() have zero residual, including the new EL first integral and strict-welfare decomposition."
+verified = ["sympy"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_algebra"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "46 local identities from the current included single-unit proof. Replays original component(s): ['fpm2_20260913_algebra']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_jensen_helper]
+statement = "At d=theta=1/2 the two stated rational two-step controls have Jensen gap 11/1728."
+verified = ["exact"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_jensen_helper"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Incidental exact calculation actually performed by the reused original helper; fixed rational witness only. Replays original component(s): ['fpm2_20260913_jensen_exact']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_shifted]
+statement = "The twelve local identities in shifted_algebra.py, including the restricted two-unit objective reduction to positive shifted-clock log energy, have zero symbolic residual."
+verified = ["sympy"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group shifted"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded. Replays original component(s): ['fp_ext_k2_shifted_clock_algebra_20260913']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_endpoint]
+statement = "The endpoint quadrature, inverse-clock convex-gap and contact-density identities, and the three envelope derivatives in continuation/endpoint_algebra.py have zero symbolic residual."
+verified = ["sympy"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group endpoint"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded. Replays original component(s): ['fp_ext_k2_inverse_endpoint_algebra_20260913']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_outer_boundary]
+statement = "The four recorded zero-left-contact, zero-right-contact, p=1 gap and buyer-mean identities have zero symbolic residual."
+verified = ["sympy"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group outer_boundary"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original local symbolic calculation block only; all writers and unrelated interval/search code are excluded. Replays original component(s): ['fp_ext_k2_outer_boundary_algebra_20260913']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_stationary_reconstruction_replay]
+statement = "The nine saved local identities have zero exact symbolic residual: D complete square; reconstructed (log P)_q, P_xi and P_xixi; D(q_l)=d*xi_l/P_l^2; xi_r=P_r^2*D(q_r)/d; the h-stationarity factor; the t-stationarity reduction modulo v^2*D(q_r)-C*q_r^2; and p-stationarity from the definition of P_l."
+verified = ["sympy"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group stationary_reconstruction_replay"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Nine local D.6 identities replayed after insertion of the reverse construction into TeX; the existing physical-domain Arb box is not rerun. Replays original component(s): ['fpm_repair_20260921_stationary_reverse_construction_algebra']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_scalar_signs]
+statement = "((8*C + I*(2*C - 1) - 6)/(4*C - 1) < 0) & ((8*C + I*(2*C - 1) - 6)/((2*C - 1)*(4*C - 1)) > 0) under [C > 1/4, C < 1/2, I > 0]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_scalar_signs"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_scalar_signs']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_envelope_lower]
+statement = "C*y*(1 - C) + 2*C - 1 < 0 under [C > 0, C <= 1/4, y > 0, 2*C*y < 1]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_envelope_lower"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_envelope_lower']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_envelope_upper]
+statement = "C*y*(1 - C) + 2*C - 1 > 0 under [C >= 1/2, y > 0, C*y < 1]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_envelope_upper"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_envelope_upper']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_gap_terms]
+statement = "E/p**2 - 2*Q*v + a*vp**2 >= 0 under [a >= 0, p > 0, E >= 0, Q >= 0, v <= 0]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_gap_terms"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_gap_terms']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_density_positive]
+statement = "H*L - K + d**2 > 0 under [d > 0, L >= d, H >= 0, K <= H*(L - d)]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_density_positive"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_density_positive']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_frontier_increasing]
+statement = "d*(S/(1 - 2*C) + 1) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_frontier_increasing"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_frontier_increasing']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_frontier_convex]
+statement = "-S**3*d*(2 - sigma)/(sigma*(1 - 2*C)**2) > 0 under [C > 1/4, C < 1/2, S > 1, d > 0, sigma < 0]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_frontier_convex"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_frontier_convex']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_seller_atom]
+statement = "(T*d*eta >= 0) & (T*d*eta < 1) under [d > 0, eta > 0, T >= 0, T <= 1/(d*(d + eta))]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_seller_atom"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_seller_atom']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_strict_welfare]
+statement = "GM + MM - beta*(GG + MM) > 0 under [beta > 0, beta < 1, alpha >= 0, alpha < 1, GM > 0, MM >= 0, GG >= 0, GM*alpha >= GG*beta - MM*(1 - beta)]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_strict_welfare"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_strict_welfare']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_single_unit_smoothing_support]
+statement = "(Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) > 0) & (Lambda*Z*eps + Lambda*eps + X*(1 - 2*eps) < Lambda) under [Lambda > 0, X >= 0, X <= Lambda, eps > 0, eps < 1/2, Z >= -1/2, Z <= 1/2]"
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group single_unit_smoothing_support"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Original semialgebraic component, both solvers rerun after the authorized TeX repairs. Replays original component(s): ['fpm2_20260913_smoothing_support']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_pricing_scalar]
+statement = "For b>=0, 1<=L<=1+b, E>=0 and |kernel_difference|<=(L-1)*E, |kernel_difference|*(1+b)<=b*L*E. Dividing by positive L*(1+b) gives the obstacle difference bound b/(1+b)*E. If E>=0, |x1-y1|<=E and |x2-y2|<=E, then |max(0,x1,x2)-max(0,y1,y2)|<=E. For d>0, 0<=s<=b and 1<=L<=1+b, the potential at constant cumulative mass 1+b and zero compensation equals d*s+1+b-L >= 0 after using the existing kernel mass identity. If old_prefix<=psi2 and psi1+psi2>=0, the updated prefix max(old_prefix,-psi1) is >=old_prefix, >=-psi1 and <=psi2."
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group pricing_scalar"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Replays only previously passing scalar/pointwise components. The existing 27-branch exact max-convexity certificate is reused. Replays original component(s): ['fpm_20260921_pricing_scalar_new_smt']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_node_steps]
+statement = "For next_mass>=0, m=max(next_mass,obstacle1,obstacle2) is nonnegative and satisfies all three bounds; every competitor satisfying those bounds is at least m. If next_mass<=next_mass_upper and each obstacle is at most its upper counterpart, their three-way maximum has the same order. For weight>=0 and future_lower<=future_upper, weight*future_lower<=weight*future_upper. This is the termwise comparison in the positive finite kernel."
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group node_steps"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Replays only previously passing scalar/pointwise components. The existing 27-branch exact max-convexity certificate is reused. Replays original component(s): ['fpm_20260921_finite_node_max_steps_smt']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_buyer_rounding]
+statement = "For 0<=rounded_buyer<=buyer<rounded_buyer+delta, delta>0 and seller>=0, 0<=(buyer-seller)_+-(rounded_buyer-seller)_+<=delta. For 0<=seller<price<=rounded_buyer<=buyer, [1+buyer-seller]-[1+rounded_buyer-seller]>=0. For 0<=rounded_buyer<price<=buyer and 0<=seller<price, the strict-seller/inclusive-buyer kernels differ by buyer-seller>=0. For rounded_buyer<=buyer, every real seller and price lies in one of: seller>=price; seller<price<=rounded_buyer; seller<price, rounded_buyer<price<=buyer; seller<price and buyer<price. The first and last branches have equal pointwise gain kernels."
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group buyer_rounding"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Replays only previously passing scalar/pointwise components. The existing 27-branch exact max-convexity certificate is reused. Replays original component(s): ['fpm_20260921_buyer_rounding_pointwise_smt']. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_d1_price_regions]
+statement = "The corrected four price regions are exhaustive and disjoint; the shifted terminal seller atom is assigned to the common-tail bound. The eight saved scalar implications hold."
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group D1_price_regions"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "D.1 price-domain and conditional gain algebra only; no measure convergence or entire realization lemma. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_d4_ratio_comparison_algebra]
+statement = "For R=(M+2)/(M+G), K=(beta*G-(1-beta)*M-2)/(beta*D) equals (M+G)/D*(1-R/beta). Its coordinate derivative at fixed beta has the saved product-rule form and vanishes when R=beta and R_prime=0."
+verified = ["sympy"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group D4_ratio_comparison_algebra"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "D.4 local identities only. Differentiability, Fermat's condition and feasible variations remain analytic premises. No complete analytic theorem is machine-certified."
+
+[claims.fpm_repair_20260921_d4_ratio_minimum_comparison]
+statement = "With positive beta,D,O and beta*D*K=O*(beta-R), R>=beta implies K<=0 and equality is equivalent to R=beta. At fixed endpoints, K=constant-E reverses energy order."
+verified = ["z3", "cvc5"]
+evidence = "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/results.json group D4_ratio_minimum_comparison"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade manuscript: repaired included TeX"
+note = "Scalar implication for the explicitly authorized beta=R_min branch. It does not establish existence, interiority or global uniqueness. No complete analytic theorem is machine-certified."
+
+[claims.fp_supplement_independent_replay_20260921]
+statement = "Independent replay script manuscript/supplement/verify.py (written separately from the generating scripts, no search, certificates read and re-evaluated) passes 37 of 37 checks: Arb enclosure 0.73802433573<beta_*<0.73802433574 from the sign change of S-1-tau, C_*=0.3937571625 to ten decimals, 7/20<tau(C_*)<9/25, r_eta<0.738024335797 and R_eta<360000000001 at eta=1e-12 via the finite-tail error bound; exact rational replay of the general two-unit instance (ratio<0.7290804, stored integers reproduced) and of the symmetric instance (ratio<0.83693); both affine-boundary Bernstein trees rebuilt from M and G with nonnegative leaves (10 and 12); all 12749 and 6827 leaves of the two stationary covers re-evaluated at 192 bits with tiling, contiguity of retained cells, sign change of the connection equation and physical root strip; the 67/70 mean-compression instance and the value-convexity obstruction (three symbolic remainders, two feasible witnesses, gap lambda/10). For the identity and enclosure files it only confirms recorded zero residuals and stored signs; those are not re-derived. Mutation test: four corrupted certificates were all rejected."
+verified = ["exact", "arb", "sympy"]
+evidence = "research_ideas/probes/fixed_price/manuscript/supplement/verify.py"
+date = "2026-09-21"
+paper = "fixed-price bilateral trade"
+note = "Re-evaluation of existing certificates by separate code, not new claims. Monotonicity of the algebraic residual in p is taken from the appendix, as in the generating scripts. Conditional on the same recorded stationary-state identities as the original cover entries."
+
+[claims.fixed_price_lean_fixed_endpoint_20260921]
+statement = "On [0,R], R>0, let ell,v and a*ell' be absolutely continuous, with integrable weighted squared derivatives, v(0)=v(R)=0, and (exp(-2ell)+(a*ell')')v<=0 pointwise. The log-energy difference is exactly the G1 integral, is nonnegative, and is zero iff v vanishes everywhere on [0,R]. These are explicit analytic premises; no claim that the paper's controls or reference curves have yet been shown to satisfy them."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Calibration.lean: FixedPrice.logEnergy_gap_identity, FixedPrice.gapIntegral_zero_imp, FixedPrice.fixedEndpoint_calibration; Lean-LSP full-file diagnostics success=true, no messages; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Local analytic component of Lemma 7.1. The original reciprocal-state change of variables, explicit reference construction, infinite-tail identification, G2 and Theorem C are not certified by this entry. During development a premature axiom query returned sorryAx while an auxiliary integrability proof had an elaboration error; the error was repaired before the successful full-file diagnostics and axiom checks recorded here."
+
+[claims.fixed_price_lean_endpoint_envelope_20260921]
+statement = "For a positive monotone continuous branch Y on (0,Cbar), continuous U>=0, C*Y(C)<1, Cstar in (0,1/2), Y(Cstar)=y_e(Cstar), and Phi'(C)=-(Y(C)+U(C))*B(C)/(1-C*Y(C))^2, the G2 absolute-value integral equals Phi(Cstar)-Phi(C). The maximum is unique throughout (0,Cbar), including C>=1/2 when present."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Envelope.lean: FixedPrice.branchDefect_sign and FixedPrice.endpointEnvelope_calibration; Lean-LSP full-file diagnostics success=true, no messages; lean_verify standard propext, Classical.choice, Quot.sound only, source warnings empty. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Analytic envelope component only. The physical implicit branch construction and its derivative, identification of Phi with reference energy, and limiting endpoint C=0 remain to be proved. This is not a Lean credential for the whole Lemma 7.1 or Theorem C."
+
+[claims.fixed_price_lean_extremal_feasible_20260921]
+statement = "For d>0, 1/4<C<1/2 and tau(C)=d, the explicit three-arc control in equation (31) is measurable, takes values in [0,1], and is strictly increasing on its middle arc. Its middle-state derivative is C*y*g/D, its middle-control derivative is g/D^2, and its endpoint control values are 0 and 1."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Extremal.lean: FixedPrice.maximizingControl_feasible and dependencies; Lean-LSP full-file diagnostics success=true with no messages; lean_verify standard propext, Classical.choice, Quot.sound only, source warnings empty. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Feasibility and strict middle-arc shape of the exact formula, not attainment of S(C) or optimality among all controls. TheoremC.lean retains open proof obligations for those statements."
+
+[claims.fixed_price_lean_original_time_energy_20260921]
+statement = "For every d>0 and every Lebesgue-a.e.-strongly-measurable control h valued in [0,1] on [0,1], g=d+integral_0^t h is 1-Lipschitz, absolutely continuous and has derivative h a.e.; the original objective equals log(g(1))-log(d)+d^2*A(0)-integral_0^1 A(t)*h(t)^2 dt, where A(t)=integral_t^1 g(u)^(-2) du. The second-moment rearrangement is proved by absolutely-continuous integration by parts."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Controls.lean: FixedPrice.objective_originalTime_identity; Lean-LSP full-file diagnostics success=true, no messages; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Original-time part of Lemma 5.1. No continuity of h is assumed. The reciprocal-time inverse, its change of variables, and the full energy identity (E) remain outside this credential."
+
+[claims.fixed_price_lean_attainment_20260921]
+statement = "For d>0, 1/4<C<1/2 and tau(C)=d, the explicit zero-middle-one control in equation (31) has the prescribed integral state g=d+integral h and attains J_d(h_C)=S(C)=C*(2+I_C(y_e(C))). The tail-time identities and all cost integrals are proved from the original measurable-control objective."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Attainment.lean: FixedPrice.maximizingControl_attains; Lean-LSP full-file diagnostics success=true, no messages; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Complete attainment portion of Theorem C, with no reference-curve or optimality assumption. The universal upper bound and uniqueness among arbitrary measurable controls remain open in TheoremC.lean; this entry does not certify them."
+
+[claims.fixed_price_lean_reciprocal_energy_20260921]
+statement = "For every d>0 and every measurable [0,1]-valued control, the tail-time map A is a strictly decreasing bijection [0,1] to [0,A(0)] with Lipschitz inverse and the stated inverse derivative. The reciprocal state p(A(t))=1/g(t), extended constantly after A(0), satisfies 1/(d+1)<=p<=1/d, p(a)<=p(0)+a for a>=0, integral_0^A(0) p^(-2)=1, and J_d(h)-1 equals the logarithmic energy on every finite horizon R>=A(0). Log p is absolutely continuous and its weighted squared derivative is integrable on [0,A(0)]."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Reciprocal.lean: FixedPrice.reciprocal_energy_identity_extended, FixedPrice.reciprocalState_line_obstacle, FixedPrice.reciprocalState_normalization; Lean-LSP full-file diagnostics success=true, no messages; all three lean_verify calls return propext, Classical.choice, Quot.sound only and empty source warnings. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Identity (E) and the two obstacles, with the infinite constant tail represented by any sufficiently large finite horizon. This does not yet construct the paper's reference family or certify G2's physical branch hypotheses."
+
+[claims.fixed_price_lean_branch_calculus_20260921]
+statement = "Whenever y>=0 and D_C(r)>0 on [0,y], differentiation under the parameter integral gives partial_C I_C(y)=-integral_0^y r^2/D_C(r)^2 dr; equation (28), (4C-1)Z=2I+y(y-2)/D_C(y), holds including C=1/4. For y>0 the y derivative of log(chi(C,y)) is -1/(y*D_C(y))."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Branch.lean: FixedPrice.hasDerivAt_primitive_parameter, FixedPrice.primitive_secondPrimitive_identity, FixedPrice.hasDerivAt_contactLog_variable; full-file Lean-LSP diagnostics success=true with no messages, lean_verify standard three axioms only and empty source warnings for each named theorem. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Analytic ingredients of the physical branch and G2 derivative. This proves differentiation under the integral, not just the cleared-denominator algebra. Existence and global coverage of the implicit branch, and its assembly into the reference family, are not certified."
+
+[claims.fixed_price_lean_branch_regularity_20260921]
+statement = "At any y>0 with D_C>0 on [0,y], the physical domain is open locally, Z_C(y) is jointly continuous, and log chi(C,y) is jointly strictly differentiable with its computed partial derivatives. Every differentiable local branch satisfying log chi(C,Y(C))=log d has 2Y'=Y^3+Y*D_C(Y)*Z_C(Y)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/BranchRegularity.lean: FixedPrice.continuousAt_secondPrimitive, FixedPrice.implicitBranch_derivative; Lean-LSP full-file diagnostics success=true, no messages; lean_verify standard propext, Classical.choice, Quot.sound only, empty source warnings. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Joint regularity and the derivative formula, without assuming differentiation under the integral. Global existence and coverage of the reference family are still outside this credential."
+
+[claims.fixed_price_lean_local_branch_20260921]
+statement = "Every positive contact point with D_C>0 on [0,y] lies on a locally unique differentiable contact branch, with derivative (y^3+yD_C(y)Z_C(y))/2. Every physical contact selection on a neighborhood agrees locally with that implicit branch, so differentiability need not be assumed for the selection."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/BranchRegularity.lean: FixedPrice.local_contact_branch_exists; FixedPrice/PhysicalBranch.lean: FixedPrice.physicalBranch_hasDerivAt. Full-file Lean-LSP diagnostics clean and lean_verify standard three axioms only, no source warnings. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Local existence and uniqueness only; not continuation across the entire parameter range or coverage of every endpoint."
+
+[claims.fixed_price_lean_physical_g2_20260921]
+statement = "Assume a physical contact solution Y exists at every C in (0,Cbar): Y>0, CY<1, D_C>0 on [0,Y], and log chi(C,Y)=log d. For d>0, 1/4<Cstar<1/2, tau(Cstar)=d and Cstar<Cbar, the explicit endpoint function C*I_C(Y)-C^2Y/(1-CY) satisfies G2's derivative, absolute-value integral gap, and unique global maximum at Cstar. Continuity, differentiability, Y monotonicity, nonnegativity and continuity of U are derived, not assumed."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/EndpointDerivative.lean: FixedPrice.hasDerivAt_endpointValue; FixedPrice/PhysicalBranch.lean: FixedPrice.physicalEndpoint_calibration. Full-file Lean-LSP diagnostics clean and lean_verify standard propext, Classical.choice, Quot.sound only, empty source warnings. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f."
+date = "2026-09-21"
+paper = "fixed-price bilateral trade current TeX"
+note = "Substantially discharges the earlier generic envelope hypotheses. Still conditional on global physical-branch existence. The identification of the explicit endpoint function with the constructed reference curve's energy and the endpoint C=0 are not certified by this entry."
+
+[claims.fixed_price_lean_global_branch_20260922]
+statement = "For d>0, the set of curvatures C>0 with a physical root of contactLog C y = log d (0<y, Cy<1, D_C>0 on [0,y]) is closed downward and open; the root is unique, so branchRoot d is a physical contact selection on every (0,C2) with a root at C2. For every D in (0,1) with d(1-D)<D there is a branch point (C,Y) with denominator C Y = D (coverage), obtained by IVT along the curve C=(D-1+y)/y^2 using the blow-up of the primitive at the double root. Combined with physicalEndpoint_calibration: for every branch point, endpointValue C (branchRoot d C) <= endpointValue Cstar (endParameter Cstar) whenever tau(Cstar)=d, 1/4<Cstar<1/2."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Coverage.lean: FixedPrice.exists_branch_point; GlobalBranch.lean: FixedPrice.hasBranchRoot_of_le, FixedPrice.hasBranchRoot_eventually, FixedPrice.branch_physical_below, FixedPrice.endpointValue_branch_le; BranchRoot.lean: FixedPrice.branchRoot. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; full-file diagnostics success=true with no messages; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-22"
+paper = "fixed-price bilateral trade"
+note = "Global existence and coverage part of Lemma 6.1, organised around the endpoint denominator rather than the paper's Cbar(d); the paper's limits x(C)->1/d and x(C)->0 are not formalised because they are not needed for the bound. Closes the open items listed in claims.fixed_price_lean_local_branch_20260921 and claims.fixed_price_lean_physical_g2_20260921 as far as the upper bound requires."
+
+[claims.fixed_price_lean_reference_energy_20260922]
+statement = "For every branch point (C,Y) with d>0, C>0, the reference curve log P_x is constructed in tail time (line log(x+a) up to a_e=CY^2/D, middle arc through the inverse of the clock a=(C/d^2)exp(-I_C(r)) on [0,Y], cap -log d from a_a=C/d^2), with x=(1-D)/D, D=D_C(Y). It is Lipschitz on [0,R] for R>=a_a, as is the weight w=a*l' written without derivatives; w=a*l' a.e.; a*(l')^2 is bounded; the multiplier exp(-2l)+w' equals (1+x)/(x+a)^2 on the line, 0 on the arc and d^2 on the cap; and logEnergy d R (log P_x) = C*I_C(Y) - C^2 Y/(1-CY) = endpointValue C Y for every R>=a_a."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/ReferenceCurve.lean (arcTime, arcParam, refLog, refWeight, contact_line, contact_arc, contact_cap); ReferenceRegularity.lean (refLog_absolutelyContinuous, refWeight_absolutelyContinuous, refWeight_ae_eq, refLog_weighted_deriv_intervalIntegrable); ReferenceEnergy.lean: FixedPrice.IsBranchRoot.logEnergy_refLog. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; full-file diagnostics success=true with no messages; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-22"
+paper = "fixed-price bilateral trade"
+note = "Identification of Phi_d(x(C)) with the reference energy (the (G2) formula), including the explicit construction of the paper's Lemma 6.1 reference curve for every branch point. Derivatives are only used at interior points of the three pieces; the joins are handled through the a.e. weighted calibration (CalibrationAE.lean)."
+
+[claims.fixed_price_lean_theoremc_bound_20260922]
+statement = "Theorem C, upper bound: for every d>0, every C in (1/4,1/2) with tau(C)=d, and every h:[0,1]->[0,1] a.e.-strongly measurable, objective d h <= optimalValue C = C(2+I_C(y_e(C))). Together with the recorded attainment, S(C_d)=sup J_d over measurable controls. Proof: identity (E) on a horizon R>=max(A(0),a_a); for endpoint x=1/g(1)<1/d, coverage gives a branch point with lineIntercept = x, the weighted G1 calibration with the reference curve and the a.e. contact sign gives logEnergy(log p) <= endpointValue C Y, and the global-branch comparison gives <= endpointValue Cstar (y_e) = S(Cstar)-1; for x=1/d the constant reference curve gives objective <= 1 <= S(Cstar)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/UpperBound.lean: FixedPrice.objective_le_optimalValue, FixedPrice.objective_sub_one_le_endpointValue, FixedPrice.objective_le_one_of_cap, FixedPrice.one_le_optimalValue, FixedPrice.endpointValue_endParameter; TheoremC.lean: FixedPrice.theoremC_bound (bound and attainment together). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; full-file diagnostics success=true with no messages; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-22"
+paper = "fixed-price bilateral trade"
+note = "The a.e. uniqueness clause of Theorem C (objective = optimalValue iff h = h_C a.e.) is NOT certified; TheoremC.lean keeps it as a sorry in FixedPrice.theoremC, and FixedPrice.theoremC_bound is the sorry-free statement. Depends on the recorded entries fixed_price_lean_{reciprocal_energy, fixed_endpoint, attainment, local_branch, physical_g2, global_branch, reference_energy}."
+
+[claims.fixed_price_lean_pricing_lemma_20260922]
+statement = "Lemma 9.1 (pricing from the variational bound): let beta >= 0, d > 0, and suppose beta * objective d h <= 1 for every a.e.-strongly measurable control h on [0,1] with values in [0,1]. Then for every pair of probability laws mu_s, mu_b on R that are a.e. nonnegative with integrable identity (finite means) there is a price z >= 0 with gain z >= beta*G - beta*d*M, where gain z = E[(V_b - V_s) 1{V_s <= z <= V_b}], G = E(V_b - V_s)_+ and M = E V_s are written as iterated integrals (seller law outside, buyer law inside; independence)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/PricingLemma.lean: FixedPrice.exists_price_of_variational_bound (with gain, sellerMean, gainsFromTrade, lowerGain, lowerGain_le_gain, IsCutoff.integral_priceDensity_lowerGain, IsCutoff.exists_lowerGain_ge); BuyerTail.lean (survival, tailIntegral, tailIntegral_sub, exists_cutoff); PriceDensity.lean (secondTail, priceBracket, priceDensity, cutControl, IsCutoff, priceDensity_nonneg, priceDensity_integral = beta * objective d (cutControl)); PricingIdentity.lean (ae_hasDerivAt_tailIntegral, ae_hasDerivAt_secondTail, IsCutoff.seller_identity). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3347 jobs); lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-22"
+paper = "fixed-price bilateral trade"
+note = "Proof organisation differs from the paper in three harmless ways: the cutoff s0 with L(s0) = d*s0 is kept unnormalised (the density carries d^2 s0 in place of d^2), the a.e. identity (38) is replaced by the endpoint identity gamma(s) = beta (L(s) - d s) proved through absolute continuity of s -> int_s^{s0} f, and the averaging step is a contradiction argument with the defect q (T - Lambda) instead of an explicit inequality. The variational hypothesis is quantified over a.e.-strongly measurable controls, the class of the recorded Theorem C bound; the lemma only uses it at the measurable control cutControl. The case E V_b = 0 is handled through T <= 0 (price zero)."
+
+[claims.fixed_price_lean_theorem_a_guarantee_20260922]
+statement = "Theorem A, guarantee direction: for C in (1/4,1/2) with optimalValue C = 1 + initialState C (the root equation (44), S(C) = 1 + tau(C)), every pair of probability laws on R that are a.e. nonnegative with integrable identity admits a price z >= 0 with (optimalValue C)^(-1) * (M + G) <= M + gain z, i.e. M + Gamma_max >= beta_* (M + G) with beta_* = 1/S(C_*)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/PricingLemma.lean: FixedPrice.theoremA_guarantee (from FixedPrice.objective_le_optimalValue, UpperBound.lean, and FixedPrice.exists_price_of_variational_bound, with initialState_pos and one_le_optimalValue). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3347 jobs); lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-22"
+paper = "fixed-price bilateral trade"
+note = "Not certified: existence and uniqueness of the root C_* of (44) (the Lean statement takes C with the root equation as a hypothesis), the strict inequality for every pair, sharpness (the hard pairs of Lemma 9.2), and the a.e. uniqueness clause of Theorem C. Depends on the recorded entries fixed_price_lean_theoremc_bound_20260922 and fixed_price_lean_pricing_lemma_20260922."
+
+[claims.fixed_price_lean_theoremc_uniqueness_20260923]
+statement = "Theorem C in full: for d>0 and C in (1/4,1/2) with tau(C)=d, every a.e.-strongly measurable h:[0,1]->[0,1] has objective d h <= S(C), and objective d h = S(C) iff h = h_C almost everywhere on [0,1], where h_C is the explicit control (31) (zero arc, strictly increasing middle arc, one arc)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Uniqueness.lean: FixedPrice.objective_eq_optimalValue_iff (via strict G1 eqOn_zero_of_weight_calibration in CalibrationAE.lean, strict G2 eq_of_endpointValue_branch_eq, log_reciprocalState_eq_of_optimal, reciprocalState_normalization_from int_0^{A(t)} p^-2 = 1-t, state_eq_of_log_reciprocalState_eq, control_ae_eq_of_state_eq, objective_congr_ae); TheoremC.lean: FixedPrice.theoremC (no sorry). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Supersedes the open item in claims.fixed_price_lean_theoremc_bound_20260922. Uniqueness is proved without the paper's a_0 = 2C/d^2 step: two maximizers share the reciprocal state, and int_0^{A(t)} p^-2 = 1 - t pins the tail time, hence the state and the control a.e. UpperBound.lean: objective_sub_one_le_endpointValue now factors through objective_endpoint_comparison (proof body only; statement unchanged, re-verified)."
+
+[claims.fixed_price_lean_root_c_star_20260923]
+statement = "Equation (7) and the root of (44): on (1/4,1/2), (4C-1)S'(C) = (2C-1)I(C)+8C-6 < 0 and tau is strictly increasing, so S is strictly decreasing; the equation S(C) = 1 + tau(C) has exactly one solution C_* in (1/4,1/2)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/ScalarCurve.lean: FixedPrice.hasDerivAt_optimalValue, optimalValue_strictAntiOn, hasDerivAt_initialState, initialState_strictMonoOn, existsUnique_root (IVT between C=101/400, where I >= 10 from 1/D >= 50 on [9/5,2], and C=49/100, where I <= 400/2499). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "The boundary limits (8) are not needed here; explicit evaluations at two points replace them."
+
+[claims.fixed_price_lean_theorem_a_strict_20260923]
+statement = "Theorem A, strict inequality: at the root C_*, every pair of probability laws on R, a.e. nonnegative seller law, integrable identities, with M + G > 0, admits z >= 0 with beta_* (M+G) < M + gain z."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Strict.lean: FixedPrice.theoremA_strict (cases G=0; 0<G<=dM via exists_gain_pos; G>dM via IsCutoff.objective_cutControl_lt, which uses the uniqueness clause of Theorem C, and exists_price_of_cutoff at beta' > beta_*). PricingLemma.lean: exists_price_of_cutoff and tailIntegral_zero_pos_of_gainsFromTrade_pos factored out of exists_price_of_variational_bound (proof body change only, statement unchanged, re-verified). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Differs from the paper's route (alpha Gamma_max >= ...) in using beta' = beta + (1 - beta J)/(|J|+1); same content."
+
+[claims.fixed_price_lean_perturbation_b2_20260923]
+statement = "Estimate (B2) of Proposition 13.1: for d>0, eta in [0,1] and measurable h:[0,1]->[0,1], |J_d(eta + (1-eta) h) - J_d(h)| <= eta (3/d + 3/d^2 + 2/d^3)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Perturbation.lean: FixedPrice.objective_liftControl_sub_le (pointwise perturb_pointwise, objective_integrand_intervalIntegrable, secondMoment_bounds). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+
+[claims.fixed_price_lean_hard_pairs_20260923]
+statement = "Lemma 9.2 (bounded hard pairs): for d>0, 0<eta<=1 and H continuous and nonincreasing on [0,1] with H(1)=eta and H<=1, the buyer law with survival H on [0,1], eta on [1,R), 0 from R=1+d/eta, and the seller law with CDF d(1/L - H T) on [0,1) and an atom at 1 (L(s) = d + int_s^1 H, T(s) = int_0^s L^-2) are probability measures with supports in [0,R] and [0,1], and satisfy M = 1 - d^2 T(1), Gamma(z) <= d + eta d^2 T(1) at every real price, G = dJ + dM with J = J_d(H(1-.)) (equivalently G = d + dJ - d^3 T(1)), and (41)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/HardBuyer.lean, HardSeller.lean (Stieltjes measures, integral_sellerFormula = (42)), HardPair.lean: gain_eq_formula, lowerGain_eq_formula, integral_max_sub_left_eq, HardPairData.sellerMean_eq, gain_le, gainsFromTrade_eq, welfare_gap_le. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "G is obtained from the existing Fubini identity IsCutoff.integral_priceDensity_lowerGain at cutoff 1 (lowerGain = d on (0,1)), not from the paper's Fubini on H F_s; gain at prices in [0,1) is exactly d and on [1,R] exactly d + eta(1-M), recorded as an upper bound."
+
+[claims.fixed_price_lean_finite_tail_20260923]
+statement = "Proposition 13.1: at the root C_* with d = tau(C_*), the hard pair (43) at eta in (0,1] has best fixed-price welfare ratio r_eta with 0 < r_eta - beta_* <= eta (beta_* L_err(d) + 1/d), L_err(d) = 3/d + 3/d^2 + 2/d^3."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Sharpness.lean: hardSurvival, hardPairData, hardPair_objective_close, hardPair_welfare_le (with maximizingControl_eq_clamp, maximizingControl_continuous, maximizingControl_monotone); TheoremA.lean: FixedPrice.proposition_finiteTail (ratio = (M + sup_{z>=0} Gamma)/(M+G)). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "The paper states 0 <= r_eta - beta_*; the Lean statement has the strict inequality."
+
+[claims.fixed_price_lean_theorem_a_full_20260923]
+statement = "Theorem A in full: for C in (1/4,1/2) with S(C) = 1 + tau(C) (unique by the root entry), every admissible pair (probability laws, a.e. nonnegative values, finite means, M+G>0) has best fixed-price welfare ratio (M + sup_{z>=0} Gamma(z))/(M+G) strictly above beta_* = 1/S(C); for every eps>0 a pair with seller values in [0,1] and bounded buyer values has ratio below beta_* + eps; hence beta_* is the greatest lower bound of the ratios over admissible pairs, and it is not attained."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TheoremA.lean: FixedPrice.theoremA (IsGLB), theoremA_constant, AdmissiblePair, fixedPriceRatio, gain_le_gainsFromTrade, lt_fixedPriceRatio, fixedPriceRatio_le, hardPair_admissible. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Supersedes the open items listed in claims.fixed_price_lean_theorem_a_guarantee_20260922 (root, strictness, sharpness, uniqueness). The decimal enclosure of beta_* stays with the interval-arithmetic records."
+
+[claims.fixed_price_lean_nonexponential_20260923]
+statement = "Proposition 8.2: for d>0 and C in (1/4,1/2), no nonempty open subinterval of the middle arc (C, C(1+y_e(C))) carries maximizingControl d C t = l0 + l1 exp(l2 t) for real constants."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/NoExponential.lean: FixedPrice.proposition_nonexponential (two derivative matches give 2 - 3Cy = l2 C D_C(y) on an interval; three sample points force l2 = 0, then C = 0). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Stronger than the paper's statement: the side condition h' > 0 is not assumed. The statement does not require tau(C) = d."
+
+[claims.fixed_price_lean_scalar_ends_20260923]
+statement = "Equation (8) and the tangent map of Theorem B: I(C) -> inf, S -> inf, tau -> 0 as C -> 1/4+; I -> 0, S -> 1, tau -> inf as C -> 1/2-; I' = -2(CI+2)/(C(4C-1)) and tau' = -tau S'/(1-2C); kappa(C) = tau(C)(S(C)+u)/u with u = 1-2C is a strictly increasing bijection of (1/4,1/2) onto (0,inf), and C -> 1/S(C) is a bijection onto (0,1)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/FrontierCurve.lean: scalarDerivI_eq, hasDerivAt_initialState', hasDerivAt_kappaOf, kappaOf_strictMonoOn, scalarI_tendsto_left/right, optimalValue_tendsto_left/right, initialState_tendsto_left/right, kappaOf_tendsto_left/right, existsUnique_optimalValue_eq, existsUnique_kappaOf_eq. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+
+[claims.fixed_price_lean_theorem_b_affine_20260923]
+statement = "Theorem B, affine frontier (46)-(47): for C in (1/4,1/2) and beta = 1/S(C), the inequality Gamma_max >= beta G - delta M holds for every admissible pair iff delta >= tau(C)/S(C); hence delta(1/S(C)) = tau(C)/S(C) as the infimum of valid penalties, and every smaller penalty is refuted by a bounded hard pair."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/FrontierAffine.lean: gainMax, AffineValid, frontierDelta, affine_guarantee, hardPair_timeT_le (T_eta <= 2C/d^2, so M_eta >= 1-2C), theoremB_affine, frontierDelta_eq. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+
+[claims.fixed_price_lean_theorem_b_conditional_20260923]
+statement = "Theorem B, conditional guarantee (50)-(52): at kappa = kappa(C), the infimum of Gamma_max/G over admissible pairs with M>0 and G = kappa M is 1/(S(C)+u) = 1/(1 + C I(C)), with approaching pairs of exactly this ratio having bounded supports."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/FrontierConditional.lean: condRatioSet, condRatio, condRatio_lower, hardPair_timeT_ge (T_eta >= 2C/d^2 - 2eta/d^3), hardPair_condBounds, exists_seller_shift, theoremB_conditional (IsGLB), condRatio_eq. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Exact ratio G/M = kappa is reached differently from the paper: a hard pair at C' > C (so kappa(C') > kappa) with a seller atom above the buyer support, which never trades and lowers G/M to kappa while leaving Gamma_max/G unchanged; no continuity of the hard pairs in C is used."
+
+[claims.fixed_price_lean_theorem_b_shape_20260923]
+statement = "Theorem B, shape of the frontier and (53): delta is strictly increasing and strictly convex on (0,1), delta'(beta) = kappa(C(beta)) where S(C(beta)) = 1/beta, the derivative ranges over (0,inf), and kappa rho(kappa) = sup_{0<beta<1}(kappa beta - delta(beta)), attained at beta = 1/S(C)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/FrontierConvex.lean: curvatureOf, hasDerivAt_curvatureOf (inverse function), hasDerivAt_frontierDelta, frontierDelta_strictMonoOn, frontierDelta_strictConvexOn, frontierDelta_deriv_image, theoremB_conjugate (IsGreatest). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+
+[claims.fixed_price_lean_corollary_b_asymptotics_20260923]
+statement = "Corollary B' (55): delta(beta) ~ (e/8) beta e^{-2/beta} as beta -> 0+; delta(beta) ~ 1/(4(1-beta)) as beta -> 1-; rho(kappa) ~ 2/log(1/kappa) as kappa -> 0+; 1 - rho(kappa) ~ 1/sqrt(kappa) as kappa -> inf (asymptotic equivalence in Mathlib's sense)."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Asymptotics.lean: scalarI_le_left (I <= 4 + 2pi/sqrt(C-1/4) via an arctan primitive), tendsto_eps_mul_scalarI, tendsto_scalarI_div_endParameter, tendsto_curvatureOf_zero/one, curvatureOfKappa, tendsto_curvatureOfKappa_zero/top, frontierDelta_isEquivalent_zero, frontierDelta_isEquivalent_one, condRatio_isEquivalent_zero, condRatio_isEquivalent_top. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (3368 jobs), no sorry anywhere in FixedPrice/; lean_verify axioms propext, Classical.choice, Quot.sound only, source warnings empty."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+
+[claims.fixed_price_lean_theorem_d_general_20260923]
+statement = "Theorem D, general instance: the explicit rational two-unit instance (131 buyer and 131 seller types, independent finitely supported laws of strictly positive ordered vectors B1 >= B2 > 0, 0 < S1 <= S2, inclusive trade rule S_i <= z <= B_i per unit) satisfies (M2 + Gamma2(z))/O2 < 7290804/10^7 for every real price z, with a uniform gap, so the supremum over prices is strictly below 0.7290804."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/TheoremD.lean: FixedPrice.TwoUnit.theoremD_general; Model.lean: exists_event_ge (cover: the largest valuation event e <= z trades a superset of the units traded at z), welfare_le_of_check, validInstance_realize, opt2_pos_realize; Checks.lean: general_mean, general_opt, general_check (kernel check at all valuation events, about 4 minutes); data GeneralInstanceData.lean generated by gen_data.py from the saved exact instance. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds, no sorry in FixedPrice/TwoUnit; integer evaluations by decide +kernel (no native_decide); #print axioms propext, Classical.choice, Quot.sound only."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Covers the finite-instance claim of thm:two-separation. The chain 0.7290804 < 0.738024 < beta_* in the displayed consequence uses the interval enclosure of beta_*, which is outside Lean. r_2^* is not defined in Lean; the bound on r_2^* follows because this instance is admissible."
+
+[claims.fixed_price_lean_theorem_d_symmetric_20260923]
+statement = "Theorem D, symmetric instance: the explicit rational symmetric two-unit instance (buyer law equals the seller law with coordinates reversed) is a valid instance and satisfies (M2 + Gamma2(z))/O2 < 83693/10^5 for every real price z, with a uniform gap."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/TheoremD.lean: FixedPrice.TwoUnit.theoremD_symmetric (includes symmetricB = symmetricS with coordinates reversed); Checks.lean: symmetric_mean, symmetric_opt, symmetric_check, symmetric_reversed; Model.lean as for the general instance. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds, no sorry in FixedPrice/TwoUnit; integer evaluations by decide +kernel (no native_decide); #print axioms propext, Classical.choice, Quot.sound only."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Covers the symmetric-instance claim of thm:two-separation."
+
+[claims.fixed_price_lean_dsic_representation_20260923]
+statement = "Proposition 11.2, representation: let Lambda > 0 and (phi, pay) satisfy, on (0,Lambda), 0 <= phi <= 1, the buyer and seller dominant-strategy inequalities in expectation, and s phi <= pay <= b phi. Then there are F monotone on (0,Lambda) with values in [0,1] and a countable set E such that for every s in (0,Lambda) outside E and every b in (s,Lambda), phi(s,b) = F(b) - F(s) and pay(s,b) = b(F(b)-F(s)) - int_s^b (F(t)-F(s)) dt; and phi = pay = 0 for b < s."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Mechanism.lean: FixedPrice.DSICOn.representation (envelope identities A2-A4 via a sandwich FTC, rectangle identity (b'-s')R = int R - int R, contraction |R| <= 2 rho^n by subdivision, priceCDF F(b) = sup_s phi(s,b), seller part antitone, zero off the countable discontinuity set). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (8527 jobs), no sorry anywhere in FixedPrice/; #print axioms and lean_verify give propext, Classical.choice, Quot.sound only."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Elementary pointwise proof instead of the paper's distributional one; the exceptional set is countable in s (stronger than Lebesgue-a.e. in (s,b)). Expected-level IR s phi <= pay <= b phi is implied by the paper's realizationwise IR with strong budget balance, so the Lean class contains the paper's. No measurability of phi is assumed."
+
+[claims.fixed_price_lean_dsic_welfare_bound_20260923]
+statement = "Proposition 11.2, welfare bound: for Lambda > 0, every mechanism as in the representation and every joint probability prior mu on R^2 with mu << Lebesgue and mu-a.e. values in (0,Lambda)^2, E[s + (b-s) phi(s,b)] <= sup_z E[s + (b-s) 1{s <= z <= b}]."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/MechanismWelfare.lean: FixedPrice.DSICOn.mechWelfare_le (monotone extension G of F, layer cake G(b)-G(s) = int_0^1 1{G(s) < u <= G(b)} du, Fubini via integral_integral_swap, posted price z(u) = inf {x : u <= G x}); definitions in JointWelfare.lean. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (8527 jobs), no sorry anywhere in FixedPrice/; #print axioms and lean_verify give propext, Classical.choice, Quot.sound only."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Holds for arbitrary (not necessarily independent) absolutely continuous joint priors, and without measurability of phi (the welfare integrand is a.e. equal to a measurable function)."
+
+[claims.fixed_price_lean_smoothing_20260923]
+statement = "Lemma 11.1 (smoothing), epsilon-delta form: for Lambda > 0, probability laws mu_s, mu_b a.e. in [0,Lambda] and eta > 0, there are probability laws mu_s', mu_b', absolutely continuous and a.e. in (0,Lambda), with |E max(S',B') - (M+G)| <= eta under independence and, at every real price z, posted-price welfare of (mu_s' x mu_b') at most M + sup_{z >= 0} Gamma(z) + eta."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/Smoothing.lean: FixedPrice.lemma_smoothing (smoothLaw = law of (1-2e)V + e Lambda + e Lambda U, U uniform on [-1/2,1/2]; uniform_window proves a uniform window-gain bound by compactness and dominated convergence; jointPriceWelfare_smooth_le, abs_firstBest_smooth_sub). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (8527 jobs), no sorry anywhere in FixedPrice/; #print axioms and lean_verify give propext, Classical.choice, Quot.sound only."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "Omits the paper's extra uniform mixture, so full support on (0,Lambda) is not claimed; the support is a.e. inside (0,Lambda), which is all Proposition 11.2 needs. The limsup statement is replaced by the equivalent epsilon-delta form, and the proof avoids reverse Fatou. Drafted by a Claude subagent, reviewed and integrated by the coordinating session."
+
+[claims.fixed_price_lean_corollary_dsic_20260923]
+statement = "Corollary 11.3: at the root C_* with beta_* = 1/S(C_*), (i) on every admissible pair some posted price z >= 0, a measurable DSIC mechanism on the nonnegative reports, has welfare > beta_* E max(V_s,V_b); (ii) for every eps > 0 there are Lambda > 0 and an admissible, absolutely continuous pair a.e. in (0,Lambda) on which every mechanism that is DSIC with s phi <= pay <= b phi on (0,Lambda) has welfare < (beta_* + eps) E max(V_s,V_b); (iii) the infimum over admissible pairs of the best ratio of measurable DSIC mechanisms on the nonnegative reports is beta_* (IsGLB), not attained."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/DSICClass.lean: DSICNonneg, DSICNonneg.restrict, fixedPrice_dsic, firstBest_prod, mechWelfare_fixedPrice, dsic_guarantee; CorollaryDSIC.lean: dsic_ceiling (hard pair of Theorem A, Lemma 11.1, Proposition 11.2), mechWelfare_le_firstBest, dsicRatio, corollary_dsic. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build of the whole project succeeds (8527 jobs), no sorry anywhere in FixedPrice/; #print axioms and lean_verify give propext, Classical.choice, Quot.sound only."
+date = "2026-09-23"
+paper = "fixed-price bilateral trade"
+note = "The mechanism class uses expected-level IR (implied by the paper's realizationwise IR with strong budget balance), so the ceiling applies to a superset of the paper's class. The decimal value of beta_* is outside Lean."
+
+[claims.fixed_price_lean_theorem_e_20260926]
+statement = "Theorem E (thm:two-pricing), parts (i)-(iv), in Lean, for every ordered buyer pair on [0,bbar] and d>0, each part assuming the structure PricingScalarCertificates of machine-certified scalar facts: (i) for each compensation theta in V the least mass is a bounded fixed point of T_{d,theta} on [0,bbar], the only bounded one, feasible and pointwise least among feasible cumulative masses; T_{d,theta} is a bbar/(1+bbar)-contraction on bounded Borel functions, and the iterates from zero converge uniformly with error at most (bbar/(1+bbar))^n varpi(0); (ii) varpi_{d,theta}(0) is jointly convex in (d,theta) on {d>0} x V, and J_d^(2) = min over V of varpi_{d,theta}(0) is attained; (iii) for 0<beta<1 there is a price probability with bounded support satisfying eq:two-price-target iff beta J_d^(2) <= 1, the price built from an optimal compensation (body -beta dvarpi, tail density beta d on (bbar, bbar+varpi(bbar)/d)) is such a price, and at d=(1-beta)/beta a price satisfying the target has welfare at least beta times normalized efficient welfare against every bounded ordered seller law independent of the buyers; (iv) J_d^(2)(H1,H2) <= J_d^(2)(H1^delta,H2^delta)+delta, the rounded bodies are ordered with finite support, J_d^(2) does not depend on the chosen bbar, and the supremum of J_d^(2) over bounded ordered pairs equals the supremum over finite-support pairs. Also the text claims of sec:two-pricing rendered in Pricing/Statements.lean."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Pricing/: Operator.lean theoremE_part_i_proof and 14 text-claim exports; Attainment.lean theoremE_part_ii_proof, pricingValue_isLeast_proof; PriceTarget.lean theoremE_part_iii_proof, theoremE_part_iii_welfare_proof, realizedPrice_spec_proof; Rounding.lean theoremE_part_iv_proof, theoremE_part_iv_sup_proof, roundedLaw_spec_proof, pricingValue_eq_of_bound_le_proof (28 exports); statements frozen in Pricing/Statements.lean and Pricing/Defs.lean. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Conditional credential: the exports take cert : PricingScalarCertificates, whose fields are the machine-certified scalar facts of ledger fpm_20260921_pricing_obstacle_new_exact (exact), fpm_20260921_pricing_scalar_new_smt (z3, cvc5) and fpm_20260921_buyer_rounding_pointwise_smt (z3, cvc5); the welfare sentence of (iii) and the rounded-law facts need none. By the user's rule the fields are not re-proved in Lean and no later Lean proof should replace them. The Lean statements follow the current TeX (existential form of (iii), after dba3021f); the factgraph copies of T_two_pricing and D_two_pricing predate that commit and were not refreshed. Free-class gaps found while formalizing, reported and not repaired in the TeX: G1 independence of bbar never stated (rendered as PricingValueEqOfBoundLeStatement), G2 the welfare sentence of (iii) has no argument, G3 the rounded bodies are again ordered with finite support, G4 compressed Helly argument, G5 'bounded' should read 'bounded Borel'. R1 (remark after thm:two-pricing) is not rendered; its strong reading is unsupported. Formalized by Claude Code (coordinating session and subagents); blueprint lean/blueprints/theoremE.md."
+
+[claims.fixed_price_lean_finite_nodes_20260926]
+statement = "The finite-node recurrence of app:two-recurrence in Lean, for finitely supported ordered buyer bodies on nodes v_0<...<v_n: eq:two-backward (last node and backward step); for nondecreasing node compensations and d>0 the backward solution is the least solution of the node inequalities, assuming NodeScalarCertificates; the node value is convex and a maximum of finitely many affine functions of (d, theta_0..theta_n), assuming NodeScalarCertificates; the step mass equals varpi_j on [v_j, v_{j+1}), and the price body has atom varpi_{j-1}-varpi_j at v_j and cumulative mass equal to the step mass; on each open cell between consecutive nodes the seller potential has derivative d + H_i(s) - sum_{l>j} (varpi_{l-1}-varpi_l) Pr(Z_i >= v_l) >= d - H_i(s)(varpi_0 - 1), nonnegative at the budget varpi_0 <= 1+d; at each node the left limit exceeds the value by (varpi_{j-1}-varpi_j) Lbar_i(v_j); and every node solution within the budget has nonnegative ordered potential sums for all real 0 <= s1 <= s2, assuming PricingScalarCertificates and NodeScalarCertificates."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Pricing/FiniteNodesProofs.lean: nodeMass_last_proof, nodeMass_backward_proof, nodeMass_isLeastSolution_proof, nodeValue_convex_piecewiseAffine_proof, stepMass_eq_on_cell_proof, priceBody_spec_proof, sellerPotential_hasDerivAt_between_nodes_proof, sellerPotential_jump_at_node_proof, nodeSolution_orderedSum_nonneg_proof (9 exports; statements in Pricing/FiniteNodes.lean; helpers FiniteNodesBasic, FiniteNodesAffine, FiniteNodesCover). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Conditional credential as stated: NodeScalarCertificates fields are ledger fpm_20260921_finite_node_max_steps_smt (z3, cvc5) and fpm_20260921_finite_node_max_convexity_exact (exact); PricingScalarCertificates as in claims.fixed_price_lean_theorem_e_20260926. Free-class gaps: G6 (the bound of the integral of Pr(Z_i >= z) against pihat_0 on (s,bbar] by H_i(s) varpi_0 is implicit), G7 (at a node with buyer mass and no price atom the displayed derivative is only the right derivative; the Lean statement renders it on the open cells between consecutive nodes). Formalized by Claude Code."
+
+[claims.fixed_price_lean_2fam_shape_20260926]
+statement = "lem:2fam-shape in Lean, with no hypotheses: for 0<beta<1 and parameters (t,p,xi0) whose class is nonempty, E_f has a minimizer in the class; any two minimizers agree on [c_f, xi0]; every minimizer is entirely affine or three-arc (initial contact on xi+delta_f over [c_f, xi_l], final contact on h_f xi+e_f over [xi_r, xi0], smooth fit at interior contacts, C^2 on (xi_l, xi_r) with P''+C P/xi^2=0 and d_f = xi P'^2 - P P' + C P^2/xi for a constant C>0, strictly concave on [xi_l, xi_r]); and if c_f=0, every three-arc decomposition of a non-affine minimizer has xi_l>0."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Family/Shape.lean: shape_holds (lem_2fam_shape_proof delegates to it; Final.lean lem_2fam_shape); helper files ShapeSpace, ShapeExist, ShapeClass, ShapeVar, ShapeTrap, ShapeTwoPoint, ShapeGood, ShapeLower, ShapeArc, ShapeODE, ShapeComp, ShapeFit, ShapeGlobal (about 3,200 lines). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Unconditional: the proof uses no certified field. Route: the relaxed obstacle problem for w = sqrt(xi)(log P)' in L^2(c_f, xi0] (uniformly convex, unique minimizer, one argument for c_f=0 and c_f>0); trapezoid variations at Lebesgue points make omega + dF monotone (omega = xi z', F = int e^{-2z}); the lower obstacle log p_f is never active inside; on a free stretch C = omega - omega^2 + d xi e^{-2z} is constant and the endpoint comparisons give 0<omega<1, hence C>0; strict concavity forbids leaving and returning to one line, so there is one free stretch; smooth fit; no contact through a corner of U_f. The TeX's global comparison eq:2fam-gap is not needed. TeX findings, all compressions: existence for c_f=0 and the variational inequality eq:2fam-multiplier are sketched; 'feasible' is undefined (family gap 7). Formalized by Claude Code (coordinating session)."
+
+[claims.fixed_price_lean_2fam_realization_20260926]
+statement = "lem:2fam-realization in Lean, assuming FamilyIdentities: every class member P is the limit of valid ordered two-unit instances (strictly positive, finite-mean, independent buyer and seller vectors) with a common escaping buyer atom, whose laws converge weakly to the body laws of P (common-quantile construction) and whose seller welfare, efficient gains, best price gain and best ratio converge to M_f, G_f, 2 and R_f."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Family/Realization.lean: realization_escaping_proof (Final.lean lem_2fam_realization); helper files RealizationDeriv, RealizationQuantile, RealizationIntegrals, RealizationPhi, RealizationInstance, RealizationLimits (2722 lines). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Conditional on FamilyIdentities (52 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_inverse_endpoint_algebra_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_shifted_clock_algebra_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_d1_price_regions, fpm_repair_20260921_d4_ratio_comparison_algebra, fpm_repair_20260921_d4_ratio_minimum_comparison, fpm_repair_20260921_endpoint, fpm_repair_20260921_outer_boundary, fpm_repair_20260921_shifted, fpm_repair_20260921_stationary_reverse_construction_algebra, fpm_repair_20260921_stationary_reconstruction_replay) as stated; the proof uses initial_seller_atom, area_derivative_in_price, gain_density, low_price_balance and first_unit_equalizer. Each field is documented with its TeX location and receipt in lean/FixedPrice/TwoUnit/Family/Certificates.lean; by the user's rule the fields are not re-proved in Lean and no later Lean proof should replace them. Construction: x_n = b_f+3+n, eta_n = 1/x_n, buyer law (1-eta_n) law(Z1+eta_n, a_f+eta_n) + eta_n delta_(x_n,x_n), seller law law(Y1+2eta_n, Y2+2eta_n). Every price gain is at most Phi(w) <= 2 in the unshifted coordinate, so the six realization_* price-region fields are not used and the second-unit bound once flagged by the Rethlas audit of P_two_family_realization is bypassed. Free gap: the common-quantile laws follow eq:2fam-laws only because P'_+ is antitone and right-continuous (proved in RealizationDeriv). Formalized by a Claude subagent, verified and integrated by the coordinating session."
+
+[claims.fixed_price_lean_2fam_compact_20260926]
+statement = "lem:2fam-compact in Lean, assuming FamilyNumerics and FamilyIdentities: for 0<beta<=3/4, every class curve with R_f<beta has 1/32<m_f<3/4, xi0<600 and p_f<1; and if K_f takes a positive value, a global maximizer of K_f with K_f>0 exists in that region."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Family/Compactness.lean lem_2fam_compact_proof; CompactnessBounds, CompactnessAttain, SeqCompactExt, SeqCompactDeriv, SeqCompactLimit, Basic, BasicClass, BasicFTC; Final.lean lem_2fam_compact. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Conditional on FamilyNumerics (10 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_polygon_finite_upper_20260913, fp_ext_k2_stationary_branch_arb_20260913, fp_ext_k2_stationary_branch_uniform_arb_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_stationary_physical_cartesian_arb, replay fp_supplement_independent_replay_20260921) and FamilyIdentities (52 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_inverse_endpoint_algebra_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_shifted_clock_algebra_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_d1_price_regions, fpm_repair_20260921_d4_ratio_comparison_algebra, fpm_repair_20260921_d4_ratio_minimum_comparison, fpm_repair_20260921_endpoint, fpm_repair_20260921_outer_boundary, fpm_repair_20260921_shifted, fpm_repair_20260921_stationary_reverse_construction_algebra, fpm_repair_20260921_stationary_reconstruction_replay) as stated. Each field is documented with its TeX location and receipt in lean/FixedPrice/TwoUnit/Family/Certificates.lean; by the user's rule the fields are not re-proved in Lean and no later Lean proof should replace them. The monotonicity of the small-mass bound on (0,1/32], which ledger fp_ext_k2_outer_boundary_algebra_20260913 asserts but its script does not check, is proved in Lean (small_mass_mono_proof). Attainment uses sequential compactness of concave Lipschitz curves with moving endpoints (Arzela-Ascoli by extraction, a.e. convergence of derivatives, moving-endpoint dominated convergence). Formalized by Claude Code."
+
+[claims.fixed_price_lean_2fam_boundary_20260926]
+statement = "lem:2fam-boundary in Lean, assuming FamilyNumerics and FamilyIdentities: for beta in [18227/25000, 729081/10^6], at a positive global maximum of K_f or at a global minimum of R_f with value beta, t_f<p_f<1, the curve is three-arc with c_f<xi_l and xi_r<xi0, and the three expressions of eq:2fam-stationarity vanish at the contact data P_l = xi_l+delta_f, P_r = h_f xi_r+e_f."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Family/Boundary.lean lem_2fam_boundary_proof; BoundaryBasic, BoundaryVarGlue, BoundaryVarComp, BoundaryVarArc, BoundaryVarCases (namespace PkgC); Final.lean lem_2fam_boundary. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Conditional on FamilyNumerics (10 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_polygon_finite_upper_20260913, fp_ext_k2_stationary_branch_arb_20260913, fp_ext_k2_stationary_branch_uniform_arb_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_stationary_physical_cartesian_arb, replay fp_supplement_independent_replay_20260921) and FamilyIdentities (52 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_inverse_endpoint_algebra_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_shifted_clock_algebra_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_d1_price_regions, fpm_repair_20260921_d4_ratio_comparison_algebra, fpm_repair_20260921_d4_ratio_minimum_comparison, fpm_repair_20260921_endpoint, fpm_repair_20260921_outer_boundary, fpm_repair_20260921_shifted, fpm_repair_20260921_stationary_reverse_construction_algebra, fpm_repair_20260921_stationary_reconstruction_replay) as stated; the proof uses affine_left, affine_right, euler_from_first_integral, left_variation, right_variation and envelope_p/t/h. Each field is documented with its TeX location and receipt in lean/FixedPrice/TwoUnit/Family/Certificates.lean; by the user's rule the fields are not re-proved in Lean and no later Lean proof should replace them. The route differs from the TeX: explicit competitors P + s times a cubic Hermite bump continued by its tangent lines replace the blending inside the free interval; feasibility, concavity, differentiation under the integral, the one-sided limits at the contacts and the boundary term are proved, and H_L=1 needs no special case. The ratio-minimizer case reduces to the maximizer case; p_f<1 comes from lem:2fam-compact at 3/4; entirely affine curves are excluded by the certified R_f >= 73/100 against beta_hi = 0.729081 (margin 0.000919). t_f<p_f must be proved before the two-sided p- and t-variations. 'Derivatives vanish' means one-sided derivatives along the constructed variations (family gap 8). Formalized by a Claude subagent, verified and integrated by the coordinating session."
+
+[claims.fixed_price_lean_2fam_domain_20260926]
+statement = "lem:2fam-domain in Lean, assuming FamilyNumerics and FamilyIdentities: for 37/100 <= d <= 3/8 every physical stationary point has 1/5 < t_f < 421/1000, and for every d>0 the algebraic residual has positive p-derivative on 0<t<p<1."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Family/Domain.lean lem_2fam_domain_proof, DomainCalc; Final.lean lem_2fam_domain. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Conditional on FamilyNumerics (10 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_polygon_finite_upper_20260913, fp_ext_k2_stationary_branch_arb_20260913, fp_ext_k2_stationary_branch_uniform_arb_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_stationary_physical_cartesian_arb, replay fp_supplement_independent_replay_20260921) and FamilyIdentities (52 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_inverse_endpoint_algebra_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_shifted_clock_algebra_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_d1_price_regions, fpm_repair_20260921_d4_ratio_comparison_algebra, fpm_repair_20260921_d4_ratio_minimum_comparison, fpm_repair_20260921_endpoint, fpm_repair_20260921_outer_boundary, fpm_repair_20260921_shifted, fpm_repair_20260921_stationary_reverse_construction_algebra, fpm_repair_20260921_stationary_reconstruction_replay) as stated. Each field is documented with its TeX location and receipt in lean/FixedPrice/TwoUnit/Family/Certificates.lean; by the user's rule the fields are not re-proved in Lean and no later Lean proof should replace them. The second claim is stated for every d>0 (family gap 10). The deduction that ledger fp_ext_k2_branch_positive_factors_20260913 asserts but its script does not check (sign case split, monotone-factor bounds, combination of the constants, identification of the implicit derivative) is proved here in Lean from the branch_* identities and branch_positive_constants; the derivative identification goes through the inverse-function rule. Formalized by a Claude subagent, verified and integrated by the coordinating session."
+
+[claims.fixed_price_lean_2fam_cover_20260926]
+statement = "lem:2fam-cover in Lean, assuming FamilyNumerics and FamilyIdentities: for every beta in [18227/25000, 729081/10^6] the eliminated system eq:2fam-algebraic, eq:2fam-connection has exactly one physical stationary point, and at beta = 18227/25000 every three-arc class curve built from it has beta G_f - (1-beta) M_f - 2 < 0."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Family/Stationary.lean, StationaryAlg, StationaryArc, StationaryReduction, Reconstruction, ReconstructionCurve (quadratures, stationary reduction with the connection equation, cover at-most-one, reconstruction); Final.lean cover_atMostOne, lem_2fam_cover. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Conditional on FamilyNumerics (10 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_polygon_finite_upper_20260913, fp_ext_k2_stationary_branch_arb_20260913, fp_ext_k2_stationary_branch_uniform_arb_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_stationary_physical_cartesian_arb, replay fp_supplement_independent_replay_20260921) and FamilyIdentities (52 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_inverse_endpoint_algebra_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_shifted_clock_algebra_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_d1_price_regions, fpm_repair_20260921_d4_ratio_comparison_algebra, fpm_repair_20260921_d4_ratio_minimum_comparison, fpm_repair_20260921_endpoint, fpm_repair_20260921_outer_boundary, fpm_repair_20260921_shifted, fpm_repair_20260921_stationary_reverse_construction_algebra, fpm_repair_20260921_stationary_reconstruction_replay) as stated. Each field is documented with its TeX location and receipt in lean/FixedPrice/TwoUnit/Family/Certificates.lean; by the user's rule the fields are not re-proved in Lean and no later Lean proof should replace them. Family gap G9 (the TeX never derives eq:2fam-connection for an interior stationary curve nor q_r<v_f) closes at no cost and is isolated as ReductionStatement. connI_eq_connJ_proof takes no hI, so the completed square is re-derived by ring. Certified fields not used: reconstructed_logP_q, reconstructed_P_xi, reconstructed_P_xixi, p_stationarity, and the PhysicalMargins fields qR_lt_v, Pl_lt_Pr, Pr_lt_one. Formalized by a Claude subagent, verified and integrated by the coordinating session."
+
+[claims.fixed_price_lean_2fam_witness_20260926]
+statement = "lem:2fam-witness in Lean, assuming FamilyNumerics: the class contains a rational concave polygon at rational parameters with R_f < 729081/10^6."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Family/Witness.lean, WitnessPoly (polygon_curve_proof, lem_2fam_witness_of); Final.lean lem_2fam_witness. Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Conditional on FamilyNumerics (10 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_polygon_finite_upper_20260913, fp_ext_k2_stationary_branch_arb_20260913, fp_ext_k2_stationary_branch_uniform_arb_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_stationary_physical_cartesian_arb, replay fp_supplement_independent_replay_20260921) as stated; the value comes from the field polygon_witness (ledger fp_ext_k2_polygon_finite_upper_20260913). The Lean part proves that the certified polygon data define a class member with that ratio. Formalized by a Claude subagent, verified and integrated by the coordinating session."
+
+[claims.fixed_price_lean_2fam_optimum_20260926]
+statement = "prop:2fam-optimum in Lean, assuming FamilyNumerics and FamilyIdentities: r_fam = inf over the class of R_f is attained at a unique parameter triple and curve (unique on [c_f, xi0]); the curve has a positive initial affine contact, one strictly concave C^2 interval with P''+C P/xi^2=0 for a constant C>0, and a positive final affine contact; the minimizing body laws are approached by valid ordered instances with a common escaping buyer atom whose laws converge weakly and whose seller welfare, efficient gains, best gain and best ratio converge to M_f, G_f, 2 and r_fam; the infimum over the subclass with endpoint slopes 1 and h_f equals r_fam; and 18227/25000 < r_fam < 729081/10^6. Also self-consistency: for beta in [18227/25000, 729081/10^6], a physical stationary point whose three-arc curve has K_f=0 gives a global minimizer of R_f and beta = r_fam; and the finite two-unit model is the special case ofFinite of the general model."
+verified = ["lean"]
+evidence = "research_ideas/probes/fixed_price/lean/FixedPrice/TwoUnit/Family/Final.lean: prop_2fam_optimum, self_consistency, ofFinite_spec; Assembly.lean (prop_2fam_optimum_of_proof, self_consistency_of_proof), AssemblyBasic, OfFinite, OfFiniteBasic; all six work packages (blueprint lean/blueprints/family.md). Lean 4.30.0; mathlib c5ea00351c28e24afc9f0f84379aa41082b1188f; lake build FixedPrice (whole library, 8605 jobs) succeeds with no sorry in FixedPrice/; #print axioms gives propext, Classical.choice, Quot.sound only."
+date = "2026-09-26"
+paper = "fixed-price bilateral trade"
+note = "Conditional on FamilyNumerics (10 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_polygon_finite_upper_20260913, fp_ext_k2_stationary_branch_arb_20260913, fp_ext_k2_stationary_branch_uniform_arb_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_stationary_physical_cartesian_arb, replay fp_supplement_independent_replay_20260921) and FamilyIdentities (52 fields; ledger fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_inverse_endpoint_algebra_20260913, fp_ext_k2_outer_boundary_algebra_20260913, fp_ext_k2_shifted_clock_algebra_20260913, fp_ext_k2_straight_boundaries_073_20260913, fpm_repair_20260921_d1_price_regions, fpm_repair_20260921_d4_ratio_comparison_algebra, fpm_repair_20260921_d4_ratio_minimum_comparison, fpm_repair_20260921_endpoint, fpm_repair_20260921_outer_boundary, fpm_repair_20260921_shifted, fpm_repair_20260921_stationary_reverse_construction_algebra, fpm_repair_20260921_stationary_reconstruction_replay). Each field is documented with its TeX location and receipt in lean/FixedPrice/TwoUnit/Family/Certificates.lean; by the user's rule the fields are not re-proved in Lean and no later Lean proof should replace them. Two ledger statements claim more than their scripts check (fp_ext_k2_branch_positive_factors_20260913, fp_ext_k2_outer_boundary_algebra_20260913); the fields follow the scripts, and the unchecked deductions are proved in Lean (lem:2fam-domain, small-mass monotonicity). Whether to narrow those ledger statements is the user's decision. Formalized by Claude Code (coordinating session and subagents)."

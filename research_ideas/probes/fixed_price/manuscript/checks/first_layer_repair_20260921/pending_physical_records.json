@@ -1,0 +1,24 @@
+[
+  {
+    "key": "fpm_repair_20260921_stationary_physical_cartesian_arb",
+    "statement": "On the entire exact rational Cartesian root hull saved in manuscript/supplement/stationary_uniform_cover.json, the recovery formulas satisfy 0<t<p<1, C>1/4, c<xi_l<xi_r<xi_0, 0<q_r<q_l<1, 0<h<1 and 0<q_r<v. Hence D(u)=(u-1/2)^2+C-1/4 is positive for every real u.",
+    "verified": [
+      "arb"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/physical_conditions.json",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript",
+    "note": "One full Cartesian box at 256-bit Arb, not point samples. The inherited stationary root cover is not rerun. Formula-to-curve realization remains an analytic argument. Actual status proved."
+  },
+  {
+    "key": "fpm_repair_20260921_stationary_reverse_construction_algebra",
+    "statement": "The nine saved local identities have zero exact symbolic residual: D complete square; reconstructed (log P)_q, P_xi and P_xixi; D(q_l)=d*xi_l/P_l^2; xi_r=P_r^2*D(q_r)/d; the h-stationarity factor; the t-stationarity reduction modulo v^2*D(q_r)-C*q_r^2; and p-stationarity from the definition of P_l.",
+    "verified": [
+      "sympy"
+    ],
+    "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_repair_20260921/physical_conditions.json",
+    "date": "2026-09-21",
+    "paper": "fixed-price bilateral trade manuscript",
+    "note": "Conditional local algebra, with all denominator and stationary premises retained in the receipt. Does not certify global existence, gluing, or optimization."
+  }
+]

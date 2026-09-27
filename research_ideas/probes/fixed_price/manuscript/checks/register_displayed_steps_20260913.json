@@ -1,0 +1,14 @@
+{
+  "scope": "Displayed endpoint algebra and the local first-variation normalization only.",
+  "residuals": {
+    "implicit_endpoint_derivative": "0",
+    "primitive_r_over_D": "0",
+    "primitive_r_squared_over_D": "0",
+    "U_from_two_primitives": "0",
+    "total_D_derivative": "0",
+    "first_variation_multiplier_2Q": "0"
+  },
+  "all_zero": true,
+  "tex_sha256": "f9a68398d0ab71f5d6a4ffef290a8394405431269a3a70f0de258218f62bcd4c",
+  "script_sha256": "8091706ac46bff316e0d3010b07c3653989dc60a2a2b57d802269f53097f6fb6"
+}

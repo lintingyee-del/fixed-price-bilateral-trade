@@ -1,0 +1,32 @@
+{
+ "scope": "Intermediate formulas added to Lemmas 6.1, 7.1 and Corollary B' on 2026-09-18; SymPy exact identities plus mpmath 30-digit checks of the three-piece energy at four parameter points.",
+ "results": {
+  "d/dr r/D": true,
+  "d/dr r^2/D": true,
+  "2U = Y^2/D + (2CY-1)Z": true,
+  "total derivative of D equals common form": true,
+  "Y D (Y+U) equals common form": true,
+  "1-D = Y(1-CY)": true,
+  "x/Pe = 1-CY": true,
+  "line: 1/x - 1/Pe = CD/(1-CY)": true,
+  "Phi closed form": true,
+  "(28) derivative": true,
+  "C r^2 = D - 1 + r": true,
+  "2C(1-r) = (2C-1) - D'": true,
+  "dPhi/dC = -(Y+U)B/q^2 (as identity in C,Y,Z)": true,
+  "Z-coefficient, polynomial form": true,
+  "Z-coefficient, product form": true,
+  "remainder = -Y(2D+Y)B/(2Dq^2)": true,
+  "D - (1-CY)^2 = Y B": true,
+  "1/x^2 - (1+x)/Pe^2 = D B/(Y q^2)": true,
+  "dPhi/dC = dPhi/dx * x'": true,
+  "multiplier prediction": true,
+  "I/2 from S=1/beta": true,
+  "1/(2 beta C) split": true,
+  "numeric Phi C=0.3 Y=0.8": true,
+  "numeric Phi C=0.39 Y=0.9": true,
+  "numeric Phi C=0.2 Y=0.6": true,
+  "numeric Phi C=0.7 Y=1.1": true
+ },
+ "all_ok": true
+}

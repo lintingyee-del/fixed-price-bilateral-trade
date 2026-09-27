@@ -1,0 +1,739 @@
+{
+  "date": "2026-09-21",
+  "statement": "For all real x0,x1,x2,y0,y1,y2 and 0<=a<=1, max_k(a*xk+(1-a)*yk) <= a*max_k(xk)+(1-a)*max_k(yk). All 27 triples of active endpoint/mixed maxima have the exact nonnegative decomposition a*(xi-xk)+(1-a)*(yj-yk), with zero polynomial residual. Ties belong to one or more covered branches.",
+  "scope": "Universal scalar max-convexity component of eq:two-backward; the induction in the number of nodes remains analytic.",
+  "previous_run": "results.json:three_way_max_convexity (Z3 unsat, cvc5 unknown)",
+  "branches": [
+    {
+      "active_indices": [
+        0,
+        0,
+        0
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x0-x0>=0",
+        "x0-x1>=0",
+        "x0-x2>=0",
+        "y0-y0>=0",
+        "y0-y1>=0",
+        "y0-y2>=0",
+        "z0-z0>=0",
+        "z0-z1>=0",
+        "z0-z2>=0"
+      ],
+      "target": "0",
+      "nonnegative_product_terms": [
+        "0",
+        "0"
+      ],
+      "decomposition": "0",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        0,
+        0,
+        1
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x0-x0>=0",
+        "x0-x1>=0",
+        "x0-x2>=0",
+        "y0-y0>=0",
+        "y0-y1>=0",
+        "y0-y2>=0",
+        "z1-z0>=0",
+        "z1-z1>=0",
+        "z1-z2>=0"
+      ],
+      "target": "a*x0 - a*x1 + y0*(1 - a) - y1*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(x0 - x1)",
+        "(1 - a)*(y0 - y1)"
+      ],
+      "decomposition": "a*(x0 - x1) + (1 - a)*(y0 - y1)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        0,
+        0,
+        2
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x0-x0>=0",
+        "x0-x1>=0",
+        "x0-x2>=0",
+        "y0-y0>=0",
+        "y0-y1>=0",
+        "y0-y2>=0",
+        "z2-z0>=0",
+        "z2-z1>=0",
+        "z2-z2>=0"
+      ],
+      "target": "a*x0 - a*x2 + y0*(1 - a) - y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(x0 - x2)",
+        "(1 - a)*(y0 - y2)"
+      ],
+      "decomposition": "a*(x0 - x2) + (1 - a)*(y0 - y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        0,
+        1,
+        0
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x0-x0>=0",
+        "x0-x1>=0",
+        "x0-x2>=0",
+        "y1-y0>=0",
+        "y1-y1>=0",
+        "y1-y2>=0",
+        "z0-z0>=0",
+        "z0-z1>=0",
+        "z0-z2>=0"
+      ],
+      "target": "-y0*(1 - a) + y1*(1 - a)",
+      "nonnegative_product_terms": [
+        "0",
+        "(1 - a)*(-y0 + y1)"
+      ],
+      "decomposition": "(1 - a)*(-y0 + y1)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        0,
+        1,
+        1
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x0-x0>=0",
+        "x0-x1>=0",
+        "x0-x2>=0",
+        "y1-y0>=0",
+        "y1-y1>=0",
+        "y1-y2>=0",
+        "z1-z0>=0",
+        "z1-z1>=0",
+        "z1-z2>=0"
+      ],
+      "target": "a*x0 - a*x1",
+      "nonnegative_product_terms": [
+        "a*(x0 - x1)",
+        "0"
+      ],
+      "decomposition": "a*(x0 - x1)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        0,
+        1,
+        2
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x0-x0>=0",
+        "x0-x1>=0",
+        "x0-x2>=0",
+        "y1-y0>=0",
+        "y1-y1>=0",
+        "y1-y2>=0",
+        "z2-z0>=0",
+        "z2-z1>=0",
+        "z2-z2>=0"
+      ],
+      "target": "a*x0 - a*x2 + y1*(1 - a) - y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(x0 - x2)",
+        "(1 - a)*(y1 - y2)"
+      ],
+      "decomposition": "a*(x0 - x2) + (1 - a)*(y1 - y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        0,
+        2,
+        0
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x0-x0>=0",
+        "x0-x1>=0",
+        "x0-x2>=0",
+        "y2-y0>=0",
+        "y2-y1>=0",
+        "y2-y2>=0",
+        "z0-z0>=0",
+        "z0-z1>=0",
+        "z0-z2>=0"
+      ],
+      "target": "-y0*(1 - a) + y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "0",
+        "(1 - a)*(-y0 + y2)"
+      ],
+      "decomposition": "(1 - a)*(-y0 + y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        0,
+        2,
+        1
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x0-x0>=0",
+        "x0-x1>=0",
+        "x0-x2>=0",
+        "y2-y0>=0",
+        "y2-y1>=0",
+        "y2-y2>=0",
+        "z1-z0>=0",
+        "z1-z1>=0",
+        "z1-z2>=0"
+      ],
+      "target": "a*x0 - a*x1 - y1*(1 - a) + y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(x0 - x1)",
+        "(1 - a)*(-y1 + y2)"
+      ],
+      "decomposition": "a*(x0 - x1) + (1 - a)*(-y1 + y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        0,
+        2,
+        2
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x0-x0>=0",
+        "x0-x1>=0",
+        "x0-x2>=0",
+        "y2-y0>=0",
+        "y2-y1>=0",
+        "y2-y2>=0",
+        "z2-z0>=0",
+        "z2-z1>=0",
+        "z2-z2>=0"
+      ],
+      "target": "a*x0 - a*x2",
+      "nonnegative_product_terms": [
+        "a*(x0 - x2)",
+        "0"
+      ],
+      "decomposition": "a*(x0 - x2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        1,
+        0,
+        0
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x1-x0>=0",
+        "x1-x1>=0",
+        "x1-x2>=0",
+        "y0-y0>=0",
+        "y0-y1>=0",
+        "y0-y2>=0",
+        "z0-z0>=0",
+        "z0-z1>=0",
+        "z0-z2>=0"
+      ],
+      "target": "-a*x0 + a*x1",
+      "nonnegative_product_terms": [
+        "a*(-x0 + x1)",
+        "0"
+      ],
+      "decomposition": "a*(-x0 + x1)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        1,
+        0,
+        1
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x1-x0>=0",
+        "x1-x1>=0",
+        "x1-x2>=0",
+        "y0-y0>=0",
+        "y0-y1>=0",
+        "y0-y2>=0",
+        "z1-z0>=0",
+        "z1-z1>=0",
+        "z1-z2>=0"
+      ],
+      "target": "y0*(1 - a) - y1*(1 - a)",
+      "nonnegative_product_terms": [
+        "0",
+        "(1 - a)*(y0 - y1)"
+      ],
+      "decomposition": "(1 - a)*(y0 - y1)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        1,
+        0,
+        2
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x1-x0>=0",
+        "x1-x1>=0",
+        "x1-x2>=0",
+        "y0-y0>=0",
+        "y0-y1>=0",
+        "y0-y2>=0",
+        "z2-z0>=0",
+        "z2-z1>=0",
+        "z2-z2>=0"
+      ],
+      "target": "a*x1 - a*x2 + y0*(1 - a) - y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(x1 - x2)",
+        "(1 - a)*(y0 - y2)"
+      ],
+      "decomposition": "a*(x1 - x2) + (1 - a)*(y0 - y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        1,
+        1,
+        0
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x1-x0>=0",
+        "x1-x1>=0",
+        "x1-x2>=0",
+        "y1-y0>=0",
+        "y1-y1>=0",
+        "y1-y2>=0",
+        "z0-z0>=0",
+        "z0-z1>=0",
+        "z0-z2>=0"
+      ],
+      "target": "-a*x0 + a*x1 - y0*(1 - a) + y1*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(-x0 + x1)",
+        "(1 - a)*(-y0 + y1)"
+      ],
+      "decomposition": "a*(-x0 + x1) + (1 - a)*(-y0 + y1)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        1,
+        1,
+        1
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x1-x0>=0",
+        "x1-x1>=0",
+        "x1-x2>=0",
+        "y1-y0>=0",
+        "y1-y1>=0",
+        "y1-y2>=0",
+        "z1-z0>=0",
+        "z1-z1>=0",
+        "z1-z2>=0"
+      ],
+      "target": "0",
+      "nonnegative_product_terms": [
+        "0",
+        "0"
+      ],
+      "decomposition": "0",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        1,
+        1,
+        2
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x1-x0>=0",
+        "x1-x1>=0",
+        "x1-x2>=0",
+        "y1-y0>=0",
+        "y1-y1>=0",
+        "y1-y2>=0",
+        "z2-z0>=0",
+        "z2-z1>=0",
+        "z2-z2>=0"
+      ],
+      "target": "a*x1 - a*x2 + y1*(1 - a) - y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(x1 - x2)",
+        "(1 - a)*(y1 - y2)"
+      ],
+      "decomposition": "a*(x1 - x2) + (1 - a)*(y1 - y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        1,
+        2,
+        0
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x1-x0>=0",
+        "x1-x1>=0",
+        "x1-x2>=0",
+        "y2-y0>=0",
+        "y2-y1>=0",
+        "y2-y2>=0",
+        "z0-z0>=0",
+        "z0-z1>=0",
+        "z0-z2>=0"
+      ],
+      "target": "-a*x0 + a*x1 - y0*(1 - a) + y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(-x0 + x1)",
+        "(1 - a)*(-y0 + y2)"
+      ],
+      "decomposition": "a*(-x0 + x1) + (1 - a)*(-y0 + y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        1,
+        2,
+        1
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x1-x0>=0",
+        "x1-x1>=0",
+        "x1-x2>=0",
+        "y2-y0>=0",
+        "y2-y1>=0",
+        "y2-y2>=0",
+        "z1-z0>=0",
+        "z1-z1>=0",
+        "z1-z2>=0"
+      ],
+      "target": "-y1*(1 - a) + y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "0",
+        "(1 - a)*(-y1 + y2)"
+      ],
+      "decomposition": "(1 - a)*(-y1 + y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        1,
+        2,
+        2
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x1-x0>=0",
+        "x1-x1>=0",
+        "x1-x2>=0",
+        "y2-y0>=0",
+        "y2-y1>=0",
+        "y2-y2>=0",
+        "z2-z0>=0",
+        "z2-z1>=0",
+        "z2-z2>=0"
+      ],
+      "target": "a*x1 - a*x2",
+      "nonnegative_product_terms": [
+        "a*(x1 - x2)",
+        "0"
+      ],
+      "decomposition": "a*(x1 - x2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        2,
+        0,
+        0
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x2-x0>=0",
+        "x2-x1>=0",
+        "x2-x2>=0",
+        "y0-y0>=0",
+        "y0-y1>=0",
+        "y0-y2>=0",
+        "z0-z0>=0",
+        "z0-z1>=0",
+        "z0-z2>=0"
+      ],
+      "target": "-a*x0 + a*x2",
+      "nonnegative_product_terms": [
+        "a*(-x0 + x2)",
+        "0"
+      ],
+      "decomposition": "a*(-x0 + x2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        2,
+        0,
+        1
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x2-x0>=0",
+        "x2-x1>=0",
+        "x2-x2>=0",
+        "y0-y0>=0",
+        "y0-y1>=0",
+        "y0-y2>=0",
+        "z1-z0>=0",
+        "z1-z1>=0",
+        "z1-z2>=0"
+      ],
+      "target": "-a*x1 + a*x2 + y0*(1 - a) - y1*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(-x1 + x2)",
+        "(1 - a)*(y0 - y1)"
+      ],
+      "decomposition": "a*(-x1 + x2) + (1 - a)*(y0 - y1)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        2,
+        0,
+        2
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x2-x0>=0",
+        "x2-x1>=0",
+        "x2-x2>=0",
+        "y0-y0>=0",
+        "y0-y1>=0",
+        "y0-y2>=0",
+        "z2-z0>=0",
+        "z2-z1>=0",
+        "z2-z2>=0"
+      ],
+      "target": "y0*(1 - a) - y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "0",
+        "(1 - a)*(y0 - y2)"
+      ],
+      "decomposition": "(1 - a)*(y0 - y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        2,
+        1,
+        0
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x2-x0>=0",
+        "x2-x1>=0",
+        "x2-x2>=0",
+        "y1-y0>=0",
+        "y1-y1>=0",
+        "y1-y2>=0",
+        "z0-z0>=0",
+        "z0-z1>=0",
+        "z0-z2>=0"
+      ],
+      "target": "-a*x0 + a*x2 - y0*(1 - a) + y1*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(-x0 + x2)",
+        "(1 - a)*(-y0 + y1)"
+      ],
+      "decomposition": "a*(-x0 + x2) + (1 - a)*(-y0 + y1)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        2,
+        1,
+        1
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x2-x0>=0",
+        "x2-x1>=0",
+        "x2-x2>=0",
+        "y1-y0>=0",
+        "y1-y1>=0",
+        "y1-y2>=0",
+        "z1-z0>=0",
+        "z1-z1>=0",
+        "z1-z2>=0"
+      ],
+      "target": "-a*x1 + a*x2",
+      "nonnegative_product_terms": [
+        "a*(-x1 + x2)",
+        "0"
+      ],
+      "decomposition": "a*(-x1 + x2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        2,
+        1,
+        2
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x2-x0>=0",
+        "x2-x1>=0",
+        "x2-x2>=0",
+        "y1-y0>=0",
+        "y1-y1>=0",
+        "y1-y2>=0",
+        "z2-z0>=0",
+        "z2-z1>=0",
+        "z2-z2>=0"
+      ],
+      "target": "y1*(1 - a) - y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "0",
+        "(1 - a)*(y1 - y2)"
+      ],
+      "decomposition": "(1 - a)*(y1 - y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        2,
+        2,
+        0
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x2-x0>=0",
+        "x2-x1>=0",
+        "x2-x2>=0",
+        "y2-y0>=0",
+        "y2-y1>=0",
+        "y2-y2>=0",
+        "z0-z0>=0",
+        "z0-z1>=0",
+        "z0-z2>=0"
+      ],
+      "target": "-a*x0 + a*x2 - y0*(1 - a) + y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(-x0 + x2)",
+        "(1 - a)*(-y0 + y2)"
+      ],
+      "decomposition": "a*(-x0 + x2) + (1 - a)*(-y0 + y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        2,
+        2,
+        1
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x2-x0>=0",
+        "x2-x1>=0",
+        "x2-x2>=0",
+        "y2-y0>=0",
+        "y2-y1>=0",
+        "y2-y2>=0",
+        "z1-z0>=0",
+        "z1-z1>=0",
+        "z1-z2>=0"
+      ],
+      "target": "-a*x1 + a*x2 - y1*(1 - a) + y2*(1 - a)",
+      "nonnegative_product_terms": [
+        "a*(-x1 + x2)",
+        "(1 - a)*(-y1 + y2)"
+      ],
+      "decomposition": "a*(-x1 + x2) + (1 - a)*(-y1 + y2)",
+      "residual": "0",
+      "passed": true
+    },
+    {
+      "active_indices": [
+        2,
+        2,
+        2
+      ],
+      "hypotheses": [
+        "0<=a<=1",
+        "x2-x0>=0",
+        "x2-x1>=0",
+        "x2-x2>=0",
+        "y2-y0>=0",
+        "y2-y1>=0",
+        "y2-y2>=0",
+        "z2-z0>=0",
+        "z2-z1>=0",
+        "z2-z2>=0"
+      ],
+      "target": "0",
+      "nonnegative_product_terms": [
+        "0",
+        "0"
+      ],
+      "decomposition": "0",
+      "residual": "0",
+      "passed": true
+    }
+  ],
+  "branches_covered": 27,
+  "all_passed": true
+}

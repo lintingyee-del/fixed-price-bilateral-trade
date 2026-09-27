@@ -1,0 +1,39 @@
+PASS  manifest: sha256 of 17 files
+PASS  beta_*: 0.73802433573 < beta_* < 0.73802433574   beta_* in [0.7380243357344945408346230 +/- 5.03e-26]
+PASS  C_* = 0.3937571625 to ten decimals
+PASS  7/20 < tau(C_*) < 9/25
+PASS  r_eta < 0.738024335797 at eta = 1e-12
+PASS  R_eta = 1 + d/eta < 360000000001
+PASS  general instance: 131 buyer and 131 seller types, 264 price events
+PASS  general instance: stored integers reproduced
+PASS  general instance: ratio < 0.7290804   ratio = 0.7290803900752
+PASS  symmetric instance: buyer law is the reversed seller law
+PASS  symmetric instance: stored OPT and ratio reproduced
+PASS  symmetric instance: ratio at each of 20 events reproduced
+PASS  symmetric instance: ratio < 0.83693   ratio = 0.836924799142
+PASS  affine boundary 'left': (M+2) - 73/100 (M+G) >= 0, 10 Bernstein leaves
+PASS  affine boundary 'right': (M+2) - 73/100 (M+G) >= 0, 12 Bernstein leaves
+PASS  obstruction 1: ratio 67/70 rises to 1 when B2 is replaced by its mean
+PASS  obstruction 2: the three pointwise remainders and their nonnegative forms
+PASS  obstruction 2: both witnesses respect the gain cap 2 and have the stated (G, M)
+PASS  obstruction 2: endpoint bounds and the convexity gap lambda/10
+PASS  stationary_physical_conditions: 14 stored margins are positive
+PASS  second_unit_kernel_bounds: stored signs
+PASS  endpoint_identities.json: 13 recorded residuals are zero
+PASS  boundary_identities.json: 4 recorded residuals are zero
+PASS  branch_elimination.json: 4 recorded residuals are zero
+PASS  branch_positive_factors.json: 11 recorded residuals are zero
+PASS  second_unit_kernel_identities.json: 10 recorded residuals are zero
+PASS  reference_price_coefficients.json: 20 recorded residuals are zero
+PASS  stationary_lower_endpoint.json: 12749 leaves re-evaluated {'wrong_phase_order': 217, 'connection_nonzero': 12092, 'root_candidate': 413, 'Pl_above_one': 19, 'no_algebraic_root': 8}
+PASS  stationary_lower_endpoint.json: leaves tile t in [1/5, 421/1000]
+PASS  stationary_lower_endpoint.json: retained cells are contiguous and equal the stored root interval
+PASS  stationary_lower_endpoint.json: connection equation changes sign across the root interval
+PASS  stationary_lower_endpoint.json: root strip is physical, comparison K < 0
+PASS  stationary_uniform_cover.json: 6827 leaves re-evaluated {'wrong_phase_order': 217, 'connection_nonzero': 4671, 'root_candidate': 1912, 'Pl_above_one': 19, 'no_algebraic_root': 8}
+PASS  stationary_uniform_cover.json: leaves tile t in [1/5, 421/1000]
+PASS  stationary_uniform_cover.json: retained cells are contiguous and equal the stored root interval
+PASS  stationary_uniform_cover.json: connection equation changes sign across the root interval
+PASS  stationary_uniform_cover.json: root strip is physical
+
+37 checks, 0 failed

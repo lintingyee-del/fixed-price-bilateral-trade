@@ -1,0 +1,66 @@
+{
+  "scope": "New components for the buyer-dependent continuous price system.\n\nChecks only the named calculus/algebra components and one exact nonuniqueness\nexample. It reuses, without running, the previously checked node recurrence\nand double-contact algebra. It does not prove existence or uniqueness of a\nprice construction from buyer input, or an all-buyer approximation bound.\n",
+  "actual_layer": "exact",
+  "identities": {
+    "tail_normalized_future_price_kernel": "0",
+    "future_price_kernel_leibniz_derivative": "0",
+    "backward_price_state_derivative": "0",
+    "regular_seller_potential_derivative": "0",
+    "regular_gamma_derivative": "0",
+    "coincident_buyer_price_atom_gamma_jump": "0",
+    "mixed_event_gamma_vs_before": "0",
+    "mixed_event_gamma_vs_after": "0",
+    "inactive_atomic_reflection_pair_sum": "0",
+    "active_atomic_reflection_first_slack": "0",
+    "active_atomic_reflection_second_slack": "0",
+    "inactive_branch_second_bound_margin": "0",
+    "active_branch_first_bound_margin": "0",
+    "regular_price_gain_derivative": "0"
+  },
+  "nonunique_optimal_policy_example": {
+    "buyers": "Z1=Z2=1, each escaping-tail first moment equals 1",
+    "seller": "(S1,S2)=(0,0) or (1,1), each with probability 1/2",
+    "beta": "3/4",
+    "price_policy_A": "mass 1/2 at price 1 and mass 1/2 at price 3",
+    "price_policy_B": "mass 1/2 at price 1 and density 1/4 on (1,3)",
+    "per_unit_potential_pieces": {
+      "both_policies_0_le_s_lt_1": {
+        "residual": "0",
+        "potential": "s/2",
+        "domain": "s/2 >= 0 on [0,1)"
+      },
+      "atomic_tail_1_le_s_lt_3": {
+        "residual": "0",
+        "potential": "s/4 - 1/4",
+        "domain": "(s-1)/4 >= 0 on [1,3)"
+      },
+      "density_tail_1_le_s_lt_3": {
+        "residual": "0",
+        "potential": "0",
+        "domain": "0 on [1,3)"
+      },
+      "both_policies_s_ge_3": {
+        "residual": "0",
+        "potential": "s/4 - 3/4",
+        "domain": "(s-3)/4 >= 0 on [3,infinity)"
+      }
+    },
+    "per_unit_welfare_for_0_lt_price_le_1": "3/2",
+    "per_unit_welfare_for_price_gt_1": "3/2",
+    "per_unit_optimum": "2",
+    "at_price_zero_welfare": "1/2",
+    "scope": "Exact rational branch formulas for two distinct actual optimal price policies in this one fixed-buyer example. The complete measure interpretation is analytic; fixing a canonical tail convention removes this particular nonuniqueness example only."
+  },
+  "source_sha256": "80e5c97d4f520525e40b738c78cd98dafc1cf05dada099baeea9c5d4cf010aaf",
+  "reused_without_rerun": [
+    "fp_ext_k2_buyer_adaptive_prefix_components_20260914: node increments, interval slope decomposition, and double/frozen-contact identities",
+    "fp_ext_k2_continuous_switching_components_20260914: finite-tail seller pieces"
+  ],
+  "not_certified": [
+    "Existence of a price policy from arbitrary buyer input",
+    "Optimality of a proposed local maximal-price or minimal-mass selection rule",
+    "Uniqueness after imposing a canonical body-price selection",
+    "Global KKT multiplier existence or general matching approximation bound",
+    "Four-sample numerical replay, owned by a separate script"
+  ]
+}

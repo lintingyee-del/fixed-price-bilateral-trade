@@ -1,0 +1,1088 @@
+{
+  "thm:exact-intro": {
+    "file": "paper.tex",
+    "line": 91,
+    "text": "\\begin{theoremAintro}[Exact welfare guarantee, informal]\\label{thm:exact-intro}\nLet the seller's and the buyer's values be independent and nonnegative, with positive and finite first-best welfare. The best posted price always achieves at least a \\(\\beta_*=0.738024\\ldots\\) fraction of first-best welfare, and no larger constant is guaranteed. Here \\(\\beta_*\\) is the unique root of an explicit equation in one variable. Every pair of distributions achieves strictly more than \\(\\beta_*\\), and an explicit family of bounded pairs approaches it.\n\\end{theoremAintro}",
+    "kind": "theoremAintro"
+  },
+  "thm:frontier-intro": {
+    "file": "paper.tex",
+    "line": 101,
+    "text": "\\begin{theoremBintro}[Sharp gains-from-trade guarantees, informal]\\label{thm:frontier-intro}\nFor independent nonnegative values with finite first-best welfare, the sharp affine gains-from-trade guarantees form an explicit strictly convex frontier. At each prescribed ratio \\(\\kappa>0\\) of potential gains to initial seller welfare, this frontier determines the exact fraction \\(\\rho(\\kappa)\\) of potential gains guaranteed by the best fixed price, with\n\\[\n\\rho(\\kappa)\\sim\\frac{2}{\\log(1/\\kappa)}\\qquad(\\kappa\\downarrow0).\n\\]\nBounded independent hard pairs approach the guarantee at every prescribed \\(\\kappa\\).\n\\end{theoremBintro}",
+    "kind": "theoremBintro"
+  },
+  "thm:frontier": {
+    "file": "paper.tex",
+    "line": 286,
+    "text": "\\begin{theoremB}[Sharp affine and conditional GFT guarantees]\\label{thm:frontier}\nThe scalar curve \\eqref{eq:4} gives the entire frontier:\n\\begin{equation}\n\\beta(C)=\\frac1{S(C)},\\qquad\n\\delta(\\beta(C))=\\frac{\\tau(C)}{S(C)},\n\\qquad \\frac14<C<\\frac12.\n\\label{eq:47}\n\\end{equation}\nEvery coefficient smaller than \\(\\delta(\\beta)\\) is refuted by a bounded hard pair of independent distributions.\n\nThe function \\(\\delta\\) is strictly increasing and strictly convex on \\((0,1)\\). Its derivative ranges from zero to infinity.\n\nWith \\(u=1-2C\\), the map\n\\begin{equation}\n\\kappa(C)=\\frac{\\tau(C)(S(C)+u)}u\n\\label{eq:51}\n\\end{equation}\nis a strictly increasing bijection from \\((1/4,1/2)\\) onto \\((0,\\infty)\\), and\n\\begin{equation}\n\\rho(\\kappa(C))\n=\\frac1{S(C)+u}\n=\\frac1{1+C\\mathcal I(C)}.\n\\label{eq:52}\n\\end{equation}\nEquivalently, extending \\(\\delta\\) by \\(+\\infty\\) outside \\((0,1)\\) for the purpose of conjugation,\n\\begin{equation}\n\\kappa\\rho(\\kappa)=\\delta^*(\\kappa)\n:=\\sup_{0<\\beta<1}\\{\\kappa\\beta-\\delta(\\beta)\\}.\n\\label{eq:53}\n\\end{equation}\nFor each fixed \\(\\kappa\\), bounded hard pairs with exactly \\(G/M=\\kappa\\) approach \\eqref{eq:52}.\n\n\\end{theoremB}",
+    "kind": "theoremB"
+  },
+  "cor:asymptotics": {
+    "file": "paper.tex",
+    "line": 320,
+    "text": "\\begin{corollaryB}[Endpoint asymptotics]\\label{cor:asymptotics}\nThe sharp curves satisfy\n\\begin{equation}\n\\begin{aligned}\n\\delta(\\beta)&\\sim\\frac e8\\,\\beta e^{-2/\\beta}\n&&(\\beta\\downarrow0),&\n\\delta(\\beta)&\\sim\\frac1{4(1-\\beta)}\n&&(\\beta\\uparrow1),\\\\\n\\rho(\\kappa)&\\sim\\frac2{\\log(1/\\kappa)}\n&&(\\kappa\\downarrow0),&\n1-\\rho(\\kappa)&\\sim\\frac1{\\sqrt\\kappa}\n&&(\\kappa\\to\\infty).\n\\end{aligned}\n\\label{eq:55}\n\\end{equation}\n\\end{corollaryB}",
+    "kind": "corollaryB"
+  },
+  "lem:energy": {
+    "file": "paper.tex",
+    "line": 352,
+    "text": "\\begin{lemma}[energy representation]\\label{lem:energy}\nFor every \\(d>0\\), a measurable \\(h:[0,1]\\to[0,1]\\) induces through \\eqref{eq:11} an absolutely continuous \\(p\\) with\n\\begin{equation}\np'(A(t))=h(t)\\quad\\text{a.e.},\\qquad\np(a)\\le \\min\\{x+a,1/d\\},\\qquad\n\\frac1{d+1}\\le x\\le\\frac1d,\n\\label{eq:12}\n\\end{equation}\nand satisfies\n\\begin{equation}\n\\mathcal J_d(h)-1=\\mathcal F_d[p]\n:=-\\log(dx)+\\int_0^\\infty\n\\left[d^2-p^{-2}-a((\\log p)')^2\\right]\\,\\mathrm da.\n\\tag{E}\\label{eq:13}\n\\end{equation}\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:reference": {
+    "file": "paper.tex",
+    "line": 437,
+    "text": "\\begin{lemma}[reference curves for every endpoint]\\label{lem:reference}\nFor \\(d>0\\), there is \\(\\bar C(d)>1/4\\) such that \\(Y_d\\) from \\eqref{eq:14} exists uniquely on \\(0<C<\\bar C(d)\\). The map \\(C\\mapsto x(C)\\) is a continuous strictly decreasing bijection from this interval onto \\((0,1/d)\\). For each such endpoint, using the contact data \\eqref{eq:15}, the function\n\\begin{equation}\n\\begin{gathered}\nP_x(a)=\n\\begin{cases}\nx+a,&0\\le a\\le a_e,\\\\\n\\text{the middle arc below},&a_e\\le a\\le a_a,\\\\\n1/d,&a\\ge a_a,\n\\end{cases}\\\\[4pt]\na(r)=\\frac C{d^2}e^{-\\mathcal I_C(r)},\\quad\nP_x(a(r))=\\frac{e^{-\\mathcal I_C(r)/2}}{d\\sqrt{D_C(r)}}\n\\quad(0\\le r\\le Y_d(C))\n\\end{gathered}\n\\label{eq:16}\n\\end{equation}\nis continuously differentiable and lies below both obstacles in \\eqref{eq:12}. The function\n\\begin{equation}\nQ_x=P_x^{-2}+\\bigl(a(\\log P_x)'\\bigr)'\n\\label{eq:17}\n\\end{equation}\nhas no atoms and is given almost everywhere by\n\\begin{equation}\nQ_x(a)=\n\\begin{cases}\n(1+x)/(x+a)^2,&0<a<a_e,\\\\\n0,&a_e<a<a_a,\\\\\nd^2,&a>a_a.\n\\end{cases}\n\\label{eq:18}\n\\end{equation}\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:gaps": {
+    "file": "paper.tex",
+    "line": 554,
+    "text": "\\begin{lemma}[nonnegative gaps]\\label{lem:gaps}\nFor \\(p\\) from \\eqref{eq:11} and the notation \\eqref{eq:23}, the fixed-endpoint gap is\n\\begin{equation}\n\\Phi_d(x)-\\mathcal F_d[p]\n=\\int_0^\\infty\n\\left[\na(v')^2+\\frac{e^{-2v}-1+2v}{P_x^2}-2Q_xv\n\\right]\\,\\mathrm da\\ \\ge0.\n\\tag{G1}\\label{eq:24}\n\\end{equation}\nIt vanishes exactly when \\(p=P_x\\). The endpoint envelope has a unique maximum at \\(C=C_d\\), and\n\\begin{equation}\n\\begin{aligned}\n\\Phi_d(x(C))&=C\\mathcal I_C(Y_d(C))-\\frac{C^2Y_d(C)}{1-CY_d(C)},\\\\\n\\frac{\\mathrm d}{\\mathrm dC}\\Phi_d(x(C))\n&=-\\frac{(Y_d(C)+U_d(C))\\mathcal B_d(C)}{(1-CY_d(C))^2},\\\\\n\\Phi_d(x(C_d))-\\Phi_d(x(C))\n&=\\int_{\\min\\{C,C_d\\}}^{\\max\\{C,C_d\\}}\n\\frac{(Y_d(u)+U_d(u))|\\mathcal B_d(u)|}\n{(1-uY_d(u))^2}\\,\\mathrm du.\n\\end{aligned}\n\\tag{G2}\\label{eq:25}\n\\end{equation}\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "thm:calibration": {
+    "file": "paper.tex",
+    "line": 686,
+    "text": "\\begin{theoremC}[Global bound and maximizing control]\\label{thm:calibration}\nLet \\(d>0\\), let \\(h:[0,1]\\to[0,1]\\) be measurable, and let \\(C_d\\in(1/4,1/2)\\) satisfy \\(\\tau(C_d)=d\\). Set \\(x=(d+\\int_0^1h(t)\\,\\mathrm dt)^{-1}\\). For \\(x<1/d\\), let \\(C\\in(0,\\bar C(d))\\) be the unique solution of \\(D_C(Y_d(C))=(1+x)^{-1}\\); for \\(x=1/d\\), set \\(C=0\\) and \\(P_x\\equiv1/d\\). With the reciprocal state \\(p\\), reference curve \\(P_x\\), and logarithmic difference \\(v\\) from \\eqref{eq:11}, \\eqref{eq:16}, and \\eqref{eq:23}, respectively,\n\\begin{equation}\n\\begin{aligned}\nS(C_d)-\\mathcal J_d(h)\n={}&\\int_{\\min\\{C,C_d\\}}^{\\max\\{C,C_d\\}}\n\\frac{(Y_d(u)+U_d(u))|\\mathcal B_d(u)|}\n{(1-uY_d(u))^2}\\,\\mathrm du\\\\\n&+\\int_0^\\infty\n\\left[\na(v')^2+\\frac{e^{-2v}-1+2v}{P_x^2}-2Q_xv\n\\right]\\,\\mathrm da\n\\ \\ge0.\n\\end{aligned}\n\\tag{G}\\label{eq:29}\n\\end{equation}\nConsequently,\n\\begin{equation}\n\\max_{0\\le h\\le1}\\mathcal J_d(h)=S(C_d).\n\\label{eq:30}\n\\end{equation}\nThe maximizing control is unique up to equality almost everywhere. It has a zero arc of length \\(C_d\\), a strictly increasing arc of length \\((1-2C_d)/(1-C_d)\\), and a one arc of length \\(C_d^2/(1-C_d)\\). On the middle arc,\n\\begin{equation}\nt=C_d(1+y),\\qquad\ng(t)=d\\sqrt{D_{C_d}(y)}\\,e^{\\mathcal I_{C_d}(y)/2},\\qquad\nh(t)=\\frac{y\\,g(t)}{D_{C_d}(y)},\\qquad 0\\le y\\le y_e(C_d).\n\\label{eq:31}\n\\end{equation}\n\\end{theoremC}",
+    "kind": "theoremC"
+  },
+  "prop:nonexponential": {
+    "file": "paper.tex",
+    "line": 747,
+    "text": "\\begin{proposition}[No exponential subarc]\\label{prop:nonexponential}\nFor \\(d>0\\), let \\(h\\) be the maximizing control of Theorem~\\ref{thm:calibration}, represented by \\eqref{eq:31} on its middle arc. There is no nonempty open subinterval of that arc on which \\(h(t)=\\lambda_0+\\lambda_1e^{\\lambda_2t}\\) for real constants \\(\\lambda_0,\\lambda_1,\\lambda_2\\) with \\(h'>0\\).\n\\end{proposition}",
+    "kind": "proposition"
+  },
+  "lem:pricing": {
+    "file": "paper.tex",
+    "line": 766,
+    "text": "\\begin{lemma}[pricing from the variational bound]\\label{lem:pricing}\nLet \\(0<\\beta<1\\) and \\(d>0\\). If\n\\begin{equation}\n\\beta\\sup_{0\\le h\\le1}\\mathcal J_d(h)\\le1,\n\\label{eq:35}\n\\end{equation}\nthen every independent pair of finite-mean distributions admits a price with\n\\begin{equation}\n\\Gamma(z)\\ge \\beta G-\\beta d M.\n\\label{eq:36}\n\\end{equation}\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:hard": {
+    "file": "paper.tex",
+    "line": 821,
+    "text": "\\begin{lemma}[bounded hard pairs]\\label{lem:hard}\nLet \\(H:[0,1]\\to[0,1]\\) be continuous and nonincreasing, with \\(H(1)=\\eta>0\\), and let \\(d>0\\). Extend \\(H\\) to a buyer survival function by keeping it equal to \\(\\eta\\) on \\([1,R_\\eta)\\), where \\(R_\\eta=1+d/\\eta\\), and setting it to zero at and above \\(R_\\eta\\). Include an atom of size \\(1-H(0)\\) at zero if needed. Using the tail integral \\(L\\), define the auxiliary integral \\(T\\) and seller CDF \\(F_s\\) by\n\\begin{equation}\nL(s)=d+\\int_s^1H(u)\\,\\mathrm du,\\qquad\nT(s)=\\int_0^sL(u)^{-2}\\,\\mathrm du,\n\\qquad\nF_s(s)=d\\bigl(L(s)^{-1}-H(s)T(s)\\bigr)\\quad(0\\le s<1),\n\\label{eq:39}\n\\end{equation}\nand complete \\(F_s\\) with an atom at one. This is a valid seller CDF. With\n\\(T_\\eta=T(1)\\) and \\(J_\\eta=\\mathcal J_d(H(1-\\cdot))\\), the pair satisfies\n\\begin{equation}\nM_\\eta=1-d^2T_\\eta,\\qquad\n\\Gamma_{\\max,\\eta}=d+\\eta d^2T_\\eta,\\qquad\nG_\\eta=d+dJ_\\eta-d^3T_\\eta.\n\\label{eq:40}\n\\end{equation}\nIn particular, for every \\(\\beta\\),\n\\begin{equation}\n\\Gamma_{\\max,\\eta}-\\beta G_\\eta+\\beta dM_\\eta\n=d(1-\\beta J_\\eta)+\\eta d^2T_\\eta.\n\\label{eq:41}\n\\end{equation}\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "thm:exact": {
+    "file": "paper.tex",
+    "line": 895,
+    "text": "\\begin{theoremA}[Exact welfare guarantee]\\label{thm:exact}\nLet \\(V_s,V_b\\) be independent nonnegative values with \\(0<\\mathbb E\\max\\{V_s,V_b\\}<\\infty\\). A fixed price trades when \\(V_s\\le z\\le V_b\\). Its optimal universal welfare guarantee is\n\\[\n\\inf_{F_s,F_b}\\max_{z\\ge0}\n\\frac{\\mathbb EV_s+\\mathbb E[(V_b-V_s)\\mathbf1_{\\{V_s\\le z\\le V_b\\}}]}\n{\\mathbb E\\max\\{V_s,V_b\\}}\n=\\beta_*\\approx0.73802.\n\\]\nThe constant is \\(\\beta_*=[C_*(2+\\mathcal I(C_*))]^{-1}\\), where \\(C_*\\) is the unique root in \\((1/4,1/2)\\) of\n\\begin{equation}\n\\begin{aligned}\nC(2+\\mathcal I(C))&=1+\\frac{C^2}{1-2C}e^{-\\mathcal I(C)/2},\\\\\n\\mathcal I(C)&=\\frac{1}{\\sqrt{C-1/4}}\n\\left[\\arctan\\frac{1-3C}{2(1-C)\\sqrt{C-1/4}}\n+\\arctan\\frac{1}{2\\sqrt{C-1/4}}\\right].\n\\end{aligned}\n\\label{eq:rootintro}\n\\end{equation}\nEvery pair has ratio strictly greater than \\(\\beta_*\\). For every \\(\\varepsilon>0\\), the explicit bounded family in Lemma~\\ref{lem:hard} contains a pair with ratio below \\(\\beta_*+\\varepsilon\\).\n\\end{theoremA}",
+    "kind": "theoremA"
+  },
+  "lem:smoothing": {
+    "file": "paper.tex",
+    "line": 1050,
+    "text": "\\begin{lemma}[smoothing bounded hard pairs]\\label{lem:smoothing}\nAn independent pair supported on \\([0,\\Lambda]\\) has independent absolutely continuous approximations with full support on \\((0,\\Lambda)\\) for which first-best welfare converges and the limit superior of best fixed-price welfare is at most the original optimum.\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:representation": {
+    "file": "paper.tex",
+    "line": 1080,
+    "text": "\\begin{proposition}[Price representation under absolutely continuous priors]\\label{lem:representation}\nFix a common report interval \\((0,\\Lambda)\\), where \\(\\Lambda>0\\). For every measurable, risk-neutral DSIC mechanism with realizationwise individual rationality and strong budget balance, there is a positive Borel measure \\(\\nu\\) on \\((0,\\Lambda)\\) of mass \\(m\\le1\\) such that its allocation probability \\(\\varphi\\) and expected transfer \\(\\Pi\\) satisfy\n\\begin{equation}\n\\varphi(s,b)=\\nu((s,b]),\\qquad\n\\Pi(s,b)=\\int_{(s,b]}z\\,\\nu(\\mathrm dz)\n\\quad\\text{for Lebesgue-a.e. }0<s<b<\\Lambda.\n\\label{eq:56}\n\\end{equation}\nUnder any absolutely continuous joint prior on this report square, its expected welfare is at most that of the best deterministic price.\n\\end{proposition}",
+    "kind": "proposition"
+  },
+  "cor:dsic": {
+    "file": "paper.tex",
+    "line": 1093,
+    "text": "\\begin{corollary}[exact dominant-strategy guarantee]\\label{cor:dsic}\nFor the independent-prior model of Section~\\ref{sec:model} and measurable mechanisms on the common nonnegative real report domain, suppose traders are risk neutral, truthfulness is dominant in expected lottery payoffs, and individual rationality and strong budget balance hold in every realization. The optimal universal welfare guarantee, allowing full prior information, is \\(\\beta_*\\).\n\\end{corollary}",
+    "kind": "corollary"
+  },
+  "prop:finite": {
+    "file": "paper.tex",
+    "line": 1386,
+    "text": "\\begin{proposition}[finite-tail error]\\label{prop:finite}\nLet \\(d=\\tau(C_*)\\), and let \\(r_\\eta\\) be the optimal fixed-price welfare ratio of \\eqref{eq:43} at \\(C_*\\). With\n\\[\nL_{\\mathrm{err}}(d)=\\frac3d+\\frac3{d^2}+\\frac2{d^3},\n\\]\none has\n\\begin{equation}\n0\\le r_\\eta-\\beta_*\n\\le\\eta\\left[\\beta_*L_{\\mathrm{err}}(d)+\\frac1d\\right].\n\\label{eq:B1}\n\\end{equation}\n\\end{proposition}",
+    "kind": "proposition"
+  },
+  "sec:intro": {
+    "file": "paper.tex",
+    "line": 57,
+    "text": "\\section{Introduction}\\label{sec:intro}",
+    "kind": "locator"
+  },
+  "tab:contributions": {
+    "file": "paper.tex",
+    "line": 85,
+    "text": "\\label{tab:contributions}",
+    "kind": "locator"
+  },
+  "sec:overview": {
+    "file": "paper.tex",
+    "line": 135,
+    "text": "\\section{Technical overview}\\label{sec:overview}",
+    "kind": "locator"
+  },
+  "fig:proofmap": {
+    "file": "paper.tex",
+    "line": 141,
+    "text": "\\label{fig:proofmap}",
+    "kind": "locator"
+  },
+  "fig:extremal": {
+    "file": "paper.tex",
+    "line": 170,
+    "text": "\\label{fig:extremal}",
+    "kind": "locator"
+  },
+  "sec:model": {
+    "file": "paper.tex",
+    "line": 183,
+    "text": "\\section{Model and the scalar curve}\\label{sec:model}",
+    "kind": "locator"
+  },
+  "eq:1": {
+    "file": "paper.tex",
+    "line": 195,
+    "text": "\\label{eq:1}",
+    "kind": "locator"
+  },
+  "eq:2": {
+    "file": "paper.tex",
+    "line": 201,
+    "text": "\\label{eq:2}",
+    "kind": "locator"
+  },
+  "eq:3": {
+    "file": "paper.tex",
+    "line": 212,
+    "text": "\\label{eq:3}",
+    "kind": "locator"
+  },
+  "eq:4": {
+    "file": "paper.tex",
+    "line": 218,
+    "text": "\\label{eq:4}",
+    "kind": "locator"
+  },
+  "eq:5": {
+    "file": "paper.tex",
+    "line": 227,
+    "text": "\\label{eq:5}",
+    "kind": "locator"
+  },
+  "eq:6": {
+    "file": "paper.tex",
+    "line": 237,
+    "text": "\\label{eq:6}",
+    "kind": "locator"
+  },
+  "eq:7": {
+    "file": "paper.tex",
+    "line": 246,
+    "text": "\\label{eq:7}",
+    "kind": "locator"
+  },
+  "eq:8": {
+    "file": "paper.tex",
+    "line": 253,
+    "text": "\\label{eq:8}",
+    "kind": "locator"
+  },
+  "fig:frontier": {
+    "file": "paper.tex",
+    "line": 261,
+    "text": "\\label{fig:frontier}",
+    "kind": "locator"
+  },
+  "sec:frontier": {
+    "file": "paper.tex",
+    "line": 267,
+    "text": "\\section{The complete gains-from-trade frontier}\\label{sec:frontier}",
+    "kind": "locator"
+  },
+  "eq:46": {
+    "file": "paper.tex",
+    "line": 275,
+    "text": "\\label{eq:46}",
+    "kind": "locator"
+  },
+  "eq:50": {
+    "file": "paper.tex",
+    "line": 283,
+    "text": "\\label{eq:50}",
+    "kind": "locator"
+  },
+  "eq:47": {
+    "file": "paper.tex",
+    "line": 292,
+    "text": "\\label{eq:47}",
+    "kind": "locator"
+  },
+  "eq:51": {
+    "file": "paper.tex",
+    "line": 301,
+    "text": "\\label{eq:51}",
+    "kind": "locator"
+  },
+  "eq:52": {
+    "file": "paper.tex",
+    "line": 308,
+    "text": "\\label{eq:52}",
+    "kind": "locator"
+  },
+  "eq:53": {
+    "file": "paper.tex",
+    "line": 314,
+    "text": "\\label{eq:53}",
+    "kind": "locator"
+  },
+  "eq:55": {
+    "file": "paper.tex",
+    "line": 333,
+    "text": "\\label{eq:55}",
+    "kind": "locator"
+  },
+  "sec:coordinates": {
+    "file": "paper.tex",
+    "line": 340,
+    "text": "\\section{From controls to a local energy}\\label{sec:coordinates}",
+    "kind": "locator"
+  },
+  "eq:11": {
+    "file": "paper.tex",
+    "line": 348,
+    "text": "\\label{eq:11}",
+    "kind": "locator"
+  },
+  "eq:12": {
+    "file": "paper.tex",
+    "line": 358,
+    "text": "\\label{eq:12}",
+    "kind": "locator"
+  },
+  "eq:13": {
+    "file": "paper.tex",
+    "line": 365,
+    "text": "\\tag{E}\\label{eq:13}",
+    "kind": "locator"
+  },
+  "eq:firstintegral": {
+    "file": "paper.tex",
+    "line": 406,
+    "text": "\\label{eq:firstintegral}",
+    "kind": "locator"
+  },
+  "sec:reference": {
+    "file": "paper.tex",
+    "line": 411,
+    "text": "\\section{A reference curve at every endpoint}\\label{sec:reference}",
+    "kind": "locator"
+  },
+  "eq:14": {
+    "file": "paper.tex",
+    "line": 419,
+    "text": "\\label{eq:14}",
+    "kind": "locator"
+  },
+  "eq:15": {
+    "file": "paper.tex",
+    "line": 428,
+    "text": "\\label{eq:15}",
+    "kind": "locator"
+  },
+  "eq:branch_integrals": {
+    "file": "paper.tex",
+    "line": 434,
+    "text": "\\label{eq:branch_integrals}",
+    "kind": "locator"
+  },
+  "eq:16": {
+    "file": "paper.tex",
+    "line": 451,
+    "text": "\\label{eq:16}",
+    "kind": "locator"
+  },
+  "eq:17": {
+    "file": "paper.tex",
+    "line": 456,
+    "text": "\\label{eq:17}",
+    "kind": "locator"
+  },
+  "eq:18": {
+    "file": "paper.tex",
+    "line": 466,
+    "text": "\\label{eq:18}",
+    "kind": "locator"
+  },
+  "eq:19": {
+    "file": "paper.tex",
+    "line": 477,
+    "text": "\\label{eq:19}",
+    "kind": "locator"
+  },
+  "eq:20": {
+    "file": "paper.tex",
+    "line": 517,
+    "text": "\\label{eq:20}",
+    "kind": "locator"
+  },
+  "eq:21": {
+    "file": "paper.tex",
+    "line": 522,
+    "text": "\\label{eq:21}",
+    "kind": "locator"
+  },
+  "eq:22": {
+    "file": "paper.tex",
+    "line": 531,
+    "text": "\\label{eq:22}",
+    "kind": "locator"
+  },
+  "sec:global": {
+    "file": "paper.tex",
+    "line": 542,
+    "text": "\\section{Fixed-endpoint comparison and the endpoint envelope}\\label{sec:global}",
+    "kind": "locator"
+  },
+  "eq:23": {
+    "file": "paper.tex",
+    "line": 551,
+    "text": "\\label{eq:23}",
+    "kind": "locator"
+  },
+  "eq:24": {
+    "file": "paper.tex",
+    "line": 562,
+    "text": "\\tag{G1}\\label{eq:24}",
+    "kind": "locator"
+  },
+  "eq:25": {
+    "file": "paper.tex",
+    "line": 575,
+    "text": "\\tag{G2}\\label{eq:25}",
+    "kind": "locator"
+  },
+  "eq:26": {
+    "file": "paper.tex",
+    "line": 597,
+    "text": "\\label{eq:26}",
+    "kind": "locator"
+  },
+  "eq:27": {
+    "file": "paper.tex",
+    "line": 627,
+    "text": "\\label{eq:27}",
+    "kind": "locator"
+  },
+  "eq:28": {
+    "file": "paper.tex",
+    "line": 641,
+    "text": "\\label{eq:28}",
+    "kind": "locator"
+  },
+  "sec:equality": {
+    "file": "paper.tex",
+    "line": 684,
+    "text": "\\section{Global calibration and the extremal shape}\\label{sec:equality}",
+    "kind": "locator"
+  },
+  "eq:29": {
+    "file": "paper.tex",
+    "line": 700,
+    "text": "\\tag{G}\\label{eq:29}",
+    "kind": "locator"
+  },
+  "eq:30": {
+    "file": "paper.tex",
+    "line": 705,
+    "text": "\\label{eq:30}",
+    "kind": "locator"
+  },
+  "eq:31": {
+    "file": "paper.tex",
+    "line": 712,
+    "text": "\\label{eq:31}",
+    "kind": "locator"
+  },
+  "eq:32": {
+    "file": "paper.tex",
+    "line": 729,
+    "text": "\\label{eq:32}",
+    "kind": "locator"
+  },
+  "eq:33": {
+    "file": "paper.tex",
+    "line": 738,
+    "text": "\\label{eq:33}",
+    "kind": "locator"
+  },
+  "eq:34": {
+    "file": "paper.tex",
+    "line": 757,
+    "text": "\\label{eq:34}",
+    "kind": "locator"
+  },
+  "sec:prices": {
+    "file": "paper.tex",
+    "line": 762,
+    "text": "\\section{Prices and bounded hard pairs}\\label{sec:prices}",
+    "kind": "locator"
+  },
+  "eq:35": {
+    "file": "paper.tex",
+    "line": 770,
+    "text": "\\label{eq:35}",
+    "kind": "locator"
+  },
+  "eq:36": {
+    "file": "paper.tex",
+    "line": 775,
+    "text": "\\label{eq:36}",
+    "kind": "locator"
+  },
+  "eq:37": {
+    "file": "paper.tex",
+    "line": 792,
+    "text": "\\label{eq:37}",
+    "kind": "locator"
+  },
+  "eq:38": {
+    "file": "paper.tex",
+    "line": 802,
+    "text": "\\label{eq:38}",
+    "kind": "locator"
+  },
+  "eq:39": {
+    "file": "paper.tex",
+    "line": 828,
+    "text": "\\label{eq:39}",
+    "kind": "locator"
+  },
+  "eq:40": {
+    "file": "paper.tex",
+    "line": 836,
+    "text": "\\label{eq:40}",
+    "kind": "locator"
+  },
+  "eq:41": {
+    "file": "paper.tex",
+    "line": 842,
+    "text": "\\label{eq:41}",
+    "kind": "locator"
+  },
+  "eq:42": {
+    "file": "paper.tex",
+    "line": 859,
+    "text": "\\label{eq:42}",
+    "kind": "locator"
+  },
+  "eq:43": {
+    "file": "paper.tex",
+    "line": 888,
+    "text": "\\label{eq:43}",
+    "kind": "locator"
+  },
+  "sec:exactproof": {
+    "file": "paper.tex",
+    "line": 893,
+    "text": "\\section{The exact welfare guarantee}\\label{sec:exactproof}",
+    "kind": "locator"
+  },
+  "eq:rootintro": {
+    "file": "paper.tex",
+    "line": 911,
+    "text": "\\label{eq:rootintro}",
+    "kind": "locator"
+  },
+  "eq:44": {
+    "file": "paper.tex",
+    "line": 923,
+    "text": "\\label{eq:44}",
+    "kind": "locator"
+  },
+  "eq:45": {
+    "file": "paper.tex",
+    "line": 929,
+    "text": "\\label{eq:45}",
+    "kind": "locator"
+  },
+  "eq:strictmass": {
+    "file": "paper.tex",
+    "line": 970,
+    "text": "\\label{eq:strictmass}",
+    "kind": "locator"
+  },
+  "sec:frontierproof": {
+    "file": "paper.tex",
+    "line": 985,
+    "text": "\\section{Proof of the gains-from-trade frontier}\\label{sec:frontierproof}",
+    "kind": "locator"
+  },
+  "eq:48": {
+    "file": "paper.tex",
+    "line": 997,
+    "text": "\\label{eq:48}",
+    "kind": "locator"
+  },
+  "eq:49": {
+    "file": "paper.tex",
+    "line": 1012,
+    "text": "\\label{eq:49}",
+    "kind": "locator"
+  },
+  "eq:54": {
+    "file": "paper.tex",
+    "line": 1028,
+    "text": "\\label{eq:54}",
+    "kind": "locator"
+  },
+  "sec:dsic": {
+    "file": "paper.tex",
+    "line": 1041,
+    "text": "\\section{The dominant-strategy welfare ceiling}\\label{sec:dsic}",
+    "kind": "locator"
+  },
+  "eq:57": {
+    "file": "paper.tex",
+    "line": 1062,
+    "text": "\\label{eq:57}",
+    "kind": "locator"
+  },
+  "eq:56": {
+    "file": "paper.tex",
+    "line": 1086,
+    "text": "\\label{eq:56}",
+    "kind": "locator"
+  },
+  "sec:related": {
+    "file": "paper.tex",
+    "line": 1108,
+    "text": "\\section{Related work}\\label{sec:related}",
+    "kind": "locator"
+  },
+  "sec:open": {
+    "file": "paper.tex",
+    "line": 1132,
+    "text": "\\section{Open questions}\\label{sec:open}",
+    "kind": "locator"
+  },
+  "app:notation": {
+    "file": "paper.tex",
+    "line": 1152,
+    "text": "\\section{Notation}\\label{app:notation}",
+    "kind": "locator"
+  },
+  "tab:coordinates": {
+    "file": "paper.tex",
+    "line": 1207,
+    "text": "\\label{tab:coordinates}",
+    "kind": "locator"
+  },
+  "tab:two-notation": {
+    "file": "paper.tex",
+    "line": 1233,
+    "text": "\\label{tab:two-notation}",
+    "kind": "locator"
+  },
+  "app:omitted": {
+    "file": "paper.tex",
+    "line": 1237,
+    "text": "\\section{Omitted proofs}\\label{app:omitted}",
+    "kind": "locator"
+  },
+  "app:asymptotics": {
+    "file": "paper.tex",
+    "line": 1241,
+    "text": "\\subsection{Endpoint asymptotics}\\label{app:asymptotics}",
+    "kind": "locator"
+  },
+  "app:representation": {
+    "file": "paper.tex",
+    "line": 1273,
+    "text": "\\subsection{Proof of the price representation}\\label{app:representation}",
+    "kind": "locator"
+  },
+  "eq:A1": {
+    "file": "paper.tex",
+    "line": 1288,
+    "text": "\\label{eq:A1}",
+    "kind": "locator"
+  },
+  "eq:A2": {
+    "file": "paper.tex",
+    "line": 1293,
+    "text": "\\label{eq:A2}\\\\",
+    "kind": "locator"
+  },
+  "eq:A3": {
+    "file": "paper.tex",
+    "line": 1295,
+    "text": "\\label{eq:A3}",
+    "kind": "locator"
+  },
+  "eq:A4": {
+    "file": "paper.tex",
+    "line": 1300,
+    "text": "\\label{eq:A4}",
+    "kind": "locator"
+  },
+  "eq:A5": {
+    "file": "paper.tex",
+    "line": 1306,
+    "text": "\\label{eq:A5}",
+    "kind": "locator"
+  },
+  "eq:A6": {
+    "file": "paper.tex",
+    "line": 1315,
+    "text": "\\label{eq:A6}",
+    "kind": "locator"
+  },
+  "eq:A7": {
+    "file": "paper.tex",
+    "line": 1320,
+    "text": "\\label{eq:A7}",
+    "kind": "locator"
+  },
+  "fig:gluing": {
+    "file": "paper.tex",
+    "line": 1327,
+    "text": "\\label{fig:gluing}",
+    "kind": "locator"
+  },
+  "eq:A8": {
+    "file": "paper.tex",
+    "line": 1333,
+    "text": "\\label{eq:A8}",
+    "kind": "locator"
+  },
+  "eq:A9": {
+    "file": "paper.tex",
+    "line": 1347,
+    "text": "\\label{eq:A9}",
+    "kind": "locator"
+  },
+  "eq:A10": {
+    "file": "paper.tex",
+    "line": 1355,
+    "text": "\\label{eq:A10}",
+    "kind": "locator"
+  },
+  "eq:A11": {
+    "file": "paper.tex",
+    "line": 1362,
+    "text": "\\label{eq:A11}",
+    "kind": "locator"
+  },
+  "eq:A12": {
+    "file": "paper.tex",
+    "line": 1369,
+    "text": "\\label{eq:A12}",
+    "kind": "locator"
+  },
+  "app:auxiliary": {
+    "file": "paper.tex",
+    "line": 1380,
+    "text": "\\section{Auxiliary results}\\label{app:auxiliary}",
+    "kind": "locator"
+  },
+  "app:finite": {
+    "file": "paper.tex",
+    "line": 1382,
+    "text": "\\subsection{Quantitative finite approximation}\\label{app:finite}",
+    "kind": "locator"
+  },
+  "eq:B1": {
+    "file": "paper.tex",
+    "line": 1395,
+    "text": "\\label{eq:B1}",
+    "kind": "locator"
+  },
+  "eq:B2": {
+    "file": "paper.tex",
+    "line": 1420,
+    "text": "\\label{eq:B2}",
+    "kind": "locator"
+  },
+  "app:nonconcavity": {
+    "file": "paper.tex",
+    "line": 1436,
+    "text": "\\subsection{Nonconcavity in the original control}\\label{app:nonconcavity}",
+    "kind": "locator"
+  },
+  "eq:9": {
+    "file": "paper.tex",
+    "line": 1443,
+    "text": "\\label{eq:9}",
+    "kind": "locator"
+  },
+  "eq:10": {
+    "file": "paper.tex",
+    "line": 1449,
+    "text": "\\label{eq:10}",
+    "kind": "locator"
+  },
+  "thm:two-separation": {
+    "file": "two_units.tex",
+    "line": 26,
+    "text": "\\begin{theoremD}[Two units are strictly harder]\\label{thm:two-separation}\nThere are independent, finitely supported laws of strictly positive\nordered buyer and seller vectors for which every common price has\nwelfare ratio less than \\(0.7290804\\).\nThere is also a symmetric such instance with ratio less than \\(0.83693\\).\nConsequently\n\\[\nr_2^*<0.7290804<0.738024<\\beta_*,\n\\qquad r_{2,\\mathrm{sym}}^*<0.83693.\n\\]\n\\end{theoremD}",
+    "kind": "theoremD"
+  },
+  "prop:two-tail": {
+    "file": "two_units.tex",
+    "line": 68,
+    "text": "\\begin{proposition}[A common escaping tail]\\label{prop:two-tail}\nFor the admissible bodies and normalized ratio defined in\n\\eqref{eq:two-body},\n\\[\nr_2^*=\\inf_{(Z,Y)\\ \\mathrm{admissible}}\\mathcal R_2(Z,Y).\n\\]\nEvery admissible body pair is approached by independent, strictly\npositive, finite-mean ordered instances whose best common-price welfare\nratios tend to \\(\\mathcal R_2(Z,Y)\\).\n\\end{proposition}",
+    "kind": "proposition"
+  },
+  "thm:two-pricing": {
+    "file": "two_units.tex",
+    "line": 158,
+    "text": "\\begin{theoremE}[Pricing for ordered buyer pairs]\\label{thm:two-pricing}\nFor every ordered buyer pair supported on \\([0,\\bar b]\\) and every \\(d>0\\):\n\\begin{enumerate}\n\\renewcommand{\\labelenumi}{(\\roman{enumi})}\n\\item For each \\(\\vartheta\\in\\mathcal V\\), the operator\n\\(\\mathcal T_{d,\\vartheta}\\) has a unique bounded fixed point\n\\(\\varpi_{d,\\vartheta}\\), the pointwise least feasible cumulative mass.\nIteration from zero converges uniformly with contraction factor\n\\(\\bar b/(1+\\bar b)\\).\n\\item The value \\(\\varpi_{d,\\vartheta}(0)\\) is jointly convex in\n\\((d,\\vartheta)\\), and the minimum\n\\begin{equation}\\label{eq:two-functional}\n\\mathcal J_d^{(2)}(H_1,H_2)\n =\\min_{\\vartheta\\in\\mathcal V}\\varpi_{d,\\vartheta}(0)\n\\end{equation}\nis attained.\n\\item For \\(0<\\beta<1\\), there is a price probability with bounded support satisfying\n\\begin{equation}\\label{eq:two-price-target}\n\\sum_{i=1}^2\\int g_i(s_i,z)\\,\\pi(\\mathrm dz)\n\\ge\\beta\\sum_{i=1}^2\\bar L_i(s_i)-\\beta d(s_1+s_2)\n\\quad(0\\le s_1\\le s_2)\n\\end{equation}\nif and only if \\(\\beta\\mathcal J_d^{(2)}(H_1,H_2)\\le1\\).\nAt \\(d=(1-\\beta)/\\beta\\), this is a welfare guarantee of \\(\\beta\\)\nagainst every ordered seller distribution in the normalized model.\n\\item If \\(H_i^\\delta\\) is the survival function of\n\\(\\delta\\lfloor Z_i/\\delta\\rfloor\\), then\n\\[\n\\mathcal J_d^{(2)}(H_1,H_2)\n\\le\\mathcal J_d^{(2)}(H_1^\\delta,H_2^\\delta)+\\delta.\n\\]\nThe supremum over bounded ordered buyer bodies consequently equals\nthe supremum over finite-support ordered buyer bodies.\n\\end{enumerate}\n\\end{theoremE}",
+    "kind": "theoremE"
+  },
+  "prop:2fam-optimum": {
+    "file": "two_units.tex",
+    "line": 268,
+    "text": "\\begin{proposition}[The minimum within the two-unit curve family]\n\\label{prop:2fam-optimum}\nLet $\\mathfrak F$ and $R_{\\mathrm f}$ be defined by\n\\eqref{eq:2fam-parameters}--\\eqref{eq:2fam-functionals}.\nThe infimum\n$ r_{\\mathrm{fam}}=\\inf_{\\mathfrak F}R_{\\mathrm f}$\nis attained at a unique curve and parameter triple $(t_{\\mathrm f},p_{\\mathrm f},\\xi_0)$.\nIts curve consists of a positive initial affine contact, one strictly\nconcave interval satisfying\n$\\mathcal P''+C_{\\mathrm f}\\mathcal P/\\xi^2=0$ for a constant $C_{\\mathrm f}>0$,\nand a positive final affine contact. The same infimum holds in the\nsubclass with endpoint slopes $1,h_{\\mathrm f}$, and\n\\[\n\\frac{18227}{25000}<r_{\\mathrm{fam}}<\\frac{729081}{10^6}.\n\\]\nThe minimizing body laws are approached by strictly positive finite-mean\nordered instances with a common escaping buyer atom.\n\\end{proposition}",
+    "kind": "proposition"
+  },
+  "conj:two-exact": {
+    "file": "two_units.tex",
+    "line": 301,
+    "text": "\\begin{conjecture}\\label{conj:two-exact}\nThe optimal two-unit common-price welfare guarantee equals\n\\(r_2^*=r_{\\mathrm{fam}}\\).\n\\end{conjecture}",
+    "kind": "conjecture"
+  },
+  "sec:two": {
+    "file": "two_units.tex",
+    "line": 1,
+    "text": "\\section{Extension to two units}\\label{sec:two}",
+    "kind": "locator"
+  },
+  "sec:two-model": {
+    "file": "two_units.tex",
+    "line": 3,
+    "text": "\\subsection{Model and separation}\\label{sec:two-model}",
+    "kind": "locator"
+  },
+  "eq:two-model": {
+    "file": "two_units.tex",
+    "line": 13,
+    "text": "\\begin{equation}\\label{eq:two-model}",
+    "kind": "locator"
+  },
+  "sec:two-tail": {
+    "file": "two_units.tex",
+    "line": 47,
+    "text": "\\subsection{Tail normalization}\\label{sec:two-tail}",
+    "kind": "locator"
+  },
+  "eq:two-body": {
+    "file": "two_units.tex",
+    "line": 51,
+    "text": "\\begin{equation}\\label{eq:two-body}",
+    "kind": "locator"
+  },
+  "sec:two-pricing": {
+    "file": "two_units.tex",
+    "line": 82,
+    "text": "\\subsection{The pricing functional}\\label{sec:two-pricing}",
+    "kind": "locator"
+  },
+  "eq:two-kernel": {
+    "file": "two_units.tex",
+    "line": 100,
+    "text": "\\begin{equation}\\label{eq:two-kernel}",
+    "kind": "locator"
+  },
+  "eq:two-potential": {
+    "file": "two_units.tex",
+    "line": 121,
+    "text": "\\begin{equation}\\label{eq:two-potential}",
+    "kind": "locator"
+  },
+  "eq:two-operator": {
+    "file": "two_units.tex",
+    "line": 144,
+    "text": "\\begin{equation}\\label{eq:two-operator}",
+    "kind": "locator"
+  },
+  "eq:two-functional": {
+    "file": "two_units.tex",
+    "line": 169,
+    "text": "\\begin{equation}\\label{eq:two-functional}",
+    "kind": "locator"
+  },
+  "eq:two-price-target": {
+    "file": "two_units.tex",
+    "line": 175,
+    "text": "\\begin{equation}\\label{eq:two-price-target}",
+    "kind": "locator"
+  },
+  "sec:two-candidate": {
+    "file": "two_units.tex",
+    "line": 205,
+    "text": "\\subsection{The structured family}\\label{sec:two-candidate}",
+    "kind": "locator"
+  },
+  "eq:2fam-parameters": {
+    "file": "two_units.tex",
+    "line": 221,
+    "text": " \\label{eq:2fam-parameters}",
+    "kind": "locator"
+  },
+  "eq:2fam-class": {
+    "file": "two_units.tex",
+    "line": 231,
+    "text": " \\label{eq:2fam-class}",
+    "kind": "locator"
+  },
+  "eq:2fam-functionals": {
+    "file": "two_units.tex",
+    "line": 249,
+    "text": " &&\\label{eq:2fam-functionals}",
+    "kind": "locator"
+  },
+  "fig:two-structure": {
+    "file": "two_units.tex",
+    "line": 295,
+    "text": "\\label{fig:two-structure}",
+    "kind": "locator"
+  },
+  "sec:two-open": {
+    "file": "two_units.tex",
+    "line": 299,
+    "text": "\\subsection{The remaining comparison}\\label{sec:two-open}",
+    "kind": "locator"
+  },
+  "eq:two-open-budget": {
+    "file": "two_units.tex",
+    "line": 308,
+    "text": "\\begin{equation}\\label{eq:two-open-budget}",
+    "kind": "locator"
+  },
+  "lem:2fam-realization": {
+    "file": "two_unit_family.tex",
+    "line": 41,
+    "text": "\\begin{lemma}[Realization by limiting instances]\\label{lem:2fam-realization}\nEvery member of $\\mathfrak F$ is the limit of strictly positive,\nfinite-mean ordered two-unit instances with independent buyer and seller\nvectors, whose optimal common-price welfare ratios converge to\n$R_{\\mathrm f}$. Their seller welfare and efficient gains converge to\n$M_{\\mathrm f}$ and $G_{\\mathrm f}$, and their best price gains converge\nto $2$.\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:2fam-compact": {
+    "file": "two_unit_family.tex",
+    "line": 127,
+    "text": "\\begin{lemma}[Compactness below three quarters]\\label{lem:2fam-compact}\nLet $0<\\beta_{\\mathrm f}\\le3/4$. Every curve with\n$R_{\\mathrm f}<\\beta_{\\mathrm f}$ satisfies\n$1/32<m_{\\mathrm f}<3/4$, $\\xi_0<600$, and $p_{\\mathrm f}<1$.\nIf $K_{\\mathrm f}$ takes a positive value, its positive supremum is\nattained in this parameter region.\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:2fam-shape": {
+    "file": "two_unit_family.tex",
+    "line": 184,
+    "text": "\\begin{lemma}[Three-arc energy minimizer]\\label{lem:2fam-shape}\nAt every feasible fixed $(t_{\\mathrm f},p_{\\mathrm f},\\xi_0)$, the energy\n$E_{\\mathrm f}$ has a unique minimizer in \\eqref{eq:2fam-class}.\nIt is entirely affine, or consists of an initial affine contact, one\nstrictly concave free interval, and a final affine contact.\nEither contact may have zero length. On the free interval there is\na constant $C_{\\mathrm f}>0$ such that\n\\begin{equation}\n \\mathcal P''+\\frac{C_{\\mathrm f}}{\\xi^2}\\mathcal P=0,\n \\qquad\n d_{\\mathrm f}\n  =\\xi\\mathcal P'^2-\\mathcal P\\mathcal P'\n          +\\frac{C_{\\mathrm f}\\mathcal P^2}{\\xi}.\n \\label{eq:2fam-euler}\n\\end{equation}\nIf $c_{\\mathrm f}=0$, every non-affine minimizer has a positive initial\ncontact interval.\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:2fam-boundary": {
+    "file": "two_unit_family.tex",
+    "line": 291,
+    "text": "\\begin{lemma}[Interior outer parameters]\\label{lem:2fam-boundary}\nSuppose $\\beta_{\\mathrm f}\\in[18227/25000,729081/10^6]$.\nAt a positive global maximum of $K_{\\mathrm f}$, or at a global\nminimum of $R_{\\mathrm f}$ whose value is $\\beta_{\\mathrm f}$, one has\n$t_{\\mathrm f}<p_{\\mathrm f}<1$ and both affine contacts have positive length.\nThe derivatives of $K_{\\mathrm f}$ with respect to\n$(t_{\\mathrm f},p_{\\mathrm f},h_{\\mathrm f})$ vanish there.\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:2fam-domain": {
+    "file": "two_unit_family.tex",
+    "line": 466,
+    "text": "\\begin{lemma}[Stationary domain and monotonicity]\\label{lem:2fam-domain}\nFor $37/100\\le d_{\\mathrm f}\\le3/8$, every physical stationary\npoint satisfies $1/5<t_{\\mathrm f}<421/1000$.\nOn the algebraic branch, $\\partial_{p_{\\mathrm f}}\\mathcal A_{\\mathrm f}>0$.\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:2fam-cover": {
+    "file": "two_unit_family.tex",
+    "line": 519,
+    "text": "\\begin{lemma}[Validated stationary branch]\\label{lem:2fam-cover}\nFor every $\\beta_{\\mathrm f}\\in[18227/25000,729081/10^6]$, the system\n\\eqref{eq:2fam-algebraic}--\\eqref{eq:2fam-connection} has exactly one\nphysical stationary point. At $\\beta_{\\mathrm f}=18227/25000$ it satisfies\n$\\beta_{\\mathrm f}G_{\\mathrm f}-(1-\\beta_{\\mathrm f})M_{\\mathrm f}-2<0$.\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "lem:2fam-witness": {
+    "file": "two_unit_family.tex",
+    "line": 617,
+    "text": "\\begin{lemma}[A rational comparison curve]\\label{lem:2fam-witness}\nThe class \\(\\mathfrak F\\) contains a rational concave polygon\nwith \\(R_{\\mathrm f}<729081/10^6\\).\n\\end{lemma}",
+    "kind": "lemma"
+  },
+  "prop:2fam-separate-responses": {
+    "file": "two_unit_family.tex",
+    "line": 804,
+    "text": "\\begin{proposition}[Separate global responses at the reference]\n\\label{prop:2fam-separate-responses}\nLet $(Z^*,Y^*)$ be the minimizing body pair from Proposition~\\ref{prop:2fam-optimum}, and set $\\beta_{\\mathrm f}=r_{\\mathrm{fam}}$.\nFor the normalized welfare quantities in \\eqref{eq:2fam-limiting-welfare}, the\nprobability $\\pi_{\\mathrm f}$ defined by \\eqref{eq:2fam-price-density} satisfies\n\\begin{align*}\n \\mathcal W_{\\mathrm f,\\pi_{\\mathrm f}}(Z^*,Y)\n     &\\ge\\beta_{\\mathrm f}\\mathcal O_{\\mathrm f}(Z^*,Y)\n       &&\\text{for every finite-mean }0\\le Y_1\\le Y_2,\\\\\n \\mathcal W_{\\mathrm f,\\pi_{\\mathrm f}}(Z,Y^*)\n     &\\ge\\beta_{\\mathrm f}\\mathcal O_{\\mathrm f}(Z,Y^*)\n       &&\\text{for every finite-mean }Z_1\\ge Z_2\\ge0.\n\\end{align*}\nFor every $z\\ge0$,\n\\begin{equation}\n \\Upsilon_{2,\\mathrm f}(z)+\\inf_{w\\ge z}\\Upsilon_{1,\\mathrm f}(w)\\ge0,\n \\qquad\n \\Upsilon_{2,\\mathrm f}(z)+\\inf_{w\\ge z}\\Upsilon_{1,\\mathrm f}(w)=0\n       \\quad\\Longleftrightarrow\\quad z=a_{\\mathrm f}.\n \\label{eq:2fam-second-gap}\n\\end{equation}\nEach welfare inequality fixes the entire opposite reference side and\nkeeps the escaping buyer first moments equal to one.\n\\end{proposition}",
+    "kind": "proposition"
+  },
+  "app:2fam": {
+    "file": "two_unit_family.tex",
+    "line": 2,
+    "text": "\\section{Optimization within a two-unit family}\\label{app:2fam}",
+    "kind": "locator"
+  },
+  "eq:2fam-physical-time": {
+    "file": "two_unit_family.tex",
+    "line": 19,
+    "text": " \\label{eq:2fam-physical-time}",
+    "kind": "locator"
+  },
+  "eq:2fam-laws": {
+    "file": "two_unit_family.tex",
+    "line": 27,
+    "text": " \\label{eq:2fam-laws}",
+    "kind": "locator"
+  },
+  "eq:2fam-comparison": {
+    "file": "two_unit_family.tex",
+    "line": 116,
+    "text": " \\label{eq:2fam-comparison}",
+    "kind": "locator"
+  },
+  "eq:2fam-small-mass": {
+    "file": "two_unit_family.tex",
+    "line": 156,
+    "text": " \\label{eq:2fam-small-mass}",
+    "kind": "locator"
+  },
+  "eq:2fam-euler": {
+    "file": "two_unit_family.tex",
+    "line": 197,
+    "text": " \\label{eq:2fam-euler}",
+    "kind": "locator"
+  },
+  "eq:2fam-multiplier": {
+    "file": "two_unit_family.tex",
+    "line": 224,
+    "text": " \\label{eq:2fam-multiplier}",
+    "kind": "locator"
+  },
+  "eq:2fam-gap": {
+    "file": "two_unit_family.tex",
+    "line": 264,
+    "text": " \\label{eq:2fam-gap}",
+    "kind": "locator"
+  },
+  "eq:2fam-affine-boundaries": {
+    "file": "two_unit_family.tex",
+    "line": 283,
+    "text": " \\label{eq:2fam-affine-boundaries}",
+    "kind": "locator"
+  },
+  "eq:2fam-left-variation": {
+    "file": "two_unit_family.tex",
+    "line": 322,
+    "text": " \\label{eq:2fam-left-variation}",
+    "kind": "locator"
+  },
+  "eq:2fam-right-variation": {
+    "file": "two_unit_family.tex",
+    "line": 339,
+    "text": " \\label{eq:2fam-right-variation}",
+    "kind": "locator"
+  },
+  "eq:2fam-quadratures": {
+    "file": "two_unit_family.tex",
+    "line": 382,
+    "text": " \\label{eq:2fam-quadratures}",
+    "kind": "locator"
+  },
+  "eq:2fam-stationarity": {
+    "file": "two_unit_family.tex",
+    "line": 402,
+    "text": "\\end{aligned}\\label{eq:2fam-stationarity}",
+    "kind": "locator"
+  },
+  "eq:2fam-algebraic": {
+    "file": "two_unit_family.tex",
+    "line": 430,
+    "text": " \\label{eq:2fam-algebraic}",
+    "kind": "locator"
+  },
+  "eq:2fam-connection": {
+    "file": "two_unit_family.tex",
+    "line": 448,
+    "text": " \\label{eq:2fam-connection}",
+    "kind": "locator"
+  },
+  "eq:2fam-recovery": {
+    "file": "two_unit_family.tex",
+    "line": 458,
+    "text": " \\label{eq:2fam-recovery}",
+    "kind": "locator"
+  },
+  "app:2fam-one-sided": {
+    "file": "two_unit_family.tex",
+    "line": 725,
+    "text": "\\label{app:2fam-one-sided}",
+    "kind": "locator"
+  },
+  "eq:2fam-limiting-welfare": {
+    "file": "two_unit_family.tex",
+    "line": 741,
+    "text": " \\label{eq:2fam-limiting-welfare}",
+    "kind": "locator"
+  },
+  "eq:2fam-price-coefficients": {
+    "file": "two_unit_family.tex",
+    "line": 761,
+    "text": " \\label{eq:2fam-price-coefficients}",
+    "kind": "locator"
+  },
+  "eq:2fam-price-density": {
+    "file": "two_unit_family.tex",
+    "line": 777,
+    "text": " \\label{eq:2fam-price-density}",
+    "kind": "locator"
+  },
+  "eq:2fam-state-gradients": {
+    "file": "two_unit_family.tex",
+    "line": 793,
+    "text": " \\label{eq:2fam-state-gradients}",
+    "kind": "locator"
+  },
+  "eq:2fam-potentials": {
+    "file": "two_unit_family.tex",
+    "line": 801,
+    "text": " \\label{eq:2fam-potentials}",
+    "kind": "locator"
+  },
+  "eq:2fam-second-gap": {
+    "file": "two_unit_family.tex",
+    "line": 823,
+    "text": " \\label{eq:2fam-second-gap}",
+    "kind": "locator"
+  },
+  "app:two-tail": {
+    "file": "two_unit_pricing_proofs.tex",
+    "line": 1,
+    "text": "\\subsection{Proof of the two-unit tail normalization}\\label{app:two-tail}",
+    "kind": "locator"
+  },
+  "eq:two-tail-cut": {
+    "file": "two_unit_pricing_proofs.tex",
+    "line": 17,
+    "text": "\\begin{equation}\\label{eq:two-tail-cut}",
+    "kind": "locator"
+  },
+  "eq:two-tail-balance": {
+    "file": "two_unit_pricing_proofs.tex",
+    "line": 47,
+    "text": "\\begin{equation}\\label{eq:two-tail-balance}",
+    "kind": "locator"
+  },
+  "eq:two-tail-gain-bounds": {
+    "file": "two_unit_pricing_proofs.tex",
+    "line": 65,
+    "text": "\\begin{equation}\\label{eq:two-tail-gain-bounds}",
+    "kind": "locator"
+  },
+  "app:two-pricing": {
+    "file": "two_unit_pricing_proofs.tex",
+    "line": 130,
+    "text": "\\subsection{Proof of the two-unit pricing theorem}\\label{app:two-pricing}",
+    "kind": "locator"
+  },
+  "app:two-recurrence": {
+    "file": "two_unit_pricing_proofs.tex",
+    "line": 341,
+    "text": "\\subsection{Finite-node evaluation}\\label{app:two-recurrence}",
+    "kind": "locator"
+  },
+  "eq:two-backward": {
+    "file": "two_unit_pricing_proofs.tex",
+    "line": 350,
+    "text": "\\begin{equation}\\label{eq:two-backward}",
+    "kind": "locator"
+  },
+  "app:two-finite": {
+    "file": "two_unit_computation.tex",
+    "line": 2,
+    "text": "\\section{The two-unit instance}\\label{app:two-finite}",
+    "kind": "locator"
+  }
+}

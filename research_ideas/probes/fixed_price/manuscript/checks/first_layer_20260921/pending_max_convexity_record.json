@@ -1,0 +1,12 @@
+{
+  "key": "fpm_20260921_finite_node_max_convexity_exact",
+  "statement": "For all real x0,x1,x2,y0,y1,y2 and 0<=a<=1, max_k(a*xk+(1-a)*yk) <= a*max_k(xk)+(1-a)*max_k(yk). All 27 triples of active endpoint/mixed maxima have the exact nonnegative decomposition a*(xi-xk)+(1-a)*(yj-yk), with zero polynomial residual. Ties belong to one or more covered branches.",
+  "verified": [
+    "exact"
+  ],
+  "evidence": "research_ideas/probes/fixed_price/manuscript/checks/first_layer_20260921/max_convexity_exact.json",
+  "date": "2026-09-21",
+  "paper": "fixed-price bilateral trade manuscript (current included TeX)",
+  "note": "Exact certificate for the scalar max convexity step in two_unit_pricing_proofs.tex, eq:two-backward. The 27 branch certificates cover all endpoint and mixed max active indices. This resolves the preceding dual-solver timeout without rerunning or changing that receipt. No continuum or arbitrary-node-count proof is claimed.",
+  "manifest_node_for_scoped_notes": "P_two_finite_nodes"
+}
